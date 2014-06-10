@@ -44,7 +44,7 @@ textarea {
 
 #columns {
 	position: relative;
-	padding-bottom: 50px;
+	/* padding-bottom: 50px; */
 	padding-top: 15px;
 }
 
@@ -59,12 +59,17 @@ header {
 	z-index: 1;
 	position: relative;
 	background: $light-background;
+
+	background: url(../img/bg_patterns/pattern_light_warm.jpg);
+	border-bottom: 1px solid #000;
+
 	padding-bottom: 15px;
 	.banner {
 		background: black;
 		max-height: 100%;
 		.row {
 			margin: 0px;
+
 		}
 	}
 	.nav {
@@ -1787,16 +1792,19 @@ div.star a:hover {
 .footer-container {
 
 	// min 768px
+	background-color: $dark-background;
+	background: url(../img/bg_patterns/pattern_dark.jpg) repeat-x 0 -10px #999999;
 
 	.container {
 		padding-bottom: 100px;
 	}
 	#footer {
-			background-color: $dark-background;
 		padding: 0 30px;
 		color: #777777;
 		.row {
-	
+			div{
+				text-align:center;
+			}
 			position: relative;
 		}
 		.footer-block {
@@ -3248,7 +3256,7 @@ div.star.star_hover {
 	}
 }
 
-//Homepage pre-footer
+// Homepage pre-footer
 #facebook_block,
 #cmsinfo_block {
 	overflow: hidden;

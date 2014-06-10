@@ -31,25 +31,28 @@
 				</div><!-- #columns -->
 			</div><!-- .columns-container -->
 			<!-- Footer -->
+
 			<div class="footer-container">
 				<footer id="footer"  class="container">
-					<div class="row">{$HOOK_FOOTER}
-
-<div class="col-xs-4"><h3>Custom Block</h3>
-<p><strong class="dark">Lorem ipsum dolor sit amet conse ctetu</strong></p>
-<p>Sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p></div>
+					<div class="row"> <!-- { $HOOK_FOOTER } -->
 
 
 
-<div class="col-xs-4"><h3>Custom Block</h3>
-<p><strong class="dark">Lorem ipsum dolor sit amet conse ctetu</strong></p>
-<p>Sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p></div>
+						<div class="col-xs-4"><h3>Shipping</h3>
+						<p class="text-center">Sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+						</div>
 
 
 
-<div class="col-xs-4"><h3>Custom Block</h3>
-<p><strong class="dark">Lorem ipsum dolor sit amet conse ctetu</strong></p>
-<p>Sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p></div>
+						<div class="col-xs-4"><h3>Custom Block</h3>
+						<p>Sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+						</div>
+
+
+
+						<div class="col-xs-4"><h3>Payment icons</h3>
+						<p>Sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+						</div>
 
 
 
