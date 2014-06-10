@@ -7,7 +7,7 @@
 
 	position: relative;
 	float: right;
-	padding-top: 50px;
+	 padding-top: 50px;
 
 	> a:first-child {
 		&:after {
@@ -27,8 +27,9 @@
 		}
 	}
 }
+
 .shopping_cart {
-	width: 270px;
+	 width: 100px;
 	@media (max-width: $screen-xs) {
 		padding-top: 20px;
 	}
@@ -159,7 +160,6 @@
 				}
 			}
 		}
-
 	}
 	.cart_block_no_products {
 		margin: 0;
@@ -556,3 +556,4 @@
 		}
 	}
 }
+

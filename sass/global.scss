@@ -86,6 +86,7 @@ header {
 		> .container {
 			position: relative;
 		}
+
 		#header_logo {
 			padding-top: 15px;
 			@extend .col-sm-4;
@@ -95,11 +96,13 @@ header {
 			@media (max-width: $screen-xs-max) {
 				padding-top: 15px;
 				img {
-					margin: 0 auto;
+
+					width: 190px !important;
 				}
 			}
 		}
 	}
+
 	@media (min-width: $screen-xs-max){
 		.col-sm-4 + .col-sm-4 + .col-sm-4 {
 			float: right;
@@ -108,7 +111,7 @@ header {
 }
 
 .ie8 #header #header_logo {
-	width: 350px;
+	/* width: 350px; */
 }
 
 //title

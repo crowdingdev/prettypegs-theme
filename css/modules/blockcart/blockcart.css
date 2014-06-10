@@ -24,25 +24,25 @@
   padding: 4px 0px 2px 0px;
 }
 
-/* line 30, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 31, ../../../sass/modules/blockcart/blockcart.scss */
 .shopping_cart {
-  width: 270px;
+  width: 100px;
 }
 @media (max-width: 480px) {
-  /* line 30, ../../../sass/modules/blockcart/blockcart.scss */
+  /* line 31, ../../../sass/modules/blockcart/blockcart.scss */
   .shopping_cart {
     padding-top: 20px;
   }
 }
 @media (max-width: 960px) {
-  /* line 30, ../../../sass/modules/blockcart/blockcart.scss */
+  /* line 31, ../../../sass/modules/blockcart/blockcart.scss */
   .shopping_cart {
     margin: 0 auto;
     float: none;
     width: 100%;
   }
 }
-/* line 40, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 41, ../../../sass/modules/blockcart/blockcart.scss */
 .shopping_cart > a:first-child {
   padding: 7px 10px 14px 16px;
   background: #333333;
@@ -53,18 +53,18 @@
   overflow: hidden;
 }
 @media (min-width: 768px) and (max-width: 959px) {
-  /* line 48, ../../../sass/modules/blockcart/blockcart.scss */
+  /* line 49, ../../../sass/modules/blockcart/blockcart.scss */
   .shopping_cart > a:first-child span.ajax_cart_product_txt, .shopping_cart > a:first-child span.ajax_cart_product_txt_s {
     display: none !important;
   }
 }
-/* line 53, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 54, ../../../sass/modules/blockcart/blockcart.scss */
 .shopping_cart > a:first-child b {
   color: white;
   font: 600 18px/22px "Open Sans", sans-serif;
   padding-right: 5px;
 }
-/* line 58, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 59, ../../../sass/modules/blockcart/blockcart.scss */
 .shopping_cart > a:first-child:before {
   content: "\f07a";
   font-family: "FontAwesome";
@@ -74,11 +74,11 @@
   color: white;
   padding-right: 15px;
 }
-/* line 68, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 69, ../../../sass/modules/blockcart/blockcart.scss */
 .shopping_cart .ajax_cart_total {
   display: none !important;
 }
-/* line 72, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 73, ../../../sass/modules/blockcart/blockcart.scss */
 .shopping_cart .block_cart_expand:after, .shopping_cart .block_cart_collapse:after {
   content: "\f0d7";
   font-family: "FontAwesome";
@@ -88,19 +88,19 @@
   color: #686666;
   padding: 6px 0 0 0;
 }
-/* line 83, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 84, ../../../sass/modules/blockcart/blockcart.scss */
 .shopping_cart .block_cart_collapse:after {
   content: "\f0d8";
   padding: 4px 0px 2px 0px;
 }
 
-/* line 92, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 93, ../../../sass/modules/blockcart/blockcart.scss */
 .cart_block .cart_block_list .remove_link {
   position: absolute;
   right: 10px;
   top: 19px;
 }
-/* line 98, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 99, ../../../sass/modules/blockcart/blockcart.scss */
 .cart_block .cart_block_list .remove_link a,
 .cart_block .cart_block_list .ajax_cart_block_remove_link {
   color: #777777;
@@ -108,7 +108,7 @@
   width: 100%;
   height: 100%;
 }
-/* line 103, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 104, ../../../sass/modules/blockcart/blockcart.scss */
 .cart_block .cart_block_list .remove_link a:before,
 .cart_block .cart_block_list .ajax_cart_block_remove_link:before {
   display: inline-block;
@@ -117,34 +117,34 @@
   font-size: 18px;
   line-height: 18px;
 }
-/* line 110, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 111, ../../../sass/modules/blockcart/blockcart.scss */
 .cart_block .cart_block_list .remove_link a:hover,
 .cart_block .cart_block_list .ajax_cart_block_remove_link:hover {
   color: #515151;
 }
-/* line 115, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 116, ../../../sass/modules/blockcart/blockcart.scss */
 .cart_block .cart-images {
   float: left;
   margin-right: 20px;
 }
-/* line 119, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 120, ../../../sass/modules/blockcart/blockcart.scss */
 .cart_block .cart-info {
   overflow: hidden;
   position: relative;
   padding-right: 20px;
 }
-/* line 123, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 124, ../../../sass/modules/blockcart/blockcart.scss */
 .cart_block .cart-info .product-name {
   padding-bottom: 5px;
   margin-top: -4px;
 }
-/* line 126, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 127, ../../../sass/modules/blockcart/blockcart.scss */
 .cart_block .cart-info .product-name a {
   font-size: 13px;
   line-height: 18px;
   display: inline-block;
 }
-/* line 132, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 133, ../../../sass/modules/blockcart/blockcart.scss */
 .cart_block .cart-info .quantity-formated {
   display: inline-block;
   color: #9c9b9b;
@@ -152,30 +152,30 @@
   font-size: 10px;
   padding-right: 5px;
 }
-/* line 138, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 139, ../../../sass/modules/blockcart/blockcart.scss */
 .cart_block .cart-info .quantity-formated .quantity {
   font-size: 15px;
 }
-/* line 143, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 144, ../../../sass/modules/blockcart/blockcart.scss */
 .cart_block dt {
   font-weight: normal;
   overflow: hidden;
   padding: 20px 10px 16px 20px;
   position: relative;
 }
-/* line 149, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 150, ../../../sass/modules/blockcart/blockcart.scss */
 .cart_block dd {
   position: relative;
 }
-/* line 151, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 152, ../../../sass/modules/blockcart/blockcart.scss */
 .cart_block dd .cart_block_customizations {
   border-top: 1px dashed #333333;
 }
-/* line 153, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 154, ../../../sass/modules/blockcart/blockcart.scss */
 .cart_block dd .cart_block_customizations li {
   padding: 10px 20px;
 }
-/* line 156, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 157, ../../../sass/modules/blockcart/blockcart.scss */
 .cart_block dd .cart_block_customizations li .deleteCustomizableProduct {
   position: absolute;
   right: 10px;
