@@ -10,39 +10,36 @@
 }
 /* line 13, ../../../sass/modules/blockcart/blockcart.scss */
 #header .shopping_cart > a:first-child:after {
-  content: "\f0d7";
-  font-family: "FontAwesome";
   display: inline-block;
   float: right;
   font-size: 18px;
   color: #686666;
   padding: 6px 0 0 0;
 }
-/* line 24, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 22, ../../../sass/modules/blockcart/blockcart.scss */
 #header .shopping_cart > a:first-child:hover:after {
-  content: "\f0d8";
   padding: 4px 0px 2px 0px;
 }
 
-/* line 31, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 28, ../../../sass/modules/blockcart/blockcart.scss */
 .shopping_cart {
   width: 100px;
 }
 @media (max-width: 480px) {
-  /* line 31, ../../../sass/modules/blockcart/blockcart.scss */
+  /* line 28, ../../../sass/modules/blockcart/blockcart.scss */
   .shopping_cart {
     padding-top: 20px;
   }
 }
 @media (max-width: 960px) {
-  /* line 31, ../../../sass/modules/blockcart/blockcart.scss */
+  /* line 28, ../../../sass/modules/blockcart/blockcart.scss */
   .shopping_cart {
     margin: 0 auto;
     float: none;
     width: 100%;
   }
 }
-/* line 41, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 38, ../../../sass/modules/blockcart/blockcart.scss */
 .shopping_cart > a:first-child {
   padding: 7px 10px 14px 16px;
   background: #333333;
@@ -53,18 +50,18 @@
   overflow: hidden;
 }
 @media (min-width: 768px) and (max-width: 959px) {
-  /* line 49, ../../../sass/modules/blockcart/blockcart.scss */
+  /* line 46, ../../../sass/modules/blockcart/blockcart.scss */
   .shopping_cart > a:first-child span.ajax_cart_product_txt, .shopping_cart > a:first-child span.ajax_cart_product_txt_s {
     display: none !important;
   }
 }
-/* line 54, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 51, ../../../sass/modules/blockcart/blockcart.scss */
 .shopping_cart > a:first-child b {
   color: white;
   font: 600 18px/22px "Open Sans", sans-serif;
   padding-right: 5px;
 }
-/* line 59, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 56, ../../../sass/modules/blockcart/blockcart.scss */
 .shopping_cart > a:first-child:before {
   content: "\f07a";
   font-family: "FontAwesome";
@@ -74,11 +71,11 @@
   color: white;
   padding-right: 15px;
 }
-/* line 69, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 66, ../../../sass/modules/blockcart/blockcart.scss */
 .shopping_cart .ajax_cart_total {
   display: none !important;
 }
-/* line 73, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 70, ../../../sass/modules/blockcart/blockcart.scss */
 .shopping_cart .block_cart_expand:after, .shopping_cart .block_cart_collapse:after {
   content: "\f0d7";
   font-family: "FontAwesome";
@@ -88,19 +85,19 @@
   color: #686666;
   padding: 6px 0 0 0;
 }
-/* line 84, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 81, ../../../sass/modules/blockcart/blockcart.scss */
 .shopping_cart .block_cart_collapse:after {
   content: "\f0d8";
   padding: 4px 0px 2px 0px;
 }
 
-/* line 93, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 90, ../../../sass/modules/blockcart/blockcart.scss */
 .cart_block .cart_block_list .remove_link {
   position: absolute;
   right: 10px;
   top: 19px;
 }
-/* line 99, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 96, ../../../sass/modules/blockcart/blockcart.scss */
 .cart_block .cart_block_list .remove_link a,
 .cart_block .cart_block_list .ajax_cart_block_remove_link {
   color: #777777;
@@ -108,7 +105,7 @@
   width: 100%;
   height: 100%;
 }
-/* line 104, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 101, ../../../sass/modules/blockcart/blockcart.scss */
 .cart_block .cart_block_list .remove_link a:before,
 .cart_block .cart_block_list .ajax_cart_block_remove_link:before {
   display: inline-block;
@@ -117,34 +114,34 @@
   font-size: 18px;
   line-height: 18px;
 }
-/* line 111, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 108, ../../../sass/modules/blockcart/blockcart.scss */
 .cart_block .cart_block_list .remove_link a:hover,
 .cart_block .cart_block_list .ajax_cart_block_remove_link:hover {
   color: #515151;
 }
-/* line 116, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 113, ../../../sass/modules/blockcart/blockcart.scss */
 .cart_block .cart-images {
   float: left;
   margin-right: 20px;
 }
-/* line 120, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 117, ../../../sass/modules/blockcart/blockcart.scss */
 .cart_block .cart-info {
   overflow: hidden;
   position: relative;
   padding-right: 20px;
 }
-/* line 124, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 121, ../../../sass/modules/blockcart/blockcart.scss */
 .cart_block .cart-info .product-name {
   padding-bottom: 5px;
   margin-top: -4px;
 }
-/* line 127, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 124, ../../../sass/modules/blockcart/blockcart.scss */
 .cart_block .cart-info .product-name a {
   font-size: 13px;
   line-height: 18px;
   display: inline-block;
 }
-/* line 133, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 130, ../../../sass/modules/blockcart/blockcart.scss */
 .cart_block .cart-info .quantity-formated {
   display: inline-block;
   color: #9c9b9b;
@@ -152,63 +149,63 @@
   font-size: 10px;
   padding-right: 5px;
 }
-/* line 139, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 136, ../../../sass/modules/blockcart/blockcart.scss */
 .cart_block .cart-info .quantity-formated .quantity {
   font-size: 15px;
 }
-/* line 144, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 141, ../../../sass/modules/blockcart/blockcart.scss */
 .cart_block dt {
   font-weight: normal;
   overflow: hidden;
   padding: 20px 10px 16px 20px;
   position: relative;
 }
-/* line 150, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 147, ../../../sass/modules/blockcart/blockcart.scss */
 .cart_block dd {
   position: relative;
 }
-/* line 152, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 149, ../../../sass/modules/blockcart/blockcart.scss */
 .cart_block dd .cart_block_customizations {
   border-top: 1px dashed #333333;
 }
-/* line 154, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 151, ../../../sass/modules/blockcart/blockcart.scss */
 .cart_block dd .cart_block_customizations li {
   padding: 10px 20px;
 }
-/* line 157, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 154, ../../../sass/modules/blockcart/blockcart.scss */
 .cart_block dd .cart_block_customizations li .deleteCustomizableProduct {
   position: absolute;
   right: 10px;
 }
-/* line 164, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 161, ../../../sass/modules/blockcart/blockcart.scss */
 .cart_block .cart_block_no_products {
   margin: 0;
   padding: 10px 20px;
 }
-/* line 168, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 165, ../../../sass/modules/blockcart/blockcart.scss */
 .cart_block .cart-prices {
   border-top: 1px solid #d6d4d4;
   font-weight: bold;
   padding: 10px 20px 22px 20px;
 }
-/* line 172, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 169, ../../../sass/modules/blockcart/blockcart.scss */
 .cart_block .cart-prices .cart-prices-line {
   overflow: hidden;
   border-bottom: 1px solid #515151;
   padding: 7px 0;
 }
-/* line 176, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 173, ../../../sass/modules/blockcart/blockcart.scss */
 .cart_block .cart-prices .cart-prices-line.last-line {
   border: none;
 }
-/* line 181, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 178, ../../../sass/modules/blockcart/blockcart.scss */
 .cart_block .cart-buttons {
   overflow: hidden;
   padding: 20px 20px 10px 20px;
   margin: 0;
   background: #f6f6f6;
 }
-/* line 186, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 183, ../../../sass/modules/blockcart/blockcart.scss */
 .cart_block .cart-buttons a {
   width: 100%;
   float: left;
@@ -216,19 +213,19 @@
   margin-bottom: 10px;
   margin-right: 10px;
 }
-/* line 192, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 189, ../../../sass/modules/blockcart/blockcart.scss */
 .cart_block .cart-buttons a#button_order_cart {
   margin-right: 0;
   border: none;
 }
-/* line 195, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 192, ../../../sass/modules/blockcart/blockcart.scss */
 .cart_block .cart-buttons a#button_order_cart span {
   padding: 7px 0;
   font-size: 1.1em;
   border: solid 1px #63c473;
   background: #43b155;
 }
-/* line 201, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 198, ../../../sass/modules/blockcart/blockcart.scss */
 .cart_block .cart-buttons a#button_order_cart:hover span {
   border: solid 1px #358c43;
   background: #2e7a3a;
@@ -238,7 +235,7 @@
 /*******************************************************************
 					Cart Block(Header) Styles
 ********************************************************************/
-/* line 214, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 211, ../../../sass/modules/blockcart/blockcart.scss */
 #header .cart_block {
   position: absolute;
   top: 95px;
@@ -251,77 +248,77 @@
   width: 270px;
 }
 @media (max-width: 480px) {
-  /* line 214, ../../../sass/modules/blockcart/blockcart.scss */
+  /* line 211, ../../../sass/modules/blockcart/blockcart.scss */
   #header .cart_block {
     width: 100%;
   }
 }
 @media (max-width: 960px) {
-  /* line 214, ../../../sass/modules/blockcart/blockcart.scss */
+  /* line 211, ../../../sass/modules/blockcart/blockcart.scss */
   #header .cart_block {
-    width: 100%;
+    /* cart dropdown on medium size screen */
   }
 }
-/* line 230, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 227, ../../../sass/modules/blockcart/blockcart.scss */
 #header .cart_block a {
   color: white;
 }
-/* line 232, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 229, ../../../sass/modules/blockcart/blockcart.scss */
 #header .cart_block a:hover {
   color: #9c9b9b;
 }
-/* line 238, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 235, ../../../sass/modules/blockcart/blockcart.scss */
 #header .cart_block .cart_block_list .remove_link a,
 #header .cart_block .cart_block_list .ajax_cart_block_remove_link {
   color: white;
   outline: none;
   text-decoration: none;
 }
-/* line 242, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 239, ../../../sass/modules/blockcart/blockcart.scss */
 #header .cart_block .cart_block_list .remove_link a:hover,
 #header .cart_block .cart_block_list .ajax_cart_block_remove_link:hover {
   color: #9c9b9b;
 }
-/* line 247, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 244, ../../../sass/modules/blockcart/blockcart.scss */
 #header .cart_block .price {
   color: white;
 }
-/* line 250, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 247, ../../../sass/modules/blockcart/blockcart.scss */
 #header .cart_block dt {
   background: url(../../../img/cart-shadow.png) repeat-x;
 }
-/* line 252, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 249, ../../../sass/modules/blockcart/blockcart.scss */
 #header .cart_block dt.first_item {
   background: none;
 }
-/* line 256, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 253, ../../../sass/modules/blockcart/blockcart.scss */
 #header .cart_block .product-atributes {
   padding-bottom: 10px;
   font-size: 11px;
 }
-/* line 259, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 256, ../../../sass/modules/blockcart/blockcart.scss */
 #header .cart_block .product-atributes a {
   color: #9c9b9b;
 }
-/* line 261, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 258, ../../../sass/modules/blockcart/blockcart.scss */
 #header .cart_block .product-atributes a:hover {
   color: white;
 }
-/* line 266, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 263, ../../../sass/modules/blockcart/blockcart.scss */
 #header .cart_block .cart-prices {
   border: none;
   background: url(../../../img/cart-shadow.png) repeat-x #3d3d3d;
 }
-/* line 270, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 267, ../../../sass/modules/blockcart/blockcart.scss */
 #header .cart_block .cart-buttons {
   background: url(../../../img/cart-shadow.png) repeat-x #333333;
 }
-/* line 274, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 271, ../../../sass/modules/blockcart/blockcart.scss */
 #header .block_content {
   margin-bottom: 0;
 }
 
-/* line 283, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 280, ../../../sass/modules/blockcart/blockcart.scss */
 .cart_block #cart_block_summary,
 .cart_block .title_block span,
 #header .cart_block h4,
@@ -330,7 +327,7 @@
   display: none;
 }
 
-/* line 290, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 287, ../../../sass/modules/blockcart/blockcart.scss */
 .cart_block .cart_block_shipping_cost,
 .cart_block .cart_block_tax_cost,
 .cart_block .cart_block_total,
@@ -338,23 +335,23 @@
   float: right;
 }
 
-/* line 294, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 291, ../../../sass/modules/blockcart/blockcart.scss */
 .cart_block table.vouchers {
   clear: both;
   width: 80%;
   margin: 0 auto;
   margin-bottom: 10px;
 }
-/* line 299, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 296, ../../../sass/modules/blockcart/blockcart.scss */
 .cart_block table.vouchers tr td {
   padding: 2px;
 }
-/* line 301, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 298, ../../../sass/modules/blockcart/blockcart.scss */
 .cart_block table.vouchers tr td.quantity {
   margin-right: 5px;
   min-width: 18px;
 }
-/* line 305, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 302, ../../../sass/modules/blockcart/blockcart.scss */
 .cart_block table.vouchers tr td.delete {
   padding-left: 0;
   padding-right: 0;
@@ -365,7 +362,7 @@
 /*****************************************************************************
 					Layer Cart Css
 *****************************************************************************/
-/* line 316, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 313, ../../../sass/modules/blockcart/blockcart.scss */
 .layer_cart_overlay {
   background-color: #000;
   display: none;
@@ -379,7 +376,7 @@
   opacity: 0.2;
 }
 
-/* line 328, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 325, ../../../sass/modules/blockcart/blockcart.scss */
 * html .layer_cart_overlay {
   position: absolute;
   left: 0;
@@ -388,7 +385,7 @@
   opacity: 0.2;
 }
 
-/* line 335, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 332, ../../../sass/modules/blockcart/blockcart.scss */
 #layer_cart {
   background-color: white;
   position: absolute;
@@ -403,13 +400,13 @@
   -o-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 344, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 341, ../../../sass/modules/blockcart/blockcart.scss */
 #layer_cart .layer_cart_product {
   padding: 30px 30px 30px 30px;
   overflow: hidden;
   position: static;
 }
-/* line 348, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 345, ../../../sass/modules/blockcart/blockcart.scss */
 #layer_cart .layer_cart_product h2 {
   font: 400 23px/29px Arial, Helvetica, sans-serif;
   color: #46a74e;
@@ -417,14 +414,14 @@
   padding-right: 100px;
 }
 @media (max-width: 767px) {
-  /* line 348, ../../../sass/modules/blockcart/blockcart.scss */
+  /* line 345, ../../../sass/modules/blockcart/blockcart.scss */
   #layer_cart .layer_cart_product h2 {
     font-size: 18px;
     padding-right: 0;
     line-height: normal;
   }
 }
-/* line 358, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 355, ../../../sass/modules/blockcart/blockcart.scss */
 #layer_cart .layer_cart_product h2 i {
   font-size: 30px;
   line-height: 30px;
@@ -432,13 +429,13 @@
   padding-right: 8px;
 }
 @media (max-width: 767px) {
-  /* line 358, ../../../sass/modules/blockcart/blockcart.scss */
+  /* line 355, ../../../sass/modules/blockcart/blockcart.scss */
   #layer_cart .layer_cart_product h2 i {
     font-size: 22px;
     line-height: 22px;
   }
 }
-/* line 369, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 366, ../../../sass/modules/blockcart/blockcart.scss */
 #layer_cart .layer_cart_product .product-image-container {
   max-width: 178px;
   border: 1px solid #d6d4d4;
@@ -447,31 +444,31 @@
   margin-right: 30px;
 }
 @media (max-width: 480px) {
-  /* line 369, ../../../sass/modules/blockcart/blockcart.scss */
+  /* line 366, ../../../sass/modules/blockcart/blockcart.scss */
   #layer_cart .layer_cart_product .product-image-container {
     float: none;
     margin-right: 0;
     margin-bottom: 10px;
   }
 }
-/* line 381, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 378, ../../../sass/modules/blockcart/blockcart.scss */
 #layer_cart .layer_cart_product .layer_cart_product_info {
   padding: 38px 0 0 0;
 }
-/* line 383, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 380, ../../../sass/modules/blockcart/blockcart.scss */
 #layer_cart .layer_cart_product .layer_cart_product_info #layer_cart_product_title {
   display: block;
   padding-bottom: 8px;
 }
-/* line 387, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 384, ../../../sass/modules/blockcart/blockcart.scss */
 #layer_cart .layer_cart_product .layer_cart_product_info > div {
   padding-bottom: 7px;
 }
-/* line 389, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 386, ../../../sass/modules/blockcart/blockcart.scss */
 #layer_cart .layer_cart_product .layer_cart_product_info > div strong {
   padding-right: 3px;
 }
-/* line 395, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 392, ../../../sass/modules/blockcart/blockcart.scss */
 #layer_cart .layer_cart_cart {
   background: #fafafa;
   border-left: 1px solid #d6d4d4;
@@ -484,25 +481,25 @@
   position: relative;
 }
 @media (min-width: 960px) {
-  /* line 395, ../../../sass/modules/blockcart/blockcart.scss */
+  /* line 392, ../../../sass/modules/blockcart/blockcart.scss */
   #layer_cart .layer_cart_cart {
     min-height: 318px;
   }
 }
 @media (min-width: 960px) and (max-width: 959px) {
-  /* line 395, ../../../sass/modules/blockcart/blockcart.scss */
+  /* line 392, ../../../sass/modules/blockcart/blockcart.scss */
   #layer_cart .layer_cart_cart {
     min-height: 360px;
   }
 }
 @media (max-width: 959px) {
-  /* line 395, ../../../sass/modules/blockcart/blockcart.scss */
+  /* line 392, ../../../sass/modules/blockcart/blockcart.scss */
   #layer_cart .layer_cart_cart {
     border-left: none;
     border-top: 1px solid #d6d4d4;
   }
 }
-/* line 413, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 410, ../../../sass/modules/blockcart/blockcart.scss */
 #layer_cart .layer_cart_cart h2 {
   font: 400 23px/29px Arial, Helvetica, sans-serif;
   color: #333333;
@@ -511,16 +508,16 @@
   margin-bottom: 17px;
 }
 @media (max-width: 767px) {
-  /* line 413, ../../../sass/modules/blockcart/blockcart.scss */
+  /* line 410, ../../../sass/modules/blockcart/blockcart.scss */
   #layer_cart .layer_cart_cart h2 {
     font-size: 18px;
   }
 }
-/* line 423, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 420, ../../../sass/modules/blockcart/blockcart.scss */
 #layer_cart .layer_cart_cart .layer_cart_row {
   padding: 0 0 7px 0;
 }
-/* line 426, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 423, ../../../sass/modules/blockcart/blockcart.scss */
 #layer_cart .layer_cart_cart .button-container {
   position: absolute;
   bottom: 0;
@@ -528,20 +525,20 @@
   width: 100%;
   padding: 0px 30px 20px 30px;
 }
-/* line 432, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 429, ../../../sass/modules/blockcart/blockcart.scss */
 #layer_cart .layer_cart_cart .button-container .btn {
   margin-bottom: 10px;
 }
-/* line 435, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 432, ../../../sass/modules/blockcart/blockcart.scss */
 #layer_cart .layer_cart_cart .button-container span.exclusive-medium {
   margin-right: 5px;
 }
-/* line 437, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 434, ../../../sass/modules/blockcart/blockcart.scss */
 #layer_cart .layer_cart_cart .button-container span.exclusive-medium i {
   padding-right: 5px;
   color: #777777;
 }
-/* line 444, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 441, ../../../sass/modules/blockcart/blockcart.scss */
 #layer_cart .cross {
   position: absolute;
   right: 7px;
@@ -552,7 +549,7 @@
   color: #333333;
   z-index: 2;
 }
-/* line 453, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 450, ../../../sass/modules/blockcart/blockcart.scss */
 #layer_cart .cross:before {
   content: "\f057";
   display: block;
@@ -560,15 +557,15 @@
   font-size: 25px;
   line-height: 25px;
 }
-/* line 460, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 457, ../../../sass/modules/blockcart/blockcart.scss */
 #layer_cart .cross:hover {
   color: #515151;
 }
-/* line 464, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 461, ../../../sass/modules/blockcart/blockcart.scss */
 #layer_cart .continue {
   cursor: pointer;
 }
-/* line 467, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 464, ../../../sass/modules/blockcart/blockcart.scss */
 #layer_cart p {
   padding: 0px;
 }
@@ -576,56 +573,56 @@
 /************************************************************************
 						Layer Cart Caroucel
 *************************************************************************/
-/* line 476, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 473, ../../../sass/modules/blockcart/blockcart.scss */
 #layer_cart .crossseling .crossseling-content {
   border-top: 1px solid #d6d4d4;
   padding: 26px 30px 40px 30px;
   position: relative;
 }
-/* line 481, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 478, ../../../sass/modules/blockcart/blockcart.scss */
 #layer_cart .crossseling h2 {
   font: 400 23px/26px Arial, Helvetica, sans-serif;
   color: #333333;
   margin-bottom: 25px;
 }
-/* line 486, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 483, ../../../sass/modules/blockcart/blockcart.scss */
 #layer_cart .crossseling #blockcart_list {
   max-width: 773px;
   width: 84%;
   margin: 0 auto;
   overflow: hidden;
 }
-/* line 491, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 488, ../../../sass/modules/blockcart/blockcart.scss */
 #layer_cart .crossseling #blockcart_list ul {
   display: block;
 }
-/* line 493, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 490, ../../../sass/modules/blockcart/blockcart.scss */
 #layer_cart .crossseling #blockcart_list ul li {
   float: left;
   width: 178px;
   margin: 0 0px 0 0;
 }
-/* line 497, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 494, ../../../sass/modules/blockcart/blockcart.scss */
 #layer_cart .crossseling #blockcart_list ul li .product-image-container {
   border: 1px solid #d6d4d4;
   text-align: center;
   padding: 5px;
   margin-bottom: 15px;
 }
-/* line 503, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 500, ../../../sass/modules/blockcart/blockcart.scss */
 #layer_cart .crossseling #blockcart_list ul li .product-image-container img {
   width: 100%;
 }
-/* line 507, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 504, ../../../sass/modules/blockcart/blockcart.scss */
 #layer_cart .crossseling #blockcart_list ul li .product-name {
   padding-bottom: 5px;
 }
-/* line 510, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 507, ../../../sass/modules/blockcart/blockcart.scss */
 #layer_cart .crossseling #blockcart_list ul li .product-name a {
   font-size: 15px;
   line-height: 20px;
 }
-/* line 518, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 515, ../../../sass/modules/blockcart/blockcart.scss */
 #layer_cart .crossseling #blockcart_list a.bx-prev,
 #layer_cart .crossseling #blockcart_list a.bx-next {
   display: block;
@@ -640,39 +637,39 @@
   top: 45%;
   margin-top: -20px;
 }
-/* line 530, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 527, ../../../sass/modules/blockcart/blockcart.scss */
 #layer_cart .crossseling #blockcart_list a.bx-prev:after,
 #layer_cart .crossseling #blockcart_list a.bx-next:after {
   display: block;
   text-indent: 0;
 }
-/* line 534, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 531, ../../../sass/modules/blockcart/blockcart.scss */
 #layer_cart .crossseling #blockcart_list a.bx-prev:hover,
 #layer_cart .crossseling #blockcart_list a.bx-next:hover {
   color: #c0c0c0;
 }
-/* line 537, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 534, ../../../sass/modules/blockcart/blockcart.scss */
 #layer_cart .crossseling #blockcart_list a.bx-prev.disabled,
 #layer_cart .crossseling #blockcart_list a.bx-next.disabled {
   display: none;
 }
-/* line 541, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 538, ../../../sass/modules/blockcart/blockcart.scss */
 #layer_cart .crossseling #blockcart_list a.bx-prev {
   left: 5%;
 }
-/* line 543, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 540, ../../../sass/modules/blockcart/blockcart.scss */
 #layer_cart .crossseling #blockcart_list a.bx-prev:after {
   content: "\f137";
 }
-/* line 547, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 544, ../../../sass/modules/blockcart/blockcart.scss */
 #layer_cart .crossseling #blockcart_list a.bx-next {
   right: 5%;
 }
-/* line 549, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 546, ../../../sass/modules/blockcart/blockcart.scss */
 #layer_cart .crossseling #blockcart_list a.bx-next:after {
   content: "\f138";
 }
-/* line 553, ../../../sass/modules/blockcart/blockcart.scss */
+/* line 550, ../../../sass/modules/blockcart/blockcart.scss */
 #layer_cart .crossseling #blockcart_list .bx-controls {
   overflow: hidden;
 }

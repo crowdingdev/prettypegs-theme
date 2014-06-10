@@ -24,6 +24,8 @@ body {
 	line-height: 18px;
 	font-size: 13px;
 	color: $base-body-color;
+
+
 	&.content_only {
 		background: none;
 	}
@@ -39,7 +41,8 @@ textarea {
 }
 
 .columns-container {
-	background: $light-background;
+
+		background: url(../img/bg_patterns/pattern_ligth.jpg);
 }
 
 #columns {
@@ -59,17 +62,14 @@ header {
 	z-index: 1;
 	position: relative;
 	background: $light-background;
-
 	background: url(../img/bg_patterns/pattern_light_warm.jpg);
 	border-bottom: 1px solid #000;
-
 	padding-bottom: 15px;
 	.banner {
 		background: black;
 		max-height: 100%;
 		.row {
 			margin: 0px;
-
 		}
 	}
 	.nav {
@@ -88,6 +88,11 @@ header {
 		}
 
 		#header_logo {
+			img {
+					height: 114px !important;
+					width: 190px !important;
+					max-width: 190px !important;
+				}
 			padding-top: 15px;
 			@extend .col-sm-4;
 			@media (max-width: $screen-md) {
@@ -96,8 +101,7 @@ header {
 			@media (max-width: $screen-xs-max) {
 				padding-top: 15px;
 				img {
-
-					width: 190px !important;
+					max-width: 100%;
 				}
 			}
 		}
@@ -1694,29 +1698,35 @@ div.star a:hover {
 	background: $light-background;
 }
 
+
+
+
+
+
+
+
+
 // BREADCRUMB
 .breadcrumb {
 	display: inline-block;
 	padding: 0 11px;
-	border: 1px solid $base-border-color;
 	font-weight: bold;
 	font-size: 12px;
 	line-height: 24px;
 	min-height: 6px;
-	@include border-radius(3px);
 	overflow: hidden;
 	margin-bottom: 16px;
 	position: relative;
 	z-index: 1;
+font-weight: normal !important;
 	.navigation-pipe {
-		width: 18px;
-		display: inline-block;
-		text-indent: -5000px;
+		margin: 0 10px 0 0;
 	}
 	a {
+
 		display: inline-block;
-		background: $light-background;
-		padding: 0 15px 0 22px;
+
+		padding: 0 8px 0 22px;
 		margin-left: -26px;
 		position: relative;
 		z-index: 2;
@@ -1728,8 +1738,6 @@ div.star a:hover {
 			text-align: center;
 			padding: 0;
 			margin: 0 0 0 -10px;
-			@include border-top-left-radius(3px);
-			@include border-bottom-left-radius(3px);
 			z-index: 99;
 			line-height: 22px;
 			display: inline-block;
@@ -1737,42 +1745,10 @@ div.star a:hover {
 			i {
 				vertical-align: -1px;
 			}
-			&:before {
-				border: none;
-			}
+	
 		}
-		&:after {
-			display: inline-block;
-			content: ".";
-			position: absolute;
-			right: -10px;
-			top: 3px;
-			width: 18px;
-			height: 18px;
-			background: $light-background;
-			border-right: 1px solid $base-border-color;
-			border-top: 1px solid $base-border-color;
-			border-radius: 2px;
-			text-indent: -5000px;
-			z-index: -1;
-			@include rotate(45deg);
-		}
-		&:before {
-			display: inline-block;
-			content: ".";
-			position: absolute;
-			left: -10px;
-			top: 3px;
-			width: 18px;
-			height: 18px;
-			background: transparent;
-			border-right: 1px solid $base-border-color;
-			border-top: 1px solid $base-border-color;
-			border-radius: 2px;
-			text-indent: -5000px;
-			z-index: -1;
-			@include rotate(45deg);
-		}
+		
+	
 		&:hover {
 			color: #777777;
 		}
@@ -1790,6 +1766,16 @@ div.star a:hover {
 		}
 	}
 }
+
+
+
+
+
+
+
+
+
+
 
 // FOOTER
 .footer-container {

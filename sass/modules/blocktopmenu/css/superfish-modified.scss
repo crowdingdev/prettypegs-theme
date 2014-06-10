@@ -2,7 +2,7 @@
 @import "theme_variables";
 /*** ESSENTIAL STYLES ***/
 .sf-contener {
-padding-top: 50px;
+	padding-top: 50px;
 	float: left;
 }
 .sf-right {}
@@ -57,7 +57,7 @@ padding-top: 50px;
 			}
 			&.active {
 				&:after {
-					content: "\f068";	
+					content: "\f068";
 				}
 			}
 		}

@@ -66,51 +66,34 @@
 		<div class="header-container">
 			<header id="header">
 				<div>
-
 					<div class="container">
-
-
-
 						<div class="row">
-
-							<div class="col-sm-3">
+							<div class="col-sm-3 col-sd-1">
 
 								<div id="header_logo" >
-
 									<a href="{$base_dir}" title="{$shop_name|escape:'html':'UTF-8'}">
-
-										<img class="logo img-responsive" src="{$img_dir}logo/header.png" height="114px" width="190px" alt="{$shop_name|escape:'html':'UTF-8'}" />
+										<img class="logo" src="{$img_dir}logo/header.png" height="114px" width="190px" alt="{$shop_name|escape:'html':'UTF-8'}" />
 									</a>
-
 								</div>
 							</div>
-
-
 							{if isset($HOOK_TOP)}{$HOOK_TOP}{/if}
-
 						</div>
 					</div>
 				</div>
 			</header>
 		</div>
-
 		<div class="columns-container">
 			<div id="columns" class="container">
-
 				<!-- Breadcrumb -->
 				{if $page_name !='index' && $page_name !='pagenotfound'}
 				{include file="$tpl_dir./breadcrumb.tpl"}
 				{/if}
 				<!-- END Breadcrumb -->
-
 				<div class="row">
-
 					<!--Big slideshow part-->
 					<div id="top_column" class="center_column col-xs-12 col-sm-12">{hook h="displayTopColumn"}</div>
 					<!--END Big slideshow part-->
-
 				</div>
-
 				<div class="row">
 					{if isset($left_column_size) && !empty($left_column_size)}
 					<div id="left_column" class="column col-xs-12 col-sm-{$left_column_size|intval}">{$HOOK_LEFT_COLUMN}</div>
