@@ -23,6 +23,7 @@
 	*  International Registered Trademark & Property of PrestaShop SA
 	*}
 	{if !$content_only}
+
 </div><!-- #center_column -->
 {if isset($right_column_size) && !empty($right_column_size)}
 <div id="right_column" class="col-xs-12 col-sm-{$right_column_size|intval} column">{$HOOK_RIGHT_COLUMN}</div>
@@ -31,19 +32,78 @@
 </div><!-- #columns -->
 </div><!-- .columns-container -->
 
-
 <!-- Moved from index.tpl -->
 
 <div class="pre-footer-container">
+	<div class="container">
 
-		<div class="container">
-				<div class="row">
-			{if isset($HOOK_FOOTER) && $HOOK_FOOTER|trim}
-			<div class="clearfix">
-				{$HOOK_FOOTER}
+		{if $page_name == 'index' }
+
+		<div class="clearfix">
+			<div class="row navigation-wrapper">
+
+				<div class="col-xs-4">
+					<a href="#">
+						<span class="pp-see-all-pegs"></span>
+					</a>
+				</div>
+
+				<div class="col-xs-4">
+					<a href="#">
+						<span class="pp-campaigns"></span>
+					</a>
+				</div>
+
+				<div class="col-xs-4">
+					<a href="#">
+						<span class="pp-inspiration"></span>
+					</a>
+				</div>
 			</div>
-			{/if}
+
 		</div>
+		{/if}
+
+		<div class="row pp-social-wrapper">
+			<div class="pp-social-container">
+				<div class="col-sm-12">
+
+					<div class="col-sm-3">
+						<a href="#">
+							<span class="pp-social pp-instagram"></span>
+						</a>
+					</div>
+
+					<div class="col-sm-3">
+						<a href="#">
+							<span class="pp-social pp-pinterest"></span>
+						</a>
+					</div>
+
+					<div class="col-sm-3">
+						<a href="#">
+							<span class="pp-social pp-facebook"></span>
+						</a>
+					</div>
+
+					<div class="col-sm-3 ">
+						<a href="#">
+							<span class="pp-social pp-blog"></span>
+						</a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+		{if isset($HOOK_FOOTER) && $HOOK_FOOTER|trim}
+		<div class="clearfix">
+
+			{$HOOK_FOOTER}
+		</div>
+		{/if}
+
 	</div>
 </div>
 
@@ -52,29 +112,17 @@
 <!-- Footer -->
 
 <div class="footer-container">
-	<footer id="footer"  class="container">
+	<footer id="footer" class="container">
 		<div class="row"> <!-- { $HOOK_FOOTER } -->
-
-
-
 			<div class="col-xs-4"><h3>Shipping</h3>
 				<p class="text-center">Sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
 			</div>
-
-
-
 			<div class="col-xs-4"><h3>Custom Block</h3>
 				<p>Sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
 			</div>
-
-
-
 			<div class="col-xs-4"><h3>Payment icons</h3>
 				<p>Sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
 			</div>
-
-
-
 		</div>
 	</footer>
 </div><!-- #footer -->
@@ -83,3 +131,4 @@
 {include file="$tpl_dir./global.tpl"}
 </body>
 </html>
+

@@ -28,7 +28,7 @@
 	<div class="category_top">
 		<div class="list">
 			<ul class="tree {if $isDhtml}dhtml{/if} sf-menu sf-js-enabled clearfix">
-				{foreach from=$blockCategTree.children item=child name=blockCategTree}				
+				{foreach from=$blockCategTree.children item=child name=blockCategTree}
 					{if $smarty.foreach.blockCategTree.last}
 						{include file="$branche_tpl_path" node=$child last='true'}
 					{else}
