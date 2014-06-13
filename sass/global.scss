@@ -1,6 +1,5 @@
 // Make sure the charset is set appropriately
 @charset "UTF-8";
-
 @import "compass";
 @import "compass/reset";
 @import "theme_variables";
@@ -3424,95 +3423,87 @@ div.star.star_hover {
 }
 
 #footer{
-//Payment options
 
-.pp-payment-options{
-
-	margin-bottom: 20px;
-
-
-	.pp-payment-option{
-
-		-webkit-filter: grayscale(1);
-
-		&:hover{
-
-			-webkit-filter: grayscale(0) !important;
-
-		}
-
-		margin-left: -12px !important;
-		float:left;
-		&.pp-paypal{
-			background: url(../img/icon/paypal_2x.png);
-			background-position: 0px 15px !important;
-			background-size: 112px !important;
-		}
-		&.pp-klarna{
-			background: url(../img/icon/klarna_2x.png);
-		}
-		&.pp-visa{
-			background: url(../img/icon/visa_2x.png);
-			background-size: 82px !important;
-			background-position: 8px 13px !important;
-		}
-		&.pp-mastercard{
-			background: url(../img/icon/mastercard_2x.png);
-			background-size: 82px !important;
-		}
-		&.pp-american-express{
-			background: url(../img/icon/americanexpress_2x.png);
-			background-size: 50px !important;
-			background-position: 16px 0 !important;
-		}
-		&.pp-discover-card{
-			background: url(../img/icon/discovercard_2x.png);
-			background-position: 4px 0 !important;
-		}
-
-
-
-		&.pp-payment-option{
-
-
-			margin: 0 0 20px 0;
-			height: 50px;
-			padding-top: 50px;
-			padding-right: 93px;
-			width: 100%;
-			background-repeat: no-repeat;
-			background-size: 100px auto;
-			background-position: left;
-
-			@media (max-width: $screen-md-max) {
+	font-family: 'Raleway' !important;
+	//Payment options
+	.pp-payment-options{
+		margin-bottom: 20px;
+		.pp-payment-option{
+			//-webkit-filter: grayscale(1);
+			margin-left: -12px !important;
+			float:left;
+			&:hover{
+				//-webkit-filter: grayscale(0) !important;
+			}
+			&.pp-paypal{
+				background: url(../img/icon/paypal_2x.png);
+				background-position: 0px 15px !important;
+				background-size: 112px !important;
+			}
+			&.pp-klarna{
+				background: url(../img/icon/klarna_2x.png);
+			}
+			&.pp-visa{
+				background: url(../img/icon/visa_2x.png);
+				background-size: 82px !important;
+				background-position: 8px 13px !important;
+			}
+			&.pp-mastercard{
+				background: url(../img/icon/mastercard_2x.png);
+				background-size: 82px !important;
+			}
+			&.pp-american-express{
+				background: url(../img/icon/americanexpress_2x.png);
+				background-size: 50px !important;
+				background-position: 16px 0 !important;
+			}
+			&.pp-discover-card{
+				background: url(../img/icon/discovercard_2x.png);
+				background-position: 4px 0 !important;
+			}
+			&.pp-payment-option{
+				margin: 0 0 20px 0;
+				height: 50px;
+				padding-top: 50px;
+				padding-right: 93px;
+				width: 100%;
+				background-repeat: no-repeat;
+				background-size: 100px auto;
+				background-position: left;
+				@media (max-width: $screen-md-max) {
+				}
 			}
 		}
-	}
+		.pp-payment-options-header{
 
-
-	.pp-payment-options-header{
-		
+		}
 	}
-}
 //Shipping options
 .pp-shipping-options{
-	.pp-shipping-options-header{
+	.pp-shipping-options-header{}
+	.pp-dhl{
+		background: url(../img/icon/dhl_white_2x.png);
+		float:left;
+		margin: 20px 0 20px 0;
+		height: 50px;
+		padding-top: 50px;
+		padding-right: 93px;
+		width: 100%;
+		background-repeat: no-repeat;
+		background-size: 100px auto;
+		background-position: center;
 	}
 
 }
 .pp-contact{
 	.pp-contact-header{
-
 	}
 }
-
 .pp-footer-header{
 	margin-top:30px;
 	padding-left: 20px;
 
 }
-
-
 }
 
 
@@ -3586,5 +3577,7 @@ div.star.star_hover {
 	}
 }
 
-
+div{
+	font-family: 'Raleway' !important;
+}
 

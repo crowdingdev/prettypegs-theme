@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Raleway-Regular';
+  src: url("/fonts/Raleway-Regular.eot?") format("eot"), url("/fonts/Raleway-Regular.otf") format("opentype"), url("/fonts/Raleway-Regular.woff") format("woff"), url("/fonts/Raleway-Regular.ttf") format("truetype"), url("/fonts/Raleway-Regular.svg#Raleway-Regular") format("svg");
+}
+
 /* Footer background color */
 /* line 3, ../../../sass/modules/blockcontact/blockcontact.scss */
 .shop-phone {
@@ -78,7 +83,7 @@
 }
 /* line 58, ../../../sass/modules/blockcontact/blockcontact.scss */
 #contact_block p.tel {
-  font: 400 17px/21px Arial, Helvetica, sans-serif;
+  font: 400 17px/21px "Raleway-Regular", Arial, Century Gothic, sans-serif;
   color: #333333;
   margin-bottom: 6px;
 }

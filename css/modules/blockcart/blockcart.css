@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Raleway-Regular';
+  src: url("/fonts/Raleway-Regular.eot?") format("eot"), url("/fonts/Raleway-Regular.otf") format("opentype"), url("/fonts/Raleway-Regular.woff") format("woff"), url("/fonts/Raleway-Regular.ttf") format("truetype"), url("/fonts/Raleway-Regular.svg#Raleway-Regular") format("svg");
+}
+
 /* Footer background color */
 /*******************************************************************
 					Cart Block Styles
@@ -408,7 +413,7 @@
 }
 /* line 345, ../../../sass/modules/blockcart/blockcart.scss */
 #layer_cart .layer_cart_product h2 {
-  font: 400 23px/29px Arial, Helvetica, sans-serif;
+  font: 400 23px/29px "Raleway-Regular", Arial, Century Gothic, sans-serif;
   color: #46a74e;
   margin-bottom: 22px;
   padding-right: 100px;
@@ -501,7 +506,7 @@
 }
 /* line 410, ../../../sass/modules/blockcart/blockcart.scss */
 #layer_cart .layer_cart_cart h2 {
-  font: 400 23px/29px Arial, Helvetica, sans-serif;
+  font: 400 23px/29px "Raleway-Regular", Arial, Century Gothic, sans-serif;
   color: #333333;
   border-bottom: 1px solid #d6d4d4;
   padding-bottom: 13px;
@@ -581,7 +586,7 @@
 }
 /* line 478, ../../../sass/modules/blockcart/blockcart.scss */
 #layer_cart .crossseling h2 {
-  font: 400 23px/26px Arial, Helvetica, sans-serif;
+  font: 400 23px/26px "Raleway-Regular", Arial, Century Gothic, sans-serif;
   color: #333333;
   margin-bottom: 25px;
 }

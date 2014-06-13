@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Raleway-Regular';
+  src: url("/fonts/Raleway-Regular.eot?") format("eot"), url("/fonts/Raleway-Regular.otf") format("opentype"), url("/fonts/Raleway-Regular.woff") format("woff"), url("/fonts/Raleway-Regular.ttf") format("truetype"), url("/fonts/Raleway-Regular.svg#Raleway-Regular") format("svg");
+}
+
 /* Footer background color */
 /*******************************************************
 Product list Styles
@@ -46,7 +51,7 @@ ul.product_list .product-image-container img {
 }
 /* line 46, ../sass/product_list.scss */
 ul.product_list .product-image-container .quick-view {
-  font: 700 13px/16px Arial, Helvetica, sans-serif;
+  font: 700 13px/16px "Raleway-Regular", Arial, Century Gothic, sans-serif;
   color: #777676;
   position: absolute;
   left: 50%;

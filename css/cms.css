@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Raleway-Regular';
+  src: url("/fonts/Raleway-Regular.eot?") format("eot"), url("/fonts/Raleway-Regular.otf") format("opentype"), url("/fonts/Raleway-Regular.woff") format("woff"), url("/fonts/Raleway-Regular.ttf") format("truetype"), url("/fonts/Raleway-Regular.svg#Raleway-Regular") format("svg");
+}
+
 /* Footer background color */
 /**************************************************************
 					CMS Pages Styles
@@ -122,7 +127,7 @@
 }
 /* line 109, ../sass/cms.scss */
 #cms #center_column #admin-action-cms p .button {
-  font: 700 17px/21px Arial, Helvetica, sans-serif;
+  font: 700 17px/21px "Raleway-Regular", Arial, Century Gothic, sans-serif;
   padding: 0;
   border: 1px solid;
   padding: 10px 14px;

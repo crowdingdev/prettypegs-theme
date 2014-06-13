@@ -110,14 +110,18 @@
 <div class="footer-container">
 	<footer id="footer" class="container">
 		<div class="row"> <!-- { $HOOK_FOOTER } -->
-
 			<div class="col-xs-4 pp-shipping-options">
 				<a href="#"> <h3 class="pp-footer-header pp-shipping-header">FREE SHIPPING<br> WORLD WIDE</h3> </a>
 
+				<div class="col-xs-8">
+					<span class="pp-delivery-company pp-dhl"></span>
+				</div>
 			</div>
 
 			<div class="col-xs-4 pp-payment-options">
-				<a href="#"> <h3 class="pp-footer-header pp-payment-options-header"> PAYMENT OPTIONS</h3> </a>
+				<a href="#">
+					<h3 class="pp-footer-header pp-payment-options-header">PAYMENT OPTIONS</h3>
+				</a>
 					<div class="col-xs-6">
 						<span class="pp-payment-option pp-paypal"></span>
 					</div>
@@ -136,11 +140,10 @@
 					<div class="col-xs-6">
 						<span class="pp-payment-option pp-american-express"></span>
 					</div>
-
 			</div>
+
 			<div class="col-xs-4 pp-contact">
 				<a href="#"> <h3 class="pp-footer-header pp-contact-header">CONTACT US</h3> </a>
-
 			</div>
 
 		</div>
