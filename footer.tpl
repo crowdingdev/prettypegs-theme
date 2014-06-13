@@ -44,19 +44,19 @@
 
 				<div class="col-xs-4">
 					<a href="#">
-						<span class="pp-see-all-pegs"></span>
+						<span class="pp-link pp-see-all-pegs"></span>
 					</a>
 				</div>
 
 				<div class="col-xs-4">
 					<a href="#">
-						<span class="pp-campaigns"></span>
+						<span class="pp-link pp-campaigns"></span>
 					</a>
 				</div>
 
 				<div class="col-xs-4">
 					<a href="#">
-						<span class="pp-inspiration"></span>
+						<span class="pp-link pp-inspiration"></span>
 					</a>
 				</div>
 			</div>
@@ -96,10 +96,8 @@
 			</div>
 		</div>
 
-
 		{if isset($HOOK_FOOTER) && $HOOK_FOOTER|trim}
 		<div class="clearfix">
-
 			{$HOOK_FOOTER}
 		</div>
 		{/if}
@@ -108,21 +106,43 @@
 </div>
 
 <!-- END Moved from index.tpl -->
-
 <!-- Footer -->
-
 <div class="footer-container">
 	<footer id="footer" class="container">
 		<div class="row"> <!-- { $HOOK_FOOTER } -->
-			<div class="col-xs-4"><h3>Shipping</h3>
-				<p class="text-center">Sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+
+			<div class="col-xs-4 pp-shipping-options">
+				<a href="#"> <h3 class="pp-footer-header pp-shipping-header">FREE SHIPPING<br> WORLD WIDE</h3> </a>
+
 			</div>
-			<div class="col-xs-4"><h3>Custom Block</h3>
-				<p>Sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+
+			<div class="col-xs-4 pp-payment-options">
+				<a href="#"> <h3 class="pp-footer-header pp-payment-options-header"> PAYMENT OPTIONS</h3> </a>
+					<div class="col-xs-6">
+						<span class="pp-payment-option pp-paypal"></span>
+					</div>
+					<div class="col-xs-6">
+						<span class="pp-payment-option pp-klarna"></span>
+					</div>
+					<div class="col-xs-6">
+						<span class="pp-payment-option pp-visa"></span>
+					</div>
+					<div class="col-xs-6">
+						<span class="pp-payment-option pp-mastercard"></span>
+					</div>
+						<div class="col-xs-6">
+						<span class="pp-payment-option pp-discover-card"></span>
+					</div>
+					<div class="col-xs-6">
+						<span class="pp-payment-option pp-american-express"></span>
+					</div>
+
 			</div>
-			<div class="col-xs-4"><h3>Payment icons</h3>
-				<p>Sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+			<div class="col-xs-4 pp-contact">
+				<a href="#"> <h3 class="pp-footer-header pp-contact-header">CONTACT US</h3> </a>
+
 			</div>
+
 		</div>
 	</footer>
 </div><!-- #footer -->

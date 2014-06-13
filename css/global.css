@@ -10187,10 +10187,6 @@ div.star a:hover {
 .footer-container #footer .row {
   position: relative;
 }
-/* line 1796, ../sass/global.scss */
-.footer-container #footer .row div {
-  text-align: center;
-}
 /* line 1801, ../sass/global.scss */
 .footer-container #footer .footer-block {
   margin-top: 45px;
@@ -12042,34 +12038,95 @@ div.star.star_hover:after {
   margin-bottom: 50px;
 }
 
-/* line 3428, ../sass/global.scss */
+/* line 3429, ../sass/global.scss */
+#footer .pp-payment-options {
+  margin-bottom: 20px;
+}
+/* line 3434, ../sass/global.scss */
+#footer .pp-payment-options .pp-payment-option {
+  -webkit-filter: grayscale(1);
+  margin-left: -12px !important;
+  float: left;
+}
+/* line 3438, ../sass/global.scss */
+#footer .pp-payment-options .pp-payment-option:hover {
+  -webkit-filter: grayscale(0) !important;
+}
+/* line 3446, ../sass/global.scss */
+#footer .pp-payment-options .pp-payment-option.pp-paypal {
+  background: url(../img/icon/paypal_2x.png);
+  background-position: 0px 15px !important;
+  background-size: 112px !important;
+}
+/* line 3451, ../sass/global.scss */
+#footer .pp-payment-options .pp-payment-option.pp-klarna {
+  background: url(../img/icon/klarna_2x.png);
+}
+/* line 3454, ../sass/global.scss */
+#footer .pp-payment-options .pp-payment-option.pp-visa {
+  background: url(../img/icon/visa_2x.png);
+  background-size: 82px !important;
+  background-position: 8px 13px !important;
+}
+/* line 3459, ../sass/global.scss */
+#footer .pp-payment-options .pp-payment-option.pp-mastercard {
+  background: url(../img/icon/mastercard_2x.png);
+  background-size: 82px !important;
+}
+/* line 3463, ../sass/global.scss */
+#footer .pp-payment-options .pp-payment-option.pp-american-express {
+  background: url(../img/icon/americanexpress_2x.png);
+  background-size: 50px !important;
+  background-position: 16px 0 !important;
+}
+/* line 3468, ../sass/global.scss */
+#footer .pp-payment-options .pp-payment-option.pp-discover-card {
+  background: url(../img/icon/discovercard_2x.png);
+  background-position: 4px 0 !important;
+}
+/* line 3475, ../sass/global.scss */
+#footer .pp-payment-options .pp-payment-option.pp-payment-option {
+  margin: 0 0 20px 0;
+  height: 50px;
+  padding-top: 50px;
+  padding-right: 93px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100px auto;
+  background-position: left;
+}
+/* line 3509, ../sass/global.scss */
+#footer .pp-footer-header {
+  margin-top: 30px;
+  padding-left: 20px;
+}
+
+/* line 3521, ../sass/global.scss */
 .pp-social-wrapper {
   background: #e3dfde;
-  margin: 0;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin: 20px 0 30px 0;
 }
-/* line 3440, ../sass/global.scss */
+/* line 3525, ../sass/global.scss */
 .pp-social-wrapper .pp-social-container .pp-social {
   float: left;
 }
-/* line 3444, ../sass/global.scss */
+/* line 3527, ../sass/global.scss */
 .pp-social-wrapper .pp-social-container .pp-social.pp-facebook {
   background: url(../img/social/facebook_path.svg);
 }
-/* line 3447, ../sass/global.scss */
+/* line 3530, ../sass/global.scss */
 .pp-social-wrapper .pp-social-container .pp-social.pp-instagram {
   background: url(../img/social/instagram_path.svg);
 }
-/* line 3450, ../sass/global.scss */
+/* line 3533, ../sass/global.scss */
 .pp-social-wrapper .pp-social-container .pp-social.pp-pinterest {
   background: url(../img/social/pinterest_path.svg);
 }
-/* line 3453, ../sass/global.scss */
+/* line 3536, ../sass/global.scss */
 .pp-social-wrapper .pp-social-container .pp-social.pp-blog {
   background: url(../img/social/blog_path.svg);
 }
-/* line 3456, ../sass/global.scss */
+/* line 3539, ../sass/global.scss */
 .pp-social-wrapper .pp-social-container .pp-social.pp-social {
   padding-top: 138px;
   padding-right: 141px;
@@ -12081,48 +12138,41 @@ div.star.star_hover:after {
   background-position: center;
 }
 @media (max-width: 959px) {
-  /* line 3456, ../sass/global.scss */
+  /* line 3539, ../sass/global.scss */
   .pp-social-wrapper .pp-social-container .pp-social.pp-social {
     margin: 20px 0;
   }
 }
 
-/* line 3477, ../sass/global.scss */
+/* line 3558, ../sass/global.scss */
 .navigation-wrapper {
   margin-top: 30px;
 }
-/* line 3480, ../sass/global.scss */
-.navigation-wrapper .pp-see-all-pegs {
+/* line 3560, ../sass/global.scss */
+.navigation-wrapper .pp-link {
   float: left;
+  width: 100%;
+  height: 120px;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+/* line 3566, ../sass/global.scss */
+.navigation-wrapper .pp-link.pp-see-all-pegs {
   background: url(../img/pre-footer/see_all_pegs_path.svg);
-  background-position: center;
-  height: 168px;
-  width: 100%;
   background-color: #aeb4af;
-  background-repeat: no-repeat;
 }
-/* line 3489, ../sass/global.scss */
-.navigation-wrapper .pp-inspiration {
-  float: left;
+/* line 3570, ../sass/global.scss */
+.navigation-wrapper .pp-link.pp-inspiration {
   background: url(../img/pre-footer/inspiration_path.svg);
-  height: 168px;
-  width: 100%;
   background-color: #a9bec4;
-  background-repeat: no-repeat;
-  background-position: center;
 }
-/* line 3499, ../sass/global.scss */
-.navigation-wrapper .pp-campaigns {
-  float: left;
+/* line 3574, ../sass/global.scss */
+.navigation-wrapper .pp-link.pp-campaigns {
   background: url(../img/pre-footer/campaigns_path.svg);
-  height: 168px;
-  width: 100%;
   background-color: #d6cbbe;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 @media (max-width: 959px) {
-  /* line 3510, ../sass/global.scss */
+  /* line 3581, ../sass/global.scss */
   .navigation-wrapper.navigation-wrapper div {
     float: none;
     width: 100%;

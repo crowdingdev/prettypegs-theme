@@ -42,4 +42,4 @@
 
 
 
-
+{hook h='selectedCategoriesHook'}
