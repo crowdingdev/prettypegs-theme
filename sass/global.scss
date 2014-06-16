@@ -6,6 +6,17 @@
 @import "bootstrap";
 @import "font-awesome";
 
+@font-face {
+	font-family: 'Raleway';
+	src: url('../font/Raleway-Regular.eot?') format('eot'),
+	url('../font/Raleway-Regular.otf')  format('opentype'),
+	url('../font/Raleway-Regular.woff') format('woff'),
+	url('../font/Raleway-Regular.ttf')  format('truetype'),
+	url('../font/Raleway-Regular.svg#Raleway-Regular') format('svg');
+}
+
+
+
 a:hover {
 	text-decoration: none;
 }
@@ -40,8 +51,7 @@ textarea {
 }
 
 .columns-container {
-
-	background: url(../img/bg_patterns/pattern_ligth.jpg);
+	background: url(../img/bg_patterns/noise.png) #e0e3dc;
 }
 
 #columns {
@@ -60,9 +70,8 @@ textarea {
 header {
 	z-index: 1;
 	position: relative;
-	background: $light-background;
-	background: url(../img/bg_patterns/pattern_light_warm.jpg);
-	border-bottom: 1px solid #000;
+	//background: $light-background;
+	background: url(../img/bg_patterns/noise.png) #f2ede9;
 	padding-bottom: 15px;
 	.banner {
 		background: black;
@@ -1766,25 +1775,16 @@ div.star a:hover {
 	}
 }
 
-
-
+// PRE-FOOTER
 .pre-footer-container{
-	border-top: 1px solid #000;
+	background: url(../img/bg_patterns/noise.png) #eeeeee;
 }
-
-
-
-
-
-
 
 // FOOTER
 .footer-container {
 
-	// min 768px
+	background: url(../img/bg_patterns/noise.png);
 	background-color: $dark-background;
-	background: url(../img/bg_patterns/pattern_dark.jpg) repeat-x 0 -10px #999999;
-
 	.container {
 		padding-bottom: 100px;
 	}
@@ -3511,7 +3511,7 @@ div.star.star_hover {
 //The old stuff that was here might be needed to bring back
 .pp-social-wrapper{
 	background: #e3dfde;
-	margin: 20px 0 30px 0;
+	margin: 30px 0;
 	.pp-social-container{
 		.pp-social{
 			float:left;
@@ -3547,6 +3547,7 @@ div.star.star_hover {
 
 //Start Page - Pre-footer navigation
 .navigation-wrapper{
+
 	margin-top: 30px;
 	.pp-link{
 		float:left;
@@ -3577,7 +3578,8 @@ div.star.star_hover {
 	}
 }
 
-div{
-	font-family: 'Raleway' !important;
-}
 
+
+footer{
+ // font-family:  'Raleway' !important;
+}

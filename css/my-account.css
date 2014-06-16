@@ -1,8 +1,3 @@
-@font-face {
-  font-family: 'Raleway-Regular';
-  src: url("/fonts/Raleway-Regular.eot?") format("eot"), url("/fonts/Raleway-Regular.otf") format("opentype"), url("/fonts/Raleway-Regular.woff") format("woff"), url("/fonts/Raleway-Regular.ttf") format("truetype"), url("/fonts/Raleway-Regular.svg#Raleway-Regular") format("svg");
-}
-
 /* Footer background color */
 /* line 4, ../sass/my-account.scss */
 #my-account .addresses-lists {
@@ -17,7 +12,7 @@
 #my-account ul.myaccount-link-list li a {
   display: block;
   overflow: hidden;
-  font: 600 16px/20px "Open Sans", sans-serif;
+  font: 600 16px/20px Century Gothic, Gotham, Futura, sans-serif;
   color: #555454;
   text-shadow: 0px 1px white;
   text-transform: uppercase;

@@ -1,8 +1,3 @@
-@font-face {
-  font-family: 'Raleway-Regular';
-  src: url("/fonts/Raleway-Regular.eot?") format("eot"), url("/fonts/Raleway-Regular.otf") format("opentype"), url("/fonts/Raleway-Regular.woff") format("woff"), url("/fonts/Raleway-Regular.ttf") format("truetype"), url("/fonts/Raleway-Regular.svg#Raleway-Regular") format("svg");
-}
-
 /* Footer background color */
 /******************************************************************************
 Home Page Slider
@@ -168,7 +163,7 @@ BXSlider Styles
 #homepage-slider .bx-wrapper .bx-pager {
   text-align: center;
   font-size: .85em;
-  font-family: "Raleway-Regular", Arial, Century Gothic, sans-serif;
+  font-family: "Raleway", Century Gothic, Gotham, Futura, sans-serif;
   font-weight: bold;
   color: #666;
   padding-top: 20px;
@@ -340,7 +335,7 @@ BXSlider Styles
 /* line 302, ../../../sass/modules/homeslider/homeslider.scss */
 #homepage-slider .bx-wrapper .bx-caption span {
   color: white;
-  font-family: "Raleway-Regular", Arial, Century Gothic, sans-serif;
+  font-family: "Raleway", Century Gothic, Gotham, Futura, sans-serif;
   display: block;
   font-size: .85em;
   padding: 10px;

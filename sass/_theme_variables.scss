@@ -4,19 +4,10 @@
 
 //$font-family:	 font-face("Raleway", $font-files, $eot, $weight, $style)
 
-@font-face {
-	font-family: 'Raleway-Regular';
-	src: url('/fonts/Raleway-Regular.eot?') format('eot'),
-	url('/fonts/Raleway-Regular.otf')  format('opentype'),
-	url('/fonts/Raleway-Regular.woff') format('woff'),
-	url('/fonts/Raleway-Regular.ttf')  format('truetype'),
-	url('/fonts/Raleway-Regular.svg#Raleway-Regular') format('svg');
-}
 
-
-$font-family:				  	'Raleway-Regular', Arial, Century Gothic, sans-serif;
+$font-family:				  	'Raleway', Century Gothic, Gotham, Futura, sans-serif;
 $font:						  		normal 13px/18px $font-family;
-$font-custom:           'Open Sans', sans-serif;
+$font-custom:           Century Gothic, Gotham, Futura, sans-serif;
 $font-icon:             "FontAwesome";
 
 //-------- BORDERS
