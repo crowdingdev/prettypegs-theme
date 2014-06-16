@@ -163,7 +163,7 @@ BXSlider Styles
 	}
 	//DIRECTION CONTROLS (NEXT / PREV)
 	.bx-wrapper .bx-prev {
-		left: -70px;
+		left: -50px;
 		background: url(../../../img/homeslider/image-slider-arrow.svg);
 		background-position:center;
 		background-repeat: no-repeat;
@@ -188,7 +188,7 @@ BXSlider Styles
 		background: url(../../../img/homeslider/image-slider-arrow.svg);
 		background-repeat: no-repeat;
 		background-position:center;
-		right: -70px;
+		right: -50px;
 		&:hover {
 			margin-right:-2px;
 		}
