@@ -58,7 +58,7 @@
 /* line 51, ../../../sass/modules/blockcart/blockcart.scss */
 .shopping_cart > a:first-child b {
   color: white;
-  font: 600 18px/22px Century Gothic, Gotham, Futura, sans-serif;
+  font: 600 18px/22px "Gotham", Century Gothic, Futura, sans-serif;
   padding-right: 5px;
 }
 /* line 56, ../../../sass/modules/blockcart/blockcart.scss */
@@ -408,7 +408,7 @@
 }
 /* line 345, ../../../sass/modules/blockcart/blockcart.scss */
 #layer_cart .layer_cart_product h2 {
-  font: 400 23px/29px "Raleway", Century Gothic, Gotham, Futura, sans-serif;
+  font: 400 23px/29px "Gotham", Century Gothic, Futura, sans-serif;
   color: #46a74e;
   margin-bottom: 22px;
   padding-right: 100px;
@@ -501,7 +501,7 @@
 }
 /* line 410, ../../../sass/modules/blockcart/blockcart.scss */
 #layer_cart .layer_cart_cart h2 {
-  font: 400 23px/29px "Raleway", Century Gothic, Gotham, Futura, sans-serif;
+  font: 400 23px/29px "Gotham", Century Gothic, Futura, sans-serif;
   color: #333333;
   border-bottom: 1px solid #d6d4d4;
   padding-bottom: 13px;
@@ -581,7 +581,7 @@
 }
 /* line 478, ../../../sass/modules/blockcart/blockcart.scss */
 #layer_cart .crossseling h2 {
-  font: 400 23px/26px "Raleway", Century Gothic, Gotham, Futura, sans-serif;
+  font: 400 23px/26px "Gotham", Century Gothic, Futura, sans-serif;
   color: #333333;
   margin-bottom: 25px;
 }

@@ -20,7 +20,7 @@
 }
 /* line 16, ../sass/maintenance.scss */
 #maintenance h1 {
-  font: 600 28px/34px Century Gothic, Gotham, Futura, sans-serif;
+  font: 600 28px/34px "Gotham", Century Gothic, Futura, sans-serif;
   color: #333333;
   text-transform: uppercase;
   border-bottom: 1px solid #d6d4d4;
@@ -29,7 +29,7 @@
 }
 /* line 24, ../sass/maintenance.scss */
 #maintenance #message {
-  font: 600 16px/31px Century Gothic, Gotham, Futura, sans-serif;
+  font: 600 16px/31px "Gotham", Century Gothic, Futura, sans-serif;
   padding: 0 0 0 18px;
   color: #555454;
   text-transform: uppercase;

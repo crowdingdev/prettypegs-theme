@@ -29,7 +29,7 @@ table#product_comparison tbody tr td.td_empty {
 }
 /* line 30, ../sass/comparator.scss */
 table#product_comparison tbody tr td.td_empty > span {
-  font: 600 18px/22px Century Gothic, Gotham, Futura, sans-serif;
+  font: 600 18px/22px "Gotham", Century Gothic, Futura, sans-serif;
   text-transform: uppercase;
   color: #555454;
 }
@@ -99,7 +99,7 @@ table#product_comparison .button-container a, table#product_comparison .button-c
 /* line 90, ../sass/comparator.scss */
 table#product_comparison .comparison_unit_price {
   font-size: 17px;
-  font-family: Century Gothic, Gotham, Futura, sans-serif;
+  font-family: "Gotham", Century Gothic, Futura, sans-serif;
   color: #333333;
   font-style: italic;
 }

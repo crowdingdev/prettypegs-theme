@@ -46,7 +46,7 @@ ul.product_list .product-image-container img {
 }
 /* line 46, ../sass/product_list.scss */
 ul.product_list .product-image-container .quick-view {
-  font: 700 13px/16px "Raleway", Century Gothic, Gotham, Futura, sans-serif;
+  font: 700 13px/16px "Gotham", Century Gothic, Futura, sans-serif;
   color: #777676;
   position: absolute;
   left: 50%;

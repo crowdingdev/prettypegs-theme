@@ -55,9 +55,9 @@
 				{$confirmation}
 			</p>
 		{/if}
-		<!-- left infos-->  
+		<!-- left infos-->
 		<div class="pb-left-column col-xs-12 col-sm-4 col-md-5">
-			<!-- product img-->        
+			<!-- product img-->
 			<div id="image-block" class="clearfix">
 				{if $product->new}
 					<span class="new-box">
@@ -116,7 +116,7 @@
 									{assign var=imageTitle value=$product->name|escape:'html':'UTF-8'}
 								{/if}
 								<li id="thumbnail_{$image.id_image}"{if $smarty.foreach.thumbnails.last} class="last"{/if}>
-									<a 
+									<a
 										{if $jqZoomEnabled && $have_image && !$content_only}
 											href="javascript:void(0);"
 											rel="{literal}{{/literal}gallery: 'gal1', smallimage: '{$link->getImageLink($product->link_rewrite, $imageIds, 'large_default')|escape:'html':'UTF-8'}',largeimage: '{$link->getImageLink($product->link_rewrite, $imageIds, 'thickbox_default')|escape:'html':'UTF-8'}'{literal}}{/literal}"
@@ -152,13 +152,13 @@
 				</p>
 			{/if}
 		</div> <!-- end pb-left-column -->
-		<!-- end left infos--> 
+		<!-- end left infos-->
 		<!-- center infos -->
 		<div class="pb-center-column col-xs-12 col-sm-4">
 			{if $product->online_only}
 				<p class="online_only">{l s='Online only'}</p>
 			{/if}
-	
+
 			<h1 itemprop="name">{$product->name|escape:'html':'UTF-8'}</h1>
 			<p id="product_reference"{if empty($product->reference) || !$product->reference} style="display: none;"{/if}>
 				<label>{l s='Model'} </label>
@@ -191,7 +191,7 @@
 						<div class="short_description_pack">
 						<h3>{l s='Pack content'}</h3>
 							{foreach from=$packItems item=packItem}
-							
+
 							<div class="pack_content">
 								{$packItem.pack_quantity} x <a href="{$link->getProductLink($packItem.id_product, $packItem.link_rewrite, $packItem.category)|escape:'html':'UTF-8'}">{$packItem.name|escape:'html':'UTF-8'}</a>
 								<p>{$packItem.description_short}</p>
@@ -213,7 +213,7 @@
 				<!-- availability -->
 				<p id="availability_statut"{if ($product->quantity <= 0 && !$product->available_later && $allow_oosp) || ($product->quantity > 0 && !$product->available_now) || !$product->available_for_order || $PS_CATALOG_MODE} style="display: none;"{/if}>
 					{*<span id="availability_label">{l s='Availability:'}</span>*}
-					<span id="availability_value"{if $product->quantity <= 0} class="warning_inline"{/if}>{if $product->quantity <= 0}{if $allow_oosp}{$product->available_later}{else}{l s='This product is no longer in stock'}{/if}{else}{$product->available_now}{/if}</span>				
+					<span id="availability_value"{if $product->quantity <= 0} class="warning_inline"{/if}>{if $product->quantity <= 0}{if $allow_oosp}{$product->available_later}{else}{l s='This product is no longer in stock'}{/if}{else}{$product->available_now}{/if}</span>
 				</p>
 				<p class="warning_inline" id="last_quantities"{if ($product->quantity > $last_qties || $product->quantity <= 0) || $allow_oosp || !$product->available_for_order || $PS_CATALOG_MODE} style="display: none"{/if} >{l s='Warning: Last items in stock!'}</p>
 			{/if}
@@ -451,10 +451,10 @@
 			<!-- Data sheet -->
 			<section class="page-product-box">
 				<h3 class="page-product-heading">{l s='Data sheet'}</h3>
-				<table class="table-data-sheet">			
+				<table class="table-data-sheet">
 					{foreach from=$features item=feature}
 					<tr class="{cycle values="odd,even"}">
-						{if isset($feature.value)}			    
+						{if isset($feature.value)}
 						<td>{$feature.name|escape:'html':'UTF-8'}</td>
 						<td>{$feature.value|escape:'html':'UTF-8'}</td>
 						{/if}
@@ -529,7 +529,7 @@
 							{/foreach}
 						</ul>
 					</div>
-				</div>	
+				</div>
 			</section>
 			<!--end Accessories -->
 		{/if}
@@ -640,7 +640,7 @@
 						</span>
 					</p>
 				</form>
-				<p class="clear required"><sup>*</sup> {l s='required fields'}</p>	
+				<p class="clear required"><sup>*</sup> {l s='required fields'}</p>
 			</section>
 			<!--end Customization -->
 			{/if}

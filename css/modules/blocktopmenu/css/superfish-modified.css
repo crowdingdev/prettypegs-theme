@@ -84,7 +84,7 @@
 }
 /* line 65, ../../../../sass/modules/blocktopmenu/css/superfish-modified.scss */
 .sf-menu > li > a {
-  font: 600 18px/22px Century Gothic, Gotham, Futura, sans-serif;
+  font: 600 18px/22px "Gotham", Century Gothic, Futura, sans-serif;
   text-transform: uppercase;
   color: #484848;
   display: block;
@@ -194,7 +194,7 @@ ul.sf-menu li li li.sfHover ul {
 /* line 143, ../../../../sass/modules/blocktopmenu/css/superfish-modified.scss */
 .sf-menu > li > ul > li > a {
   text-transform: uppercase;
-  font: 600 16px/20px Century Gothic, Gotham, Futura, sans-serif;
+  font: 600 16px/20px "Gotham", Century Gothic, Futura, sans-serif;
   color: #333333;
 }
 
@@ -270,7 +270,7 @@ ul.sf-menu li li li.sfHover ul {
   /* line 199, ../../../../sass/modules/blocktopmenu/css/superfish-modified.scss */
   .cat-title {
     display: block;
-    font: 600 18px/22px Century Gothic, Gotham, Futura, sans-serif;
+    font: 600 18px/22px "Gotham", Century Gothic, Futura, sans-serif;
     text-transform: uppercase;
     color: #484848;
     display: block;

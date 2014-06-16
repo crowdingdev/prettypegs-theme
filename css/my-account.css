@@ -12,7 +12,7 @@
 #my-account ul.myaccount-link-list li a {
   display: block;
   overflow: hidden;
-  font: 600 16px/20px Century Gothic, Gotham, Futura, sans-serif;
+  font: 600 16px/20px "Gotham", Century Gothic, Futura, sans-serif;
   color: #555454;
   text-shadow: 0px 1px white;
   text-transform: uppercase;

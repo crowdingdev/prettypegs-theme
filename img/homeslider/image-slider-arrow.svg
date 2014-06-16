@@ -2,11 +2,10 @@
 <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="35px" height="104.007px" viewBox="0 0 35 104.007" enable-background="new 0 0 35 104.007" xml:space="preserve">
-<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="52.0034" x2="35" y2="52.0034">
+	 width="28px" height="83.207px" viewBox="3.5 10.4 28 83.207" enable-background="new 3.5 10.4 28 83.207" xml:space="preserve">
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-5" y1="28.0034" x2="23" y2="28.0034" gradientTransform="matrix(1 0 0 -1 8.5 80.0068)">
 	<stop  offset="0" style="stop-color:#000000"/>
 	<stop  offset="1" style="stop-color:#000000"/>
 </linearGradient>
-<path fill-rule="evenodd" clip-rule="evenodd" fill="url(#SVGID_1_)" d="M0,102.768l32.447-50.763L0,1.239L1.302,0L35,52.005
-	L1.302,104.007L0,102.768z"/>
+<path fill="url(#SVGID_1_)" d="M3.5,93.607l26.758-41.603L3.5,10.4h1.042L31.5,52.004L4.542,93.607H3.5z"/>
 </svg>

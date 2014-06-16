@@ -22,7 +22,7 @@
 }
 /* line 19, ../sass/category.scss */
 .content_scene_cat span.category-name {
-  font: 600 42px/51px Century Gothic, Gotham, Futura, sans-serif;
+  font: 600 42px/51px "Gotham", Century Gothic, Futura, sans-serif;
   color: white;
   margin-bottom: 12px;
 }
@@ -105,7 +105,7 @@
 }
 /* line 83, ../sass/category.scss */
 #subcategories ul li .subcategory-name {
-  font: 600 18px/22px Century Gothic, Gotham, Futura, sans-serif;
+  font: 600 18px/22px "Gotham", Century Gothic, Futura, sans-serif;
   color: #555454;
   text-transform: uppercase;
 }
