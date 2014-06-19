@@ -28,6 +28,7 @@
 {/if}
 	<div class="shopping_cart">
 		<a href="{$link->getPageLink($order_process, true)|escape:'html':'UTF-8'}" title="{l s='View my shopping cart' mod='blockcart'}" rel="nofollow">
+			<p>
 
 			<span class="ajax_cart_quantity{if $cart_qties == 0} unvisible{/if}">{$cart_qties}</span>
 			<span class="ajax_cart_product_txt{if $cart_qties != 1} unvisible{/if}">{l s='Peg added' mod='blockcart'}</span>
@@ -43,12 +44,17 @@
 					{/if}
 				{/if}
 			</span>
+
+
 			<span class="ajax_cart_no_product{if $cart_qties > 0} unvisible{/if}">{l s='No pegs added' mod='blockcart'}</span>
 			{if $ajax_allowed && isset($blockcart_top) && !$blockcart_top}
 				<span class="block_cart_expand{if !isset($colapseExpandStatus) || (isset($colapseExpandStatus) && $colapseExpandStatus eq 'expanded')} unvisible{/if}">&nbsp;</span>
 				<span class="block_cart_collapse{if isset($colapseExpandStatus) && $colapseExpandStatus eq 'collapsed'} unvisible{/if}">&nbsp;</span>
 			{/if}
+</p>
+<span class="cart-icon {if $cart_qties != 0}not-empty{/if}"></span>
 		</a>
+
 		{if !$PS_CATALOG_MODE}
 			<div class="cart_block block exclusive">
 				<div class="block_content">

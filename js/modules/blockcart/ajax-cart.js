@@ -71,7 +71,7 @@ $(document).ready(function(){
 				setTimeout(function(){
 					if (!shopping_cart.isHoveringOver() && !cart_block.isHoveringOver())
 						$("#header .cart_block").stop(true, true).slideUp(450);
-						
+
 				}, 200);
 			}
 		);
@@ -116,7 +116,7 @@ $(document).ready(function(){
 		$('.layer_cart_overlay').hide();
 		$('#layer_cart').fadeOut('fast');
 	});
-	
+
 	$('#columns #layer_cart, #columns .layer_cart_overlay').detach().prependTo('#columns');
 });
 
@@ -205,7 +205,7 @@ var ajaxCart = {
 					$('.block_cart_expand').fadeOut('fast', function(){
 						$('.block_cart_collapse').fadeIn('fast');
 					});
-				}			
+				}
 			});
 		}
 	},
@@ -255,7 +255,7 @@ var ajaxCart = {
 	updateCartInformation : function (jsonData, addedFromProductPage){
 		ajaxCart.updateCart(jsonData);
 		//reactive the button when adding has finished
-		if (addedFromProductPage) 
+		if (addedFromProductPage)
 		{
 			$('#add_to_cart button').removeProp('disabled').removeClass('disabled');
 			if (!jsonData.hasError || jsonData.hasError == false)
@@ -314,7 +314,7 @@ var ajaxCart = {
 				// add appliance to whishlist module
 				if (whishlist && !jsonData.errors)
 					WishlistAddProductCart(whishlist[0], idProduct, idCombination, whishlist[1]);
-				
+
 				if (!jsonData.hasError)
 				{
 					window.parent.ajaxCart.updateCartInformation(jsonData, addedFromProductPage);
@@ -335,7 +335,7 @@ var ajaxCart = {
 					if (contentOnly)
 						parent.$.fancybox.close();
 				}
-				else 
+				else
 				{
 					if (addedFromProductPage)
 						$('#add_to_cart button').removeProp('disabled').removeClass('disabled');
@@ -754,6 +754,11 @@ var ajaxCart = {
 
 	//update general cart informations everywhere in the page
 	updateCartEverywhere : function(jsonData){
+
+		/*Linus has added this*/
+		$('.cart-icon').removeClass('not-empty');
+		/*END Linus has added this*/
+
 		$('.ajax_cart_total').text($.trim(jsonData.productTotal));
 
 		if (parseFloat(jsonData.shippingCostFloat) > 0)
@@ -783,6 +788,10 @@ var ajaxCart = {
 			$('.ajax_cart_quantity').text(jsonData.nbTotalProducts);
 			$('.ajax_cart_quantity').fadeIn('slow');
 			$('.ajax_cart_total').fadeIn('slow');
+
+			/*Linus has added this*/
+			$('.cart-icon').addClass('not-empty');
+			/*END Linus has added this*/
 
 			if (parseInt(jsonData.nbTotalProducts) > 1)
 			{

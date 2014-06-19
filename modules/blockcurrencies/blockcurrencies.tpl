@@ -31,7 +31,7 @@
 				<input type="hidden" name="SubmitCurrency" value="" />
 				<span class="cur-label">{l s='Currency' mod='blockcurrencies'} :</span>
 				{foreach from=$currencies key=k item=f_currency}
-					{if $cookie->id_currency == $f_currency.id_currency}<strong>{$f_currency.iso_code}</strong>{/if}
+					{if $cookie->id_currency == $f_currency.id_currency}{$f_currency.iso_code}{/if}
 				{/foreach}
 			</div>
 			<ul id="first-currencies" class="currencies_ul toogle_content">
