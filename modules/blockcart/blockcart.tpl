@@ -24,14 +24,14 @@
 *}
 <!-- MODULE Block cart -->
 {if isset($blockcart_top) && $blockcart_top}
-<div class="col-sm-2 {if $PS_CATALOG_MODE} header_user_catalog{/if}">
+<div class="col-sm-4 clearfix{if $PS_CATALOG_MODE} header_user_catalog{/if}">
 {/if}
 	<div class="shopping_cart">
 		<a href="{$link->getPageLink($order_process, true)|escape:'html':'UTF-8'}" title="{l s='View my shopping cart' mod='blockcart'}" rel="nofollow">
-
+			<b>{l s='Cart' mod='blockcart'}</b>
 			<span class="ajax_cart_quantity{if $cart_qties == 0} unvisible{/if}">{$cart_qties}</span>
-			<span class="ajax_cart_product_txt{if $cart_qties != 1} unvisible{/if}">{l s='Peg added' mod='blockcart'}</span>
-			<span class="ajax_cart_product_txt_s{if $cart_qties < 2} unvisible{/if}">{l s='Pegs added' mod='blockcart'}</span>
+			<span class="ajax_cart_product_txt{if $cart_qties != 1} unvisible{/if}">{l s='Product' mod='blockcart'}</span>
+			<span class="ajax_cart_product_txt_s{if $cart_qties < 2} unvisible{/if}">{l s='Products' mod='blockcart'}</span>
 			<span class="ajax_cart_total{if $cart_qties == 0} unvisible{/if}">
 				{if $cart_qties > 0}
 					{if $priceDisplay == 1}
@@ -43,7 +43,7 @@
 					{/if}
 				{/if}
 			</span>
-			<span class="ajax_cart_no_product{if $cart_qties > 0} unvisible{/if}">{l s='No pegs added' mod='blockcart'}</span>
+			<span class="ajax_cart_no_product{if $cart_qties > 0} unvisible{/if}">{l s='(empty)' mod='blockcart'}</span>
 			{if $ajax_allowed && isset($blockcart_top) && !$blockcart_top}
 				<span class="block_cart_expand{if !isset($colapseExpandStatus) || (isset($colapseExpandStatus) && $colapseExpandStatus eq 'expanded')} unvisible{/if}">&nbsp;</span>
 				<span class="block_cart_collapse{if isset($colapseExpandStatus) && $colapseExpandStatus eq 'collapsed'} unvisible{/if}">&nbsp;</span>
@@ -235,7 +235,7 @@
 						{l s='There is 1 item in your cart.' mod='blockcart'}
 					</span>
 				</h2>
-
+	
 				<div class="layer_cart_row">
 					<strong class="dark">
 						{l s='Total products' mod='blockcart'}
@@ -251,7 +251,7 @@
 						{/if}
 					</span>
 				</div>
-
+	
 				{if $show_wrapping}
 					<div class="layer_cart_row">
 						<strong class="dark">
@@ -289,7 +289,7 @@
 						<span class="price cart_block_tax_cost ajax_cart_tax_cost">{$tax_cost}</span>
 					</div>
 				{/if}
-				<div class="layer_cart_row">
+				<div class="layer_cart_row">	
 					<strong class="dark">
 						{l s='Total' mod='blockcart'}
 						{if $priceDisplay == 1}
@@ -308,7 +308,7 @@
 						{/if}
 					</span>
 				</div>
-				<div class="button-container">
+				<div class="button-container">	
 					<span class="continue btn btn-default button exclusive-medium" title="{l s='Continue shopping' mod='blockcart'}">
 						<span>
 							<i class="icon-chevron-left left"></i>{l s='Continue shopping' mod='blockcart'}
@@ -318,7 +318,7 @@
 						<span>
 							{l s='Proceed to checkout' mod='blockcart'}<i class="icon-chevron-right right"></i>
 						</span>
-					</a>
+					</a>	
 				</div>
 			</div>
 		</div>

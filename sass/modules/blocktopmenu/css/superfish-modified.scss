@@ -2,7 +2,9 @@
 @import "theme_variables";
 /*** ESSENTIAL STYLES ***/
 .sf-contener {
-	padding-top: 50px;
+	//padding-top: 100px;
+	position:relative;
+	top: 73px;
 	float: left;
 }
 .sf-right {}

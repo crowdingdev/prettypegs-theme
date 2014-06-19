@@ -68,7 +68,7 @@
 				<div>
 					<div class="container">
 						<div class="row">
-							<div class="col-sm-3 col-sd-1">
+							<div class="col-sm-3">
 
 								<div id="header_logo" >
 									<a href="{$base_dir}" title="{$shop_name|escape:'html':'UTF-8'}">
@@ -100,4 +100,3 @@
 					{/if}
 					<div id="center_column" class="center_column col-xs-12 col-sm-{12 - $left_column_size - $right_column_size}">
 						{/if}
-

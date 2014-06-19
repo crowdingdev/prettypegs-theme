@@ -176,7 +176,7 @@ BXSlider Styles
   *zoom: 1;
   *display: inline;
 }
-/* line 148, ../../../sass/modules/homeslider/homeslider.scss */
+/* line 149, ../../../sass/modules/homeslider/homeslider.scss */
 #homepage-slider .bx-wrapper .bx-pager.bx-default-pager a {
   background: #666;
   text-indent: -9999px;
@@ -189,12 +189,12 @@ BXSlider Styles
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 161, ../../../sass/modules/homeslider/homeslider.scss */
+/* line 162, ../../../sass/modules/homeslider/homeslider.scss */
 #homepage-slider .bx-wrapper .bx-pager.bx-default-pager a:hover,
 #homepage-slider .bx-wrapper .bx-pager.bx-default-pager a.active {
   background: #000;
 }
-/* line 165, ../../../sass/modules/homeslider/homeslider.scss */
+/* line 166, ../../../sass/modules/homeslider/homeslider.scss */
 #homepage-slider .bx-wrapper .bx-prev {
   left: -50px;
   background: url(../../../img/homeslider/image-slider-arrow.svg);
@@ -214,30 +214,30 @@ BXSlider Styles
   /* IE10 */
   transition: all 0.1s ease-out;
 }
-/* line 180, ../../../sass/modules/homeslider/homeslider.scss */
+/* line 181, ../../../sass/modules/homeslider/homeslider.scss */
 #homepage-slider .bx-wrapper .bx-prev:hover {
   margin-left: -2px;
 }
-/* line 183, ../../../sass/modules/homeslider/homeslider.scss */
+/* line 184, ../../../sass/modules/homeslider/homeslider.scss */
 #homepage-slider .bx-wrapper .bx-prev:active {
   margin-left: -4px;
 }
-/* line 187, ../../../sass/modules/homeslider/homeslider.scss */
+/* line 188, ../../../sass/modules/homeslider/homeslider.scss */
 #homepage-slider .bx-wrapper .bx-next {
   background: url(../../../img/homeslider/image-slider-arrow.svg);
   background-repeat: no-repeat;
   background-position: center;
   right: -50px;
 }
-/* line 192, ../../../sass/modules/homeslider/homeslider.scss */
+/* line 193, ../../../sass/modules/homeslider/homeslider.scss */
 #homepage-slider .bx-wrapper .bx-next:hover {
   margin-right: -2px;
 }
-/* line 195, ../../../sass/modules/homeslider/homeslider.scss */
+/* line 196, ../../../sass/modules/homeslider/homeslider.scss */
 #homepage-slider .bx-wrapper .bx-next:active {
   margin-right: -4px;
 }
-/* line 209, ../../../sass/modules/homeslider/homeslider.scss */
+/* line 210, ../../../sass/modules/homeslider/homeslider.scss */
 #homepage-slider .bx-wrapper .bx-controls-direction a {
   position: absolute;
   bottom: 0px;
@@ -247,7 +247,7 @@ BXSlider Styles
   text-indent: -9999px;
   z-index: 9999;
 }
-/* line 218, ../../../sass/modules/homeslider/homeslider.scss */
+/* line 219, ../../../sass/modules/homeslider/homeslider.scss */
 #homepage-slider .bx-wrapper .bx-controls-direction a:before {
   height: 48px;
   width: 48px;
@@ -260,7 +260,7 @@ BXSlider Styles
   top: 0;
   z-index: 1;
 }
-/* line 230, ../../../sass/modules/homeslider/homeslider.scss */
+/* line 231, ../../../sass/modules/homeslider/homeslider.scss */
 #homepage-slider .bx-wrapper .bx-controls-direction a:after {
   display: block;
   width: 48px;
@@ -276,15 +276,15 @@ BXSlider Styles
   z-index: 2;
   padding: 16px 0 0 0;
 }
-/* line 252, ../../../sass/modules/homeslider/homeslider.scss */
+/* line 253, ../../../sass/modules/homeslider/homeslider.scss */
 #homepage-slider .bx-wrapper .bx-controls-direction a.disabled {
   display: none;
 }
-/* line 256, ../../../sass/modules/homeslider/homeslider.scss */
+/* line 257, ../../../sass/modules/homeslider/homeslider.scss */
 #homepage-slider .bx-wrapper .bx-controls-auto {
   text-align: center;
 }
-/* line 259, ../../../sass/modules/homeslider/homeslider.scss */
+/* line 260, ../../../sass/modules/homeslider/homeslider.scss */
 #homepage-slider .bx-wrapper .bx-controls-auto .bx-start {
   display: block;
   text-indent: -9999px;
@@ -294,12 +294,12 @@ BXSlider Styles
   background: url(images/controls.png) -86px -11px no-repeat;
   margin: 0 3px;
 }
-/* line 269, ../../../sass/modules/homeslider/homeslider.scss */
+/* line 270, ../../../sass/modules/homeslider/homeslider.scss */
 #homepage-slider .bx-wrapper .bx-controls-auto .bx-start:hover,
 #homepage-slider .bx-wrapper .bx-controls-auto .bx-start.active {
   background-position: -86px 0;
 }
-/* line 272, ../../../sass/modules/homeslider/homeslider.scss */
+/* line 273, ../../../sass/modules/homeslider/homeslider.scss */
 #homepage-slider .bx-wrapper .bx-controls-auto .bx-stop {
   display: block;
   text-indent: -9999px;
@@ -309,22 +309,22 @@ BXSlider Styles
   background: url(images/controls.png) -86px -44px no-repeat;
   margin: 0 3px;
 }
-/* line 282, ../../../sass/modules/homeslider/homeslider.scss */
+/* line 283, ../../../sass/modules/homeslider/homeslider.scss */
 #homepage-slider .bx-wrapper .bx-controls-auto .bx-stop:hover,
 #homepage-slider .bx-wrapper .bx-controls-auto .bx-stop.active {
   background-position: -86px -33px;
 }
-/* line 286, ../../../sass/modules/homeslider/homeslider.scss */
+/* line 287, ../../../sass/modules/homeslider/homeslider.scss */
 #homepage-slider .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
   text-align: left;
   width: 80%;
 }
-/* line 290, ../../../sass/modules/homeslider/homeslider.scss */
+/* line 291, ../../../sass/modules/homeslider/homeslider.scss */
 #homepage-slider .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
   right: 0;
   width: 35px;
 }
-/* line 295, ../../../sass/modules/homeslider/homeslider.scss */
+/* line 296, ../../../sass/modules/homeslider/homeslider.scss */
 #homepage-slider .bx-wrapper .bx-caption {
   position: absolute;
   bottom: 0;
@@ -333,7 +333,7 @@ BXSlider Styles
   background: rgba(80, 80, 80, 0.75);
   width: 100%;
 }
-/* line 303, ../../../sass/modules/homeslider/homeslider.scss */
+/* line 304, ../../../sass/modules/homeslider/homeslider.scss */
 #homepage-slider .bx-wrapper .bx-caption span {
   color: white;
   font-family: "Gotham", Century Gothic, Futura, sans-serif;
@@ -342,7 +342,7 @@ BXSlider Styles
   padding: 10px;
 }
 
-/* line 314, ../../../sass/modules/homeslider/homeslider.scss */
+/* line 315, ../../../sass/modules/homeslider/homeslider.scss */
 .ie8 #homepage-slider .bx-wrapper .bx-controls-direction a:before {
   background: #333333;
 }
