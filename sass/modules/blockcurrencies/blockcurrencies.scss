@@ -4,11 +4,10 @@
 	float: right;
 	border-left: 1px solid #515151;
 	position: relative;
-
 	// max 479px
 	@media (max-width: $screen-xs - 1) {
 		width: 25%;
-	}
+	}													
 	span.firstWord {
 		display: none;
 	}
