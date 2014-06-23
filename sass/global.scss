@@ -806,7 +806,7 @@ table.table_block td {
 .new-label {
 	font: 700 14px / 12px $font-family;
 	color: $light-text-color;
-	background: #6ad4ff;
+	background: #dc7670;
 	text-transform: uppercase;
 	padding: 9px 0 7px;
 	text-shadow: 1px 1px rgba(0, 0, 0, 0.24);
@@ -826,7 +826,7 @@ table.table_block td {
 		height: 0px;
 		border-style: solid;
 		border-width: 4px 4px 0px 4px;
-		border-color: #21a3d8 transparent transparent transparent;
+		border-color: #dc7670 transparent transparent transparent;
 		content: ".";
 		text-indent: -5000px;
 		@include rotate(225deg);
@@ -839,7 +839,7 @@ table.table_block td {
 		height: 0px;
 		border-style: solid;
 		border-width: 4px 4px 0px 4px;
-		border-color: #21a3d8 transparent transparent transparent;
+		border-color: #dc7670 transparent transparent transparent;
 		content: ".";
 		text-indent: -5000px;
 		@include rotate(135deg);
@@ -1198,7 +1198,7 @@ table.table_block td {
 }
 
 h3.page-product-heading {
-	@include sub-heading;
+	//@include sub-heading;
 }
 
 // BLOCK .footer_links (cms pages)

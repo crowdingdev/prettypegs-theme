@@ -8919,7 +8919,7 @@ table.table_block td {
 .new-label {
   font: 700 14px/12px "Gotham", Century Gothic, Futura, sans-serif;
   color: white;
-  background: #6ad4ff;
+  background: #dc7670;
   text-transform: uppercase;
   padding: 9px 0 7px;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.24);
@@ -8943,7 +8943,7 @@ table.table_block td {
   height: 0px;
   border-style: solid;
   border-width: 4px 4px 0px 4px;
-  border-color: #21a3d8 transparent transparent transparent;
+  border-color: #dc7670 transparent transparent transparent;
   content: ".";
   text-indent: -5000px;
   -webkit-transform: rotate(225deg);
@@ -8959,7 +8959,7 @@ table.table_block td {
   height: 0px;
   border-style: solid;
   border-width: 4px 4px 0px 4px;
-  border-color: #21a3d8 transparent transparent transparent;
+  border-color: #dc7670 transparent transparent transparent;
   content: ".";
   text-indent: -5000px;
   -webkit-transform: rotate(135deg);
@@ -9399,22 +9399,6 @@ table.table_block td {
   line-height: normal;
   margin-bottom: 12px;
   border-bottom: 1px solid #d6d4d4;
-}
-
-/* line 1200, ../sass/global.scss */
-h3.page-product-heading {
-  color: #555454;
-  text-transform: uppercase;
-  font-family: "Gotham", Century Gothic, Futura, sans-serif;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 20px;
-  padding: 14px 20px 17px;
-  margin: 0 0 20px;
-  position: relative;
-  border: 1px solid #d6d4d4;
-  border-bottom: none;
-  background: #fbfbfb;
 }
 
 /* line 1205, ../sass/global.scss */
