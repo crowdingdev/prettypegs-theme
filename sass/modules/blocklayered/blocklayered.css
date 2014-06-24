@@ -1,0 +1,253 @@
+/* Footer background color */
+/* line 2, blocklayered.scss */
+#enabled_filters {
+  margin: 0 0 10px 0;
+  background: #eee;
+  padding: 5px;
+}
+
+/* line 7, blocklayered.scss */
+#enabled_filters .layered_subtitle {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+/* line 11, blocklayered.scss */
+#enabled_filters ul li {
+  padding: 2px 0;
+}
+
+/* line 12, blocklayered.scss */
+#enabled_filters li a {
+  float: right;
+  /*display: inline-block;
+  height: 12px;
+  width: 12px;
+  text-indent: -5000px;*/
+  /*background: url(../../../img/icon/delete.gif) no-repeat 0 0 transparent;*/
+  /*background: url(./delete.gif) no-repeat 0 0 transparent;*/
+  cursor: pointer;
+}
+
+/* line 22, blocklayered.scss */
+#layered_block_left .layered_close {
+  float: right;
+  padding-right: 5px;
+}
+
+/* line 27, blocklayered.scss */
+#layered_block_left span.layered_close a,
+#layered_block_left span.layered_close a {
+  display: block;
+  height: 13px;
+  width: 13px;
+  text-decoration: none;
+  text-indent: -5000px;
+  background: url(img/icon/less.gif) no-repeat 2px 2px;
+}
+
+/* line 35, blocklayered.scss */
+#layered_block_left span.closed a {
+  background: url(img/icon/more.gif) no-repeat 2px 2px;
+}
+
+/* line 39, blocklayered.scss */
+#layered_block_left .layered_subtitle {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+/* line 44, blocklayered.scss */
+#layered_block_left ul {
+  clear: both;
+  padding: 5px 0;
+}
+
+/* line 48, blocklayered.scss */
+#layered_block_left ul li {
+  padding: 2px 0;
+}
+
+/* line 49, blocklayered.scss */
+#layered_block_left ul li label {
+  cursor: pointer;
+}
+
+/* line 52, blocklayered.scss */
+#layered_block_left ul {
+  padding-left: 0;
+}
+
+/* line 55, blocklayered.scss */
+#layered_block_left ul li {
+  list-style-type: none;
+}
+
+/* line 58, blocklayered.scss */
+#layered_block_left div > form > div > div {
+  margin-top: 5px;
+}
+
+/* line 61, blocklayered.scss */
+#layered_block_left #enabled_filters, #layered_url_filter_block {
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+  margin-top: 0px;
+  border-bottom: 1px dotted #CCC;
+}
+
+/* line 67, blocklayered.scss */
+#layered_block_left #enabled_filters ul li {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/* Style moved form the template to the css  */
+/* line 75, blocklayered.scss */
+#layered_block_left #enabled_filters ul li:hover {
+  background: inherit;
+  color: inherit;
+}
+
+/* line 82, blocklayered.scss */
+#layered_block_left ul li input.checkbox {
+  vertical-align: middle;
+  margin-left: 2px;
+}
+
+/* line 86, blocklayered.scss */
+#layered_block_left ul li .disabled {
+  color: #666;
+}
+
+/* line 89, blocklayered.scss */
+#layered_block_left .color-option {
+  border: 1px solid #666666;
+  height: 16px;
+  margin-left: 0;
+  padding: 0;
+  width: 16px;
+}
+
+/* line 96, blocklayered.scss */
+#layered_block_left .color-option.disable {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.5;
+}
+
+/* line 101, blocklayered.scss */
+#layered_block_left .nomargin a {
+  display: inline;
+}
+
+/* line 104, blocklayered.scss */
+#layered_form .select {
+  width: 165px;
+}
+
+/* line 107, blocklayered.scss */
+#layered_form .color-option {
+  margin-left: 0;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  border: 1px solid #666;
+}
+
+/* line 114, blocklayered.scss */
+#layered_form .color-option.on {
+  border: 1px solid red;
+}
+
+/* line 117, blocklayered.scss */
+#layered_form input[type=radio] {
+  margin-left: 2px;
+  vertical-align: middle;
+}
+
+/* line 121, blocklayered.scss */
+.layered_price_range {
+  margin-left: 7px;
+}
+
+/* line 124, blocklayered.scss */
+.layered_price_range_unit {
+  margin-right: 7px;
+}
+
+/* line 127, blocklayered.scss */
+.layered_slider_container {
+  margin: 6px 0 6px 10px;
+  width: 91%;
+}
+
+/* line 130, blocklayered.scss */
+.layered_slider {
+  margin-top: 5px;
+}
+
+/* line 133, blocklayered.scss */
+.layered_input_range_min {
+  width: 30px;
+}
+
+/* line 136, blocklayered.scss */
+.layered_input_range_max {
+  width: 40px;
+}
+
+/* line 139, blocklayered.scss */
+.layered_list_selected {
+  font-weight: bold;
+}
+
+/* line 142, blocklayered.scss */
+.layered_list {
+  display: block;
+  cursor: pointer;
+}
+
+/* line 146, blocklayered.scss */
+.layered_list:hover {
+  font-weight: bold;
+}
+
+/* line 149, blocklayered.scss */
+.layered_ajax_loader p {
+  margin: 20px 0;
+  text-align: center;
+}
+
+/* line 153, blocklayered.scss */
+.hide-action {
+  text-align: center;
+  text-align: right;
+  display: block;
+  cursor: pointer;
+}
+
+/* line 159, blocklayered.scss */
+.hide-action:hover {
+  font-weight: bold;
+}
+
+/* line 162, blocklayered.scss */
+#layered_form div div ul {
+  max-height: 200px;
+  overflow-x: auto;
+}
+
+/* line 166, blocklayered.scss */
+.layered_filter {
+  border-bottom: 1px solid #eee;
+}
+/* line 168, blocklayered.scss */
+.layered_filter label {
+  font-weight: normal;
+}
+/* line 171, blocklayered.scss */
+.layered_filter layered_subtitle {
+  font-size: 1.2 em;
+}

@@ -1,0 +1,113 @@
+/* Footer background color */
+@media only print {
+  /* line 6, print.scss */
+  #header .nav, #header .banner, #header .row > div {
+    display: none;
+  }
+  /* line 9, print.scss */
+  #header .row div#header_logo {
+    display: block;
+  }
+
+  /* line 14, print.scss */
+  #center_column {
+    width: 100% !important;
+  }
+
+  /* line 17, print.scss */
+  #left_column, #right_column {
+    display: none;
+  }
+
+  /* line 20, print.scss */
+  .no-print, #quantity_wanted_p > a, a.quick-view {
+    display: none !important;
+  }
+
+  /* line 23, print.scss */
+  div.selector, div.selector span, div.selector select {
+    background: none;
+  }
+
+  /* line 26, print.scss */
+  #thumbs_list li a:hover, #thumbs_list li a.shown {
+    border-color: #fff;
+  }
+
+  /* line 29, print.scss */
+  .product_attributes, .box-cart-bottom {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+
+  /* line 32, print.scss */
+  .pb-left-column #views_block {
+    margin-top: 10px;
+    width: 278px !important;
+  }
+
+  /* line 36, print.scss */
+  #thumbs_list_frame, #thumbs_list {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  /* line 41, print.scss */
+  #thumbs_list li, #thumbs_list li:first-child {
+    margin: 4px;
+    width: 82px;
+    height: 82px;
+  }
+
+  /* line 47, print.scss */
+  #view_scroll_left, #view_scroll_right, .view_scroll_spacer {
+    display: none !important;
+  }
+
+  /* line 50, print.scss */
+  .bx-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* line 54, print.scss */
+  .bx-viewport {
+    height: auto !important;
+  }
+
+  /* line 57, print.scss */
+  #bxslider, #bxslider1, #crossselling_list_car {
+    width: 100% !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  /* line 63, print.scss */
+  #bxslider1 .product-box {
+    min-height: 200px;
+  }
+
+  /* line 67, print.scss */
+  .bx-controls-direction {
+    display: none;
+  }
+
+  /* line 72, print.scss */
+  #footer .row > div, #footer .row > section {
+    display: none;
+  }
+  /* line 74, print.scss */
+  #footer .row > div#block_contact_infos, #footer .row > section#block_contact_infos {
+    display: block;
+    width: 100%;
+    border-left: none;
+    border-top: 1px solid #515151;
+    padding-top: 20px;
+  }
+
+  /* line 84, print.scss */
+  .footer-container #footer h4:after {
+    display: none;
+  }
+}
