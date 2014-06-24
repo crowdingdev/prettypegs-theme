@@ -200,7 +200,7 @@ span.view_scroll_spacer {
 	}
 	&:before{
 		padding-left: 2px;
-		color: $scroll-button-color;
+		color: #000;
 		font-family: $font-icon;
 		font-size: 20px;
 		line-height: 22px;
@@ -211,15 +211,15 @@ span.view_scroll_spacer {
 }
 #view_scroll_right {
 	float: left;
-	margin-left: 5px;
+	margin-left: 16px;
 	&:before{
-		content: "\f138";
+		content: "\f105";
 	}
 }
 #view_scroll_left {
 	margin-top: 0;
 	&:before{
-		content: "\f137";
+		content: "\f104";
 		padding-right: 2px;
 	}
 }
@@ -333,6 +333,7 @@ span.view_scroll_spacer {
 /* pb-left-column ****************************************************************************** */
 .pb-center-column {
 	margin-bottom: 30px;
+
 	h1 {
 		padding-bottom: 16px;
 		font-size: 20px;
@@ -364,6 +365,7 @@ span.view_scroll_spacer {
 	/* form */
 	#buy_block {
 		margin-top: 10px;
+
 		label {
 			display: inline-block;
 			width: 125px;
@@ -493,7 +495,7 @@ span.view_scroll_spacer {
 }
 
 .box-info-product {
-
+padding-bottom: 20px;
 
 
 	//padding: 20px;
@@ -504,7 +506,8 @@ span.view_scroll_spacer {
 		margin-bottom: 7px;
 	}
 	h1{
-		padding: 20px;
+		padding: 20px 20px 0 20px;
+		margin:0;
 	}
 	.exclusive{
 
@@ -512,7 +515,8 @@ span.view_scroll_spacer {
 
 
 		@include border-radius(300px);
-		padding: 29px;
+		width: 160px ;
+		height: 160px ;
 		background: #dc7670;
 
 		position: relative;
@@ -570,7 +574,7 @@ span.view_scroll_spacer {
 			text-transform:uppercase;
 			font-weight: normal;
 			font-size: 14px;
-			line-height: 99px;
+			//line-height: 99px;
 			position:relative;
 			top: 30px;
 
@@ -1020,6 +1024,7 @@ Quick View Styles
 			}
 			div {
 				&.pb-left-column {
+
 					padding: 20px 20px 5px 35px;
 					width: 47%;
 					@media (max-width: $screen-xs - 1)  {  // max 479px
@@ -1095,6 +1100,7 @@ Quick View Styles
 								@media (max-width: $screen-md-max) { //max 1199px
 									padding: 12px 22px 14px 70px;
 									font-size: 20px;
+
 								}
 							}
 						}
@@ -1202,3 +1208,14 @@ Quick View Styles
 		filter: none;
 	}
 }
+
+
+.pb-left-column{
+
+}
+
+.pb-right-column{
+
+	margin-left:-30px !important;
+}
+

@@ -69,11 +69,6 @@
 
 
 
-
-
-
-
-
 					{if $product->new}
 					<span class="new-box">
 
@@ -179,9 +174,9 @@
 			</p>
 			{/if}
 
-			<div class="row">
 
-				<div class="pb-center-column col-xs-12">
+
+				<div class="col-xs-12">
 					{if $product->online_only}
 					<p class="online_only">{l s='Online only'}</p>
 					{/if}
@@ -268,7 +263,7 @@
 					</ul>
 					{/if}
 				</div>
-			</div> <!-- end center infos-->
+	<!-- end center infos-->
 
 
 

@@ -218,7 +218,7 @@ span.view_scroll_spacer {
 #view_scroll_left:before,
 #view_scroll_right:before {
   padding-left: 2px;
-  color: silver;
+  color: #000;
   font-family: "FontAwesome";
   font-size: 20px;
   line-height: 22px;
@@ -230,17 +230,17 @@ span.view_scroll_spacer {
 
 #view_scroll_right {
   float: left;
-  margin-left: 5px;
+  margin-left: 16px;
 }
 #view_scroll_right:before {
-  content: "\f138";
+  content: "\f105";
 }
 
 #view_scroll_left {
   margin-top: 0;
 }
 #view_scroll_left:before {
-  content: "\f137";
+  content: "\f104";
   padding-right: 2px;
 }
 
@@ -505,6 +505,7 @@ span.view_scroll_spacer {
 }
 
 .box-info-product {
+  padding-bottom: 20px;
   background: #f6f6f6;
   background: url(../img/bg_patterns/noise.png) #f2ede9;
 }
@@ -512,7 +513,8 @@ span.view_scroll_spacer {
   margin-bottom: 7px;
 }
 .box-info-product h1 {
-  padding: 20px;
+  padding: 20px 20px 0 20px;
+  margin: 0;
 }
 .box-info-product .exclusive {
   -webkit-border-radius: 300px;
@@ -520,7 +522,8 @@ span.view_scroll_spacer {
   -ms-border-radius: 300px;
   -o-border-radius: 300px;
   border-radius: 300px;
-  padding: 29px;
+  width: 160px;
+  height: 160px;
   background: #dc7670;
   position: relative;
   display: block;
@@ -580,7 +583,6 @@ span.view_scroll_spacer {
   text-transform: uppercase;
   font-weight: normal;
   font-size: 14px;
-  line-height: 99px;
   position: relative;
   top: 30px;
   color: white;
@@ -1247,4 +1249,8 @@ Quick View Styles
 }
 .ie8 .box-security {
   filter: none;
+}
+
+.pb-right-column {
+  margin-left: -30px !important;
 }
