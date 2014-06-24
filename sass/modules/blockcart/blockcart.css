@@ -1,0 +1,686 @@
+/* Footer background color */
+/*******************************************************************
+					Cart Block Styles
+					********************************************************************/
+/* line 6, blockcart.scss */
+#header .shopping_cart {
+  position: relative;
+  float: right;
+  padding-top: 20px;
+}
+/* line 13, blockcart.scss */
+#header .shopping_cart > a:first-child:after {
+  /*	display: inline-block;
+  	float: right;
+  	font-size: 18px;
+  	color: #686666;
+  	padding: 6px 0 0 0;*/
+}
+
+@media (max-width: 480px) {
+  /* line 28, blockcart.scss */
+  .shopping_cart {
+    padding-top: 20px;
+  }
+}
+@media (max-width: 960px) {
+  /* line 28, blockcart.scss */
+  .shopping_cart {
+    margin: 0 auto;
+    float: none;
+    width: 100%;
+  }
+}
+/* line 65, blockcart.scss */
+.shopping_cart .cart-icon:after {
+  float: right;
+  content: "\f07a";
+  font-family: "FontAwesome";
+  font-size: 31px;
+  line-height: 6px;
+  color: white;
+  margin-right: -8px;
+  margin-top: -59px;
+  color: #db7770;
+  padding: 26px 16px;
+  border-radius: 100px;
+}
+/* line 82, blockcart.scss */
+.shopping_cart .cart-icon.not-empty:after {
+  background-color: #fff;
+}
+/* line 90, blockcart.scss */
+.shopping_cart > a:first-child {
+  padding-left: 17px;
+  float: left;
+  width: 120px;
+  height: 60px;
+  background: url(../../../img/shopping-cart/shopping_cart_bg.svg) no-repeat;
+}
+/* line 92, blockcart.scss */
+.shopping_cart > a:first-child p {
+  font-size: 11px;
+  width: 35px;
+  height: 60px;
+  display: table-cell;
+  vertical-align: middle;
+  line-height: 15px;
+}
+@media (min-width: 768px) and (max-width: 959px) {
+  /* line 106, blockcart.scss */
+  .shopping_cart > a:first-child span.ajax_cart_product_txt, .shopping_cart > a:first-child span.ajax_cart_product_txt_s {
+    display: none !important;
+  }
+}
+/* line 111, blockcart.scss */
+.shopping_cart > a:first-child b {
+  color: white;
+  font: 600 18px/22px "Gotham", Century Gothic, Futura, sans-serif;
+  padding-right: 5px;
+}
+/* line 117, blockcart.scss */
+.shopping_cart > a:first-child:after {
+  float: right;
+}
+/* line 136, blockcart.scss */
+.shopping_cart .ajax_cart_total {
+  display: none !important;
+}
+/* line 140, blockcart.scss */
+.shopping_cart .block_cart_expand:after, .shopping_cart .block_cart_collapse:after {
+  content: "\f0d7";
+  font-family: "FontAwesome";
+  display: inline-block;
+  float: right;
+  font-size: 18px;
+  color: #686666;
+  padding: 6px 0 0 0;
+}
+/* line 151, blockcart.scss */
+.shopping_cart .block_cart_collapse:after {
+  content: "\f0d8";
+  padding: 4px 0px 2px 0px;
+}
+
+/* line 160, blockcart.scss */
+.cart_block .cart_block_list .remove_link {
+  position: absolute;
+  right: 10px;
+  top: 19px;
+}
+/* line 166, blockcart.scss */
+.cart_block .cart_block_list .remove_link a,
+.cart_block .cart_block_list .ajax_cart_block_remove_link {
+  color: #777777;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/* line 171, blockcart.scss */
+.cart_block .cart_block_list .remove_link a:before,
+.cart_block .cart_block_list .ajax_cart_block_remove_link:before {
+  display: inline-block;
+  content: "\f057";
+  font-family: "FontAwesome";
+  font-size: 18px;
+  line-height: 18px;
+}
+/* line 178, blockcart.scss */
+.cart_block .cart_block_list .remove_link a:hover,
+.cart_block .cart_block_list .ajax_cart_block_remove_link:hover {
+  color: #515151;
+}
+/* line 183, blockcart.scss */
+.cart_block .cart-images {
+  float: left;
+  margin-right: 20px;
+}
+/* line 187, blockcart.scss */
+.cart_block .cart-info {
+  overflow: hidden;
+  position: relative;
+  padding-right: 20px;
+}
+/* line 191, blockcart.scss */
+.cart_block .cart-info .product-name {
+  padding-bottom: 5px;
+  margin-top: -4px;
+}
+/* line 194, blockcart.scss */
+.cart_block .cart-info .product-name a {
+  font-size: 13px;
+  line-height: 18px;
+  display: inline-block;
+}
+/* line 200, blockcart.scss */
+.cart_block .cart-info .quantity-formated {
+  display: inline-block;
+  color: #9c9b9b;
+  text-transform: uppercase;
+  font-size: 10px;
+  padding-right: 5px;
+}
+/* line 206, blockcart.scss */
+.cart_block .cart-info .quantity-formated .quantity {
+  font-size: 15px;
+}
+/* line 211, blockcart.scss */
+.cart_block dt {
+  font-weight: normal;
+  overflow: hidden;
+  padding: 20px 10px 16px 20px;
+  position: relative;
+}
+/* line 217, blockcart.scss */
+.cart_block dd {
+  position: relative;
+}
+/* line 219, blockcart.scss */
+.cart_block dd .cart_block_customizations {
+  border-top: 1px dashed #333333;
+}
+/* line 221, blockcart.scss */
+.cart_block dd .cart_block_customizations li {
+  padding: 10px 20px;
+}
+/* line 224, blockcart.scss */
+.cart_block dd .cart_block_customizations li .deleteCustomizableProduct {
+  position: absolute;
+  right: 10px;
+}
+/* line 231, blockcart.scss */
+.cart_block .cart_block_no_products {
+  margin: 0;
+  padding: 10px 20px;
+}
+/* line 235, blockcart.scss */
+.cart_block .cart-prices {
+  border-top: 1px solid #d6d4d4;
+  font-weight: bold;
+  padding: 10px 20px 22px 20px;
+}
+/* line 239, blockcart.scss */
+.cart_block .cart-prices .cart-prices-line {
+  overflow: hidden;
+  border-bottom: 1px solid #515151;
+  padding: 7px 0;
+}
+/* line 243, blockcart.scss */
+.cart_block .cart-prices .cart-prices-line.last-line {
+  border: none;
+}
+/* line 248, blockcart.scss */
+.cart_block .cart-buttons {
+  overflow: hidden;
+  padding: 20px 20px 10px 20px;
+  margin: 0;
+  background: #f6f6f6;
+}
+/* line 253, blockcart.scss */
+.cart_block .cart-buttons a {
+  width: 100%;
+  float: left;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+/* line 259, blockcart.scss */
+.cart_block .cart-buttons a#button_order_cart {
+  margin-right: 0;
+  border: none;
+}
+/* line 262, blockcart.scss */
+.cart_block .cart-buttons a#button_order_cart span {
+  padding: 7px 0;
+  font-size: 1.1em;
+  border: solid 1px #63c473;
+  background: #43b155;
+}
+/* line 268, blockcart.scss */
+.cart_block .cart-buttons a#button_order_cart:hover span {
+  border: solid 1px #358c43;
+  background: #2e7a3a;
+  color: white;
+}
+
+/*******************************************************************
+					Cart Block(Header) Styles
+					********************************************************************/
+/* line 281, blockcart.scss */
+#header .cart_block {
+  position: absolute;
+  top: 95px;
+  right: 0;
+  z-index: 100;
+  display: none;
+  height: auto;
+  background: #484848;
+  color: white;
+  width: 270px;
+}
+@media (max-width: 480px) {
+  /* line 281, blockcart.scss */
+  #header .cart_block {
+    width: 100%;
+  }
+}
+@media (max-width: 960px) {
+  /* line 281, blockcart.scss */
+  #header .cart_block {
+    /* cart dropdown on medium size screen */
+  }
+}
+/* line 297, blockcart.scss */
+#header .cart_block a {
+  color: white;
+}
+/* line 299, blockcart.scss */
+#header .cart_block a:hover {
+  color: #9c9b9b;
+}
+/* line 305, blockcart.scss */
+#header .cart_block .cart_block_list .remove_link a,
+#header .cart_block .cart_block_list .ajax_cart_block_remove_link {
+  color: white;
+  outline: none;
+  text-decoration: none;
+}
+/* line 309, blockcart.scss */
+#header .cart_block .cart_block_list .remove_link a:hover,
+#header .cart_block .cart_block_list .ajax_cart_block_remove_link:hover {
+  color: #9c9b9b;
+}
+/* line 314, blockcart.scss */
+#header .cart_block .price {
+  color: white;
+}
+/* line 317, blockcart.scss */
+#header .cart_block dt {
+  background: url(../../../img/cart-shadow.png) repeat-x;
+}
+/* line 319, blockcart.scss */
+#header .cart_block dt.first_item {
+  background: none;
+}
+/* line 323, blockcart.scss */
+#header .cart_block .product-atributes {
+  padding-bottom: 10px;
+  font-size: 11px;
+}
+/* line 326, blockcart.scss */
+#header .cart_block .product-atributes a {
+  color: #9c9b9b;
+}
+/* line 328, blockcart.scss */
+#header .cart_block .product-atributes a:hover {
+  color: white;
+}
+/* line 333, blockcart.scss */
+#header .cart_block .cart-prices {
+  border: none;
+  background: url(../../../img/cart-shadow.png) repeat-x #3d3d3d;
+}
+/* line 337, blockcart.scss */
+#header .cart_block .cart-buttons {
+  background: url(../../../img/cart-shadow.png) repeat-x #333333;
+}
+/* line 341, blockcart.scss */
+#header .block_content {
+  margin-bottom: 0;
+}
+
+/* line 350, blockcart.scss */
+.cart_block #cart_block_summary,
+.cart_block .title_block span,
+#header .cart_block h4,
+#header .cart_block .title_block,
+#header .cart_block h4 {
+  display: none;
+}
+
+/* line 357, blockcart.scss */
+.cart_block .cart_block_shipping_cost,
+.cart_block .cart_block_tax_cost,
+.cart_block .cart_block_total,
+.cart_block .cart_block_wrapping_cost {
+  float: right;
+}
+
+/* line 361, blockcart.scss */
+.cart_block table.vouchers {
+  clear: both;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+/* line 366, blockcart.scss */
+.cart_block table.vouchers tr td {
+  padding: 2px;
+}
+/* line 368, blockcart.scss */
+.cart_block table.vouchers tr td.quantity {
+  margin-right: 5px;
+  min-width: 18px;
+}
+/* line 372, blockcart.scss */
+.cart_block table.vouchers tr td.delete {
+  padding-left: 0;
+  padding-right: 0;
+  text-align: right;
+  width: 15px;
+}
+
+/*****************************************************************************
+					Layer Cart Css
+					*****************************************************************************/
+/* line 383, blockcart.scss */
+.layer_cart_overlay {
+  background-color: #000;
+  display: none;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 98;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+  opacity: 0.2;
+}
+
+/* line 395, blockcart.scss */
+* html .layer_cart_overlay {
+  position: absolute;
+  left: 0;
+  margin-left: -160px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+  opacity: 0.2;
+}
+
+/* line 402, blockcart.scss */
+#layer_cart {
+  background-color: white;
+  position: absolute;
+  display: none;
+  z-index: 99;
+  width: 84%;
+  margin-right: 8%;
+  margin-left: 8%;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+/* line 411, blockcart.scss */
+#layer_cart .layer_cart_product {
+  padding: 30px 30px 30px 30px;
+  overflow: hidden;
+  position: static;
+}
+/* line 415, blockcart.scss */
+#layer_cart .layer_cart_product h2 {
+  font: 400 23px/29px "Gotham", Century Gothic, Futura, sans-serif;
+  color: #46a74e;
+  margin-bottom: 22px;
+  padding-right: 100px;
+}
+@media (max-width: 767px) {
+  /* line 415, blockcart.scss */
+  #layer_cart .layer_cart_product h2 {
+    font-size: 18px;
+    padding-right: 0;
+    line-height: normal;
+  }
+}
+/* line 425, blockcart.scss */
+#layer_cart .layer_cart_product h2 i {
+  font-size: 30px;
+  line-height: 30px;
+  float: left;
+  padding-right: 8px;
+}
+@media (max-width: 767px) {
+  /* line 425, blockcart.scss */
+  #layer_cart .layer_cart_product h2 i {
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+/* line 436, blockcart.scss */
+#layer_cart .layer_cart_product .product-image-container {
+  max-width: 178px;
+  border: 1px solid #d6d4d4;
+  padding: 5px;
+  float: left;
+  margin-right: 30px;
+}
+@media (max-width: 480px) {
+  /* line 436, blockcart.scss */
+  #layer_cart .layer_cart_product .product-image-container {
+    float: none;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+/* line 448, blockcart.scss */
+#layer_cart .layer_cart_product .layer_cart_product_info {
+  padding: 38px 0 0 0;
+}
+/* line 450, blockcart.scss */
+#layer_cart .layer_cart_product .layer_cart_product_info #layer_cart_product_title {
+  display: block;
+  padding-bottom: 8px;
+}
+/* line 454, blockcart.scss */
+#layer_cart .layer_cart_product .layer_cart_product_info > div {
+  padding-bottom: 7px;
+}
+/* line 456, blockcart.scss */
+#layer_cart .layer_cart_product .layer_cart_product_info > div strong {
+  padding-right: 3px;
+}
+/* line 462, blockcart.scss */
+#layer_cart .layer_cart_cart {
+  background: #fafafa;
+  border-left: 1px solid #d6d4d4;
+  padding: 21px 30px 170px 30px;
+  -webkit-border-radius: 0px 4px 4px 0px;
+  -moz-border-radius: 0px 4px 4px 0px;
+  -ms-border-radius: 0px 4px 4px 0px;
+  -o-border-radius: 0px 4px 4px 0px;
+  border-radius: 0px 4px 4px 0px;
+  position: relative;
+}
+@media (min-width: 960px) {
+  /* line 462, blockcart.scss */
+  #layer_cart .layer_cart_cart {
+    min-height: 318px;
+  }
+}
+@media (min-width: 960px) and (max-width: 959px) {
+  /* line 462, blockcart.scss */
+  #layer_cart .layer_cart_cart {
+    min-height: 360px;
+  }
+}
+@media (max-width: 959px) {
+  /* line 462, blockcart.scss */
+  #layer_cart .layer_cart_cart {
+    border-left: none;
+    border-top: 1px solid #d6d4d4;
+  }
+}
+/* line 480, blockcart.scss */
+#layer_cart .layer_cart_cart h2 {
+  font: 400 23px/29px "Gotham", Century Gothic, Futura, sans-serif;
+  color: #333333;
+  border-bottom: 1px solid #d6d4d4;
+  padding-bottom: 13px;
+  margin-bottom: 17px;
+}
+@media (max-width: 767px) {
+  /* line 480, blockcart.scss */
+  #layer_cart .layer_cart_cart h2 {
+    font-size: 18px;
+  }
+}
+/* line 490, blockcart.scss */
+#layer_cart .layer_cart_cart .layer_cart_row {
+  padding: 0 0 7px 0;
+}
+/* line 493, blockcart.scss */
+#layer_cart .layer_cart_cart .button-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0px 30px 20px 30px;
+}
+/* line 499, blockcart.scss */
+#layer_cart .layer_cart_cart .button-container .btn {
+  margin-bottom: 10px;
+}
+/* line 502, blockcart.scss */
+#layer_cart .layer_cart_cart .button-container span.exclusive-medium {
+  margin-right: 5px;
+}
+/* line 504, blockcart.scss */
+#layer_cart .layer_cart_cart .button-container span.exclusive-medium i {
+  padding-right: 5px;
+  color: #777777;
+}
+/* line 511, blockcart.scss */
+#layer_cart .cross {
+  position: absolute;
+  right: 7px;
+  top: 8px;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  color: #333333;
+  z-index: 2;
+}
+/* line 520, blockcart.scss */
+#layer_cart .cross:before {
+  content: "\f057";
+  display: block;
+  font-family: "FontAwesome";
+  font-size: 25px;
+  line-height: 25px;
+}
+/* line 527, blockcart.scss */
+#layer_cart .cross:hover {
+  color: #515151;
+}
+/* line 531, blockcart.scss */
+#layer_cart .continue {
+  cursor: pointer;
+}
+/* line 534, blockcart.scss */
+#layer_cart p {
+  padding: 0px;
+}
+
+/************************************************************************
+						Layer Cart Caroucel
+						*************************************************************************/
+/* line 543, blockcart.scss */
+#layer_cart .crossseling .crossseling-content {
+  border-top: 1px solid #d6d4d4;
+  padding: 26px 30px 40px 30px;
+  position: relative;
+}
+/* line 548, blockcart.scss */
+#layer_cart .crossseling h2 {
+  font: 400 23px/26px "Gotham", Century Gothic, Futura, sans-serif;
+  color: #333333;
+  margin-bottom: 25px;
+}
+/* line 553, blockcart.scss */
+#layer_cart .crossseling #blockcart_list {
+  max-width: 773px;
+  width: 84%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+/* line 558, blockcart.scss */
+#layer_cart .crossseling #blockcart_list ul {
+  display: block;
+}
+/* line 560, blockcart.scss */
+#layer_cart .crossseling #blockcart_list ul li {
+  float: left;
+  width: 178px;
+  margin: 0 0px 0 0;
+}
+/* line 564, blockcart.scss */
+#layer_cart .crossseling #blockcart_list ul li .product-image-container {
+  border: 1px solid #d6d4d4;
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+/* line 570, blockcart.scss */
+#layer_cart .crossseling #blockcart_list ul li .product-image-container img {
+  width: 100%;
+}
+/* line 574, blockcart.scss */
+#layer_cart .crossseling #blockcart_list ul li .product-name {
+  padding-bottom: 5px;
+}
+/* line 577, blockcart.scss */
+#layer_cart .crossseling #blockcart_list ul li .product-name a {
+  font-size: 15px;
+  line-height: 20px;
+}
+/* line 585, blockcart.scss */
+#layer_cart .crossseling #blockcart_list a.bx-prev,
+#layer_cart .crossseling #blockcart_list a.bx-next {
+  display: block;
+  font-family: "FontAwesome";
+  font-size: 20px;
+  line-height: 20px;
+  width: 20px;
+  height: 20px;
+  color: #333333;
+  text-indent: -5000px;
+  position: absolute;
+  top: 45%;
+  margin-top: -20px;
+}
+/* line 597, blockcart.scss */
+#layer_cart .crossseling #blockcart_list a.bx-prev:after,
+#layer_cart .crossseling #blockcart_list a.bx-next:after {
+  display: block;
+  text-indent: 0;
+}
+/* line 601, blockcart.scss */
+#layer_cart .crossseling #blockcart_list a.bx-prev:hover,
+#layer_cart .crossseling #blockcart_list a.bx-next:hover {
+  color: #c0c0c0;
+}
+/* line 604, blockcart.scss */
+#layer_cart .crossseling #blockcart_list a.bx-prev.disabled,
+#layer_cart .crossseling #blockcart_list a.bx-next.disabled {
+  display: none;
+}
+/* line 608, blockcart.scss */
+#layer_cart .crossseling #blockcart_list a.bx-prev {
+  left: 5%;
+}
+/* line 610, blockcart.scss */
+#layer_cart .crossseling #blockcart_list a.bx-prev:after {
+  content: "\f137";
+}
+/* line 614, blockcart.scss */
+#layer_cart .crossseling #blockcart_list a.bx-next {
+  right: 5%;
+}
+/* line 616, blockcart.scss */
+#layer_cart .crossseling #blockcart_list a.bx-next:after {
+  content: "\f138";
+}
+/* line 620, blockcart.scss */
+#layer_cart .crossseling #blockcart_list .bx-controls {
+  overflow: hidden;
+}
