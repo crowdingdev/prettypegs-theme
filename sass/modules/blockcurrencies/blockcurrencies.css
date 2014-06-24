@@ -1,0 +1,82 @@
+/* Footer background color */
+/* line 3, blockcurrencies.scss */
+#currencies-block-top {
+  float: right;
+  position: relative;
+}
+@media (max-width: 479px) {
+  /* line 3, blockcurrencies.scss */
+  #currencies-block-top {
+    width: 25%;
+  }
+}
+/* line 10, blockcurrencies.scss */
+#currencies-block-top span.firstWord {
+  display: none;
+}
+/* line 13, blockcurrencies.scss */
+#currencies-block-top div.current {
+  padding: 8px 10px 10px 10px;
+  margin: 3px 10px 0 0;
+  cursor: pointer;
+  line-height: 18px;
+}
+@media (max-width: 479px) {
+  /* line 13, blockcurrencies.scss */
+  #currencies-block-top div.current {
+    text-align: center;
+    padding: 9px 5px 10px;
+    font-size: 11px;
+  }
+}
+/* line 33, blockcurrencies.scss */
+#currencies-block-top div.current:after {
+  content: "\f0d7";
+  font-family: "FontAwesome";
+  font-size: 18px;
+  line-height: 18px;
+  vertical-align: -2px;
+  padding-left: 5px;
+}
+@media (max-width: 479px) {
+  /* line 33, blockcurrencies.scss */
+  #currencies-block-top div.current:after {
+    padding-left: 2px;
+    font-size: 13px;
+    line-height: 13px;
+    vertical-align: 0;
+  }
+}
+@media (max-width: 479px) {
+  /* line 49, blockcurrencies.scss */
+  #currencies-block-top div.current .cur-label {
+    display: none;
+  }
+}
+/* line 56, blockcurrencies.scss */
+#currencies-block-top ul {
+  display: none;
+  position: absolute;
+  top: 37px;
+  left: 0;
+  width: 157px;
+  background: #333333;
+  z-index: 2;
+}
+/* line 64, blockcurrencies.scss */
+#currencies-block-top ul li {
+  color: white;
+  line-height: 35px;
+  font-size: 13px;
+}
+/* line 69, blockcurrencies.scss */
+#currencies-block-top ul li a,
+#currencies-block-top ul li > span {
+  padding: 0 10px 0 12px;
+  display: block;
+  color: white;
+}
+/* line 74, blockcurrencies.scss */
+#currencies-block-top ul li.selected, #currencies-block-top ul li:hover a {
+  background: #484848;
+}
