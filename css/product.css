@@ -796,11 +796,18 @@ table.table-product-discounts tr th {
 }
 #quantity_wanted_p .btn {
   float: left;
-  margin-left: 3px;
 }
 #quantity_wanted_p label {
   display: block;
   margin-bottom: 7px;
+}
+
+.btn.button-minus {
+  margin: 0 3px 0 0;
+}
+
+.btn.button-plus {
+  margin: 0 0 0 3px;
 }
 
 /* availability_statut */

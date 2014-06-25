@@ -771,7 +771,7 @@ table.table-product-discounts{
 	}
 	.btn{
 		float: left;
-		margin-left: 3px
+
 	}
 	label{
 		display: block;
@@ -779,6 +779,12 @@ table.table-product-discounts{
 	}
 }
 
+.btn.button-minus{
+	margin: 0 3px 0 0;
+}
+.btn.button-plus{
+	margin: 0 0 0 3px;
+}
 /* availability_statut */
 #availability_statut span#availability_label,
 #availability_date_label {
@@ -1218,4 +1224,6 @@ Quick View Styles
 
 	margin-left:-30px !important;
 }
+
+
 
