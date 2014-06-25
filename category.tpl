@@ -45,7 +45,7 @@
                         </div>
                     {else}
                     <!-- Category image -->
-                    <div class="content_scene_cat_bg" {if $category->id_image}style="background:url({$link->getCatImageLink($category->link_rewrite, $category->id_image, 'category_default')|escape:'html':'UTF-8'}) 0 top no-repeat; background-size:contain; min-height:{$categorySize.height}px;" {/if}>
+                    <div class="content_scene_cat_bg">
                         {if $category->description}
                             <div class="cat_desc">
                             <span class="category-name">
@@ -99,7 +99,7 @@
 		{if $products}
 			<div class="content_sortPagiBar clearfix">
             	<div class="sortPagiBar clearfix">
-            		{include file="./product-sort.tpl"}
+            	
                 	{include file="./nbr-product-page.tpl"}
 				</div>
                 <div class="top-pagination-content clearfix">
@@ -107,7 +107,12 @@
 					{include file="$tpl_dir./pagination.tpl"}
                 </div>
 			</div>
+
+            <!-- RENDER PRODUCTS -->
 			{include file="./product-list.tpl" products=$products}
+            <!-- END! RENDER PRODUCTS -->
+
+
 			<div class="content_sortPagiBar">
 				<div class="bottom-pagination-content clearfix">
 					{include file="./product-compare.tpl" paginationId='bottom'}

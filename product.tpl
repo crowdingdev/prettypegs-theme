@@ -62,12 +62,8 @@
 		<div class="row">
 			<div class="pb-left-column col-xs-7">
 
-
-
 				<!-- product img-->
 				<div id="image-block" class="clearfix">
-
-
 
 					{if $product->new}
 					<span class="new-box">
@@ -176,7 +172,7 @@
 
 
 
-				<div class="col-xs-12">
+				<div >
 					{if $product->online_only}
 					<p class="online_only">{l s='Online only'}</p>
 					{/if}
@@ -192,13 +188,8 @@
 
 						{/if}
 
-						{if $product->description}
-						<p class="buttons_bottom_block">
-							<a href="javascript:{ldelim}{rdelim}" class="button">
-								{l s='More details'}
-							</a>
-						</p>
-						{/if}
+
+
 						{if $packItems|@count > 0}
 						<div class="short_description_pack">
 							<h3>{l s='Pack content'}</h3>
@@ -291,12 +282,12 @@
 						{if !$PS_CATALOG_MODE}
 						<p id="quantity_wanted_p"{if (!$allow_oosp && $product->quantity <= 0) || !$product->available_for_order || $PS_CATALOG_MODE} style="display: none;"{/if}>
 							<label>{l s='Quantity:'}</label>
-					
+
 		<a href="#" data-field-qty="qty" class="btn btn-default button-minus product_quantity_down">
 								<span><i class="icon-minus"></i></span>
 							</a>
 							<input type="text" name="qty" id="quantity_wanted" class="text" value="{if isset($quantityBackup)}{$quantityBackup|intval}{else}{if $product->minimal_quantity > 1}{$product->minimal_quantity}{else}1{/if}{/if}" />
-					
+
 
 							<a href="#" data-field-qty="qty" class="btn btn-default button-plus product_quantity_up ">
 								<span><i class="icon-plus"></i></span>
@@ -332,7 +323,6 @@
 										{foreach from=$group.attributes key=id_attribute item=group_attribute}
 										<li{if $group.default == $id_attribute} class="selected"{/if}>
 										<a href="{$link->getProductLink($product)|escape:'html':'UTF-8'}" id="color_{$id_attribute|intval}" name="{$colors.$id_attribute.name|escape:'html':'UTF-8'}" class="color_pick{if ($group.default == $id_attribute)} selected{/if}" style="background: {$colors.$id_attribute.value|escape:'html':'UTF-8'};" title="{$colors.$id_attribute.name|escape:'html':'UTF-8'}">
-
 
 
 											{if file_exists($col_img_dir|cat:$id_attribute|cat:'.jpg')}
@@ -372,7 +362,9 @@
 					<div class="price">
 						<p class="our_price_display" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
 							{if $product->quantity > 0}<link itemprop="availability" href="http://schema.org/InStock"/>{/if}
+
 							{if $priceDisplay >= 0 && $priceDisplay <= 2}
+							{l s='Total'}:
 							<span id="our_price_display" itemprop="price">{convertPrice price=$productPrice}</span>
 										<!--{if $tax_enabled  && ((isset($display_tax_label) && $display_tax_label == 1) || !isset($display_tax_label))}
 											{if $priceDisplay == 1}{l s='tax excl.'}{else}{l s='tax incl.'}{/if}
