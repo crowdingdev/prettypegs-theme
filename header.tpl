@@ -68,7 +68,7 @@
 				<div>
 					<div class="container">
 						<div class="row">
-							<div class="col-sm-3 col-sd-1">
+							<div class="col-sm-2">
 
 								<div id="header_logo" >
 									<a href="{$base_dir}" title="{$shop_name|escape:'html':'UTF-8'}">

@@ -4,7 +4,7 @@
 /* product desc */
 /* primary_block ***************************************************************************** */
 .primary_block {
-	margin-bottom: 300px;
+//	margin-bottom: 300px;
 }
 .top-hr{
 	//	background: $top-line-color;
@@ -50,6 +50,7 @@ img{
 		cursor: pointer;
 		padding: 5px;
 		background: $light-background;
+		border: 4px solid #ccc;
 		@media (max-width: $screen-xs-max) { //max 767px
 			width: 280px;
 			margin: 0 auto;
@@ -522,6 +523,7 @@ padding-bottom: 20px;
 		position: relative;
 		display: block;
 		border: none;
+		margin:auto;
 		&:before{
 			font-family: $font-icon;
 			position: absolute;
@@ -843,7 +845,9 @@ table.table-product-discounts{
 
 /* prices */
 .content_prices {
+	margin-top: 30px;
 	padding: 13px 19px;
+	text-align:center;
 }
 .discount {
 	display: none;
@@ -1096,6 +1100,7 @@ Quick View Styles
 						#add_to_cart .exclusive{
 							display: block;
 							width: 100%;
+
 							&:before,
 							&:after{
 								display: block;
@@ -1220,10 +1225,7 @@ Quick View Styles
 
 }
 
-.pb-right-column{
 
-	margin-left:-30px !important;
-}
 
 
 

@@ -21,60 +21,22 @@
 	*  @copyright  2007-2014 PrestaShop SA
 	*  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 	*  International Registered Trademark & Property of PrestaShop SA
+	*
+	*  @author Linus Karlsson
+	*
 	*}
-	{if isset($htmlitems) && $htmlitems}
-	<div id="htmlcontent_{$hook|escape:'htmlall':'UTF-8'}">
 
-
-		<ul class="htmlcontent-home clearfix row">
-
-			{foreach name=items from=$htmlitems item=hItem}
-
-			<li class="htmlcontent-item-{$smarty.foreach.items.iteration|escape:'htmlall':'UTF-8'} col-xs-6">
-
-				{if $hItem.url}
-
-				<a href="{$hItem.url|escape:'htmlall':'UTF-8'}" class="item-link"{if $hItem.target == 1} onclick="return !window.open(this.href);"{/if} title="{$hItem.title|escape:'htmlall':'UTF-8'}">
-
-					{/if}
-
-					{if $hItem.image}
-
-					<img src="{$link->getMediaLink("`$module_dir`img/`$hItem.image`")}" class="item-img" title="{$hItem.title|escape:'htmlall':'UTF-8'}" alt="{$hItem.title|escape:'htmlall':'UTF-8'}" width="{if $hItem.image_w}{$hItem.image_w|intval}{else}100%{/if}" height="{if $hItem.image_h}{$hItem.image_h|intval}{else}100%{/if}"/>
-
-					{/if}
-
-					{if $hItem.title && $hItem.title_use == 1}
-					<h3 class="item-title">{$hItem.title|escape:'htmlall':'UTF-8'}</h3>
-					{/if}
-
-					{if $hItem.html}
-					<div class="item-html">
-						{$hItem.html} <i class="icon-double-angle-right"></i>
-					</div>
-					{/if}
-
-					{if $hItem.url}
-				</a>
-				{/if}
-			</li>
-			{/foreach}
-		</ul>
-
-
-	</div>
-	{/if}
 
 
 	{if isset($htmlitems) && $htmlitems}
-	<div id="htmlcontent_{$hook|escape:'htmlall':'UTF-8'}">
+	<div id="pp-home-category-wrapper htmlcontent_{$hook|escape:'htmlall':'UTF-8'}">
 
 	<ul class="htmlcontent-home  pp-home-categories clearfix row">
 
 		{foreach name=items from=$htmlitems item=hItem}
 
 
-		<li class="col-xs-6">
+		<li class="child-{$smarty.foreach.items.iteration|escape:'htmlall':'UTF-8'} col-xs-6">
 			<div class="pp-home-category">
 
 				<a href="{$hItem.url|escape:'htmlall':'UTF-8'}">
@@ -91,7 +53,13 @@
 
 						<h4 class="pp-category-name">{$hItem.title|escape:'htmlall':'UTF-8'}</h4>
 					</div>
-					<div class="pp-category-image" style="background: url({$link->getMediaLink("`$module_dir`img/`$hItem.image`")});">
+
+
+
+
+
+
+					<div class="pp-category-image" style="background: url({$link->getMediaLink("`$module_dir`img/`$hItem.image`")}); 	{if $hItem.image_w}background-position-x:{$hItem.image_w|intval}px;{else}background-position: center right;{/if}">
 					</div>
 				</div>
 
@@ -99,8 +67,6 @@
 
 		</li>
 		{/foreach}
-
-
 	</ul>
 
 

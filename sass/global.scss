@@ -132,18 +132,22 @@ header {
 		}
 
 		#header_logo {
+							margin-left: -30px;
 			img {
-				height: 114px !important;
-				width: 190px !important;
+				//height: 114px !important;
+				width: 160px !important;
 				max-width: 190px !important;
+
 			}
 			padding-top: 15px;
 			@extend .col-sm-4;
 			@media (max-width: $screen-md) {
 				padding-top: 40px;
+				margin-left: 0;
 			}
 			@media (max-width: $screen-xs-max) {
 				padding-top: 15px;
+				margin-left: 0;
 				img {
 					max-width: 100%;
 				}
@@ -415,22 +419,16 @@ span.exclusive {
 	color: $button-text-color;
 	padding: 0;
 	font-weight: bold;
-	background: rgb(67, 183, 84);
-	background: -moz-linear-gradient(top, rgba(67, 183, 84, 1) 0%, rgba(65, 183, 87, 1) 2%, rgba(65, 184, 84, 1) 4%, rgba(67, 183, 86, 1) 6%, rgba(65, 179, 84, 1) 38%, rgba(68, 179, 85, 1) 40%, rgba(69, 175, 85, 1) 66%, rgba(65, 174, 83, 1) 74%, rgba(66, 172, 82, 1) 91%, rgba(65, 174, 85, 1) 94%, rgba(67, 171, 84, 1) 96%, rgba(66, 172, 82, 1) 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(67, 183, 84, 1)), color-stop(2%, rgba(65, 183, 87, 1)), color-stop(4%, rgba(65, 184, 84, 1)), color-stop(6%, rgba(67, 183, 86, 1)), color-stop(38%, rgba(65, 179, 84, 1)), color-stop(40%, rgba(68, 179, 85, 1)), color-stop(66%, rgba(69, 175, 85, 1)), color-stop(74%, rgba(65, 174, 83, 1)), color-stop(91%, rgba(66, 172, 82, 1)), color-stop(94%, rgba(65, 174, 85, 1)), color-stop(96%, rgba(67, 171, 84, 1)), color-stop(100%, rgba(66, 172, 82, 1)));
-	background: -webkit-linear-gradient(top, rgba(67, 183, 84, 1) 0%, rgba(65, 183, 87, 1) 2%, rgba(65, 184, 84, 1) 4%, rgba(67, 183, 86, 1) 6%, rgba(65, 179, 84, 1) 38%, rgba(68, 179, 85, 1) 40%, rgba(69, 175, 85, 1) 66%, rgba(65, 174, 83, 1) 74%, rgba(66, 172, 82, 1) 91%, rgba(65, 174, 85, 1) 94%, rgba(67, 171, 84, 1) 96%, rgba(66, 172, 82, 1) 100%);
-	background: -o-linear-gradient(top, rgba(67, 183, 84, 1) 0%, rgba(65, 183, 87, 1) 2%, rgba(65, 184, 84, 1) 4%, rgba(67, 183, 86, 1) 6%, rgba(65, 179, 84, 1) 38%, rgba(68, 179, 85, 1) 40%, rgba(69, 175, 85, 1) 66%, rgba(65, 174, 83, 1) 74%, rgba(66, 172, 82, 1) 91%, rgba(65, 174, 85, 1) 94%, rgba(67, 171, 84, 1) 96%, rgba(66, 172, 82, 1) 100%);
-	background: -ms-linear-gradient(top, rgba(67, 183, 84, 1) 0%, rgba(65, 183, 87, 1) 2%, rgba(65, 184, 84, 1) 4%, rgba(67, 183, 86, 1) 6%, rgba(65, 179, 84, 1) 38%, rgba(68, 179, 85, 1) 40%, rgba(69, 175, 85, 1) 66%, rgba(65, 174, 83, 1) 74%, rgba(66, 172, 82, 1) 91%, rgba(65, 174, 85, 1) 94%, rgba(67, 171, 84, 1) 96%, rgba(66, 172, 82, 1) 100%);
-	background: linear-gradient(to bottom, rgba(67, 183, 84, 1) 0%, rgba(65, 183, 87, 1) 2%, rgba(65, 184, 84, 1) 4%, rgba(67, 183, 86, 1) 6%, rgba(65, 179, 84, 1) 38%, rgba(68, 179, 85, 1) 40%, rgba(69, 175, 85, 1) 66%, rgba(65, 174, 83, 1) 74%, rgba(66, 172, 82, 1) 91%, rgba(65, 174, 85, 1) 94%, rgba(67, 171, 84, 1) 96%, rgba(66, 172, 82, 1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#43b754', endColorstr='#42ac52',GradientType=0 );
+		border-color: #70a7aa;
+	background: rgb(112, 167, 170);
 	border: 1px solid;
-	border-color: #399a49 #247f32 #1a6d27 #399a49;
+	border-color: #70a7aa;
 	@include border-radius(0);
 	span {
 		display: block;
 		padding: 10px 10px 10px 14px;
 		border: 1px solid;
-		border-color: #74d578;
+		border-color: #70a7aa;
 		// max 480px
 		@media (max-width: $screen-xs) {
 			font-size: 15px;
@@ -459,36 +457,24 @@ span.exclusive {
 		}
 	}
 	&:hover {
-		background: rgb(58, 160, 76);
-		background: -moz-linear-gradient(top, rgba(58, 160, 76, 1) 0%, rgba(58, 160, 74, 1) 100%);
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(58, 160, 76, 1)), color-stop(100%, rgba(58, 160, 74, 1)));
-		background: -webkit-linear-gradient(top, rgba(58, 160, 76, 1) 0%, rgba(58, 160, 74, 1) 100%);
-		background: -o-linear-gradient(top, rgba(58, 160, 76, 1) 0%, rgba(58, 160, 74, 1) 100%);
-		background: -ms-linear-gradient(top, rgba(58, 160, 76, 1) 0%, rgba(58, 160, 74, 1) 100%);
-		background: linear-gradient(to bottom, rgba(58, 160, 76, 1) 0%, rgba(58, 160, 74, 1) 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3aa04c', endColorstr='#3aa04a',GradientType=0 );
-		border-color: #196f28 #399a49 #399a49 #258033;
+	background: #336666;
+
+		border-color: #70a7aa;
 	}
 }
 
 .button.button-medium.exclusive {
-	border-color: #db8600 #d98305 #c86d26 #d98305;
-	background: rgb(253, 170, 2);
-	background: -moz-linear-gradient(top, rgba(253, 170, 2, 1) 0%, rgba(254, 151, 2, 1) 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(253, 170, 2, 1)), color-stop(100%, rgba(254, 151, 2, 1)));
-	background: -webkit-linear-gradient(top, rgba(253, 170, 2, 1) 0%, rgba(254, 151, 2, 1) 100%);
-	background: -o-linear-gradient(top, rgba(253, 170, 2, 1) 0%, rgba(254, 151, 2, 1) 100%);
-	background: -ms-linear-gradient(top, rgba(253, 170, 2, 1) 0%, rgba(254, 151, 2, 1) 100%);
-	background: linear-gradient(to bottom, rgba(253, 170, 2, 1) 0%, rgba(254, 151, 2, 1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdaa02', endColorstr='#fe9702',GradientType=0 );
+	border-color: #70a7aa;
+	background: rgb(112, 167, 170);
+
 	span {
-		border-color: #fec133 #febc33 #feb233 #febc33;
+		border-color: #70a7aa;
 		&:hover {
 			filter: none;
-			background: #f89609;
-			border-color: #a6550c #ba6708 #db8600 #ba6708;
+			background: #336666;
+			border-color: #70a7aa;
 			span {
-				border-color: #fec133;
+				border-color: #70a7aa;
 			}
 		}
 	}
@@ -3267,7 +3253,7 @@ div.star.star_hover {
 	width: 28px;
 	height: 28px;
 	background: none;
-	font-size: 28px;
+	font-size: 26px;
 	line-height: 28px;
 	color: $base-text-color;
 	text-align: center;
@@ -3621,7 +3607,13 @@ div.star.star_hover {
 }
 
 .pp-home-categories{
-	margin-top: 20px;
+	margin-top: 20px !important;
+	margin: 15px -15px 0 -15px !important;
+	li{
+		padding:0 15px !important;
+
+		//margin: 0 -10px;
+	}
 	.pp-home-category{
 		overflow:hidden;
 		a{
@@ -3645,11 +3637,13 @@ div.star.star_hover {
 			}
 			.pp-category-image{
 				height: 150px;
-				//background: url(../img/home-categories/pegs_for_sofa.jpg);
-				background-repeat: no-repeat;
-				background-position: center right;
-				background-size: cover !important;
-				background-color: #eceaeb;
+				//background-size: 100% !important;
+				background-repeat: no-repeat !important;
+				//background-position: right !important;
+				//background-position: center right  !important;
+				//background-position-x: 150px !important;
+				//background-size: cover !important;
+				background-color: #eceaeb !important;
 			}
 		}
 	}
@@ -3683,3 +3677,7 @@ div.star.star_hover {
 // 	}
 
 // }
+
+.no-bg{
+	background:none !important;
+}

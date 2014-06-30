@@ -173,88 +173,88 @@
 
 
 
-				<div >
-					{if $product->online_only}
-					<p class="online_only">{l s='Online only'}</p>
+			<div >
+				{if $product->online_only}
+				<p class="online_only">{l s='Online only'}</p>
+				{/if}
+
+
+				{if $product->description_short || $packItems|@count > 0}
+				<div id="short_description_block">
+					<h3> Info </h3>
+
+					{if isset($product) && $product->description}
+					<!-- full description -->
+					<div  class="">{$product->description}</div>
+
 					{/if}
 
 
-					{if $product->description_short || $packItems|@count > 0}
-					<div id="short_description_block">
-						<h3> Info </h3>
+					{if $packItems|@count > 0}
+					<div class="short_description_pack">
+						<h3>{l s='Pack content'}</h3>
+						{foreach from=$packItems item=packItem}
 
-						{if isset($product) && $product->description}
-						<!-- full description -->
-						<div  class="">{$product->description}</div>
-
-						{/if}
-
-
-						{if $packItems|@count > 0}
-						<div class="short_description_pack">
-							<h3>{l s='Pack content'}</h3>
-							{foreach from=$packItems item=packItem}
-
-							<div class="pack_content">
-								{$packItem.pack_quantity} x <a href="{$link->getProductLink($packItem.id_product, $packItem.link_rewrite, $packItem.category)|escape:'html':'UTF-8'}">{$packItem.name|escape:'html':'UTF-8'}</a>
-								<p>{$packItem.description_short}</p>
-							</div>
-							{/foreach}
+						<div class="pack_content">
+							{$packItem.pack_quantity} x <a href="{$link->getProductLink($packItem.id_product, $packItem.link_rewrite, $packItem.category)|escape:'html':'UTF-8'}">{$packItem.name|escape:'html':'UTF-8'}</a>
+							<p>{$packItem.description_short}</p>
 						</div>
-						{/if}
-					</div> <!-- end short_description_block -->
-					{/if}
-					{if ($display_qties == 1 && !$PS_CATALOG_MODE && $PS_STOCK_MANAGEMENT && $product->available_for_order)}
-					<!-- number of item in stock -->
-					<p id="pQuantityAvailable"{if $product->quantity <= 0} style="display: none;"{/if}>
-						<span id="quantityAvailable">{$product->quantity|intval}</span>
-						<span {if $product->quantity > 1} style="display: none;"{/if} id="quantityAvailableTxt">{l s='Item'}</span>
-						<span {if $product->quantity == 1} style="display: none;"{/if} id="quantityAvailableTxtMultiple">{l s='Items'}</span>
-					</p>
-
-
-					{/if}
-
-					<!-- Data sheet -->
-					<section class="page-product-box">
-						<div class="table-data-sheet">
-							{foreach from=$features item=feature}
-							<p class="{cycle values="odd,even"}">
-								{if isset($feature.value)}
-								<span class="key">{$feature.name|escape:'html':'UTF-8'}</span>:
-								<span class="value">{$feature.value|escape:'html':'UTF-8'}</span>
-								{/if}
-							</p>
-							{/foreach}
-						</div>
-					</section>
-					<!--end Data sheet -->
-
-
-					{if $PS_STOCK_MANAGEMENT}
-					<!-- availability -->
-					<p class="warning_inline" id="last_quantities"{if ($product->quantity > $last_qties || $product->quantity <= 0) || $allow_oosp || !$product->available_for_order || $PS_CATALOG_MODE} style="display: none"{/if} >{l s='Warning: Last items in stock!'}</p>
-					{/if}
-					<p id="availability_date"{if ($product->quantity > 0) || !$product->available_for_order || $PS_CATALOG_MODE || !isset($product->available_date) || $product->available_date < $smarty.now|date_format:'%Y-%m-%d'} style="display: none;"{/if}>
-						<span id="availability_date_label">{l s='Availability date:'}</span>
-						<span id="availability_date_value">{dateFormat date=$product->available_date full=false}</span>
-					</p>
-					<!-- Out of stock hook -->
-					<div id="oosHook"{if $product->quantity > 0} style="display: none;"{/if}>
-						{$HOOK_PRODUCT_OOS}
+						{/foreach}
 					</div>
-					{if isset($HOOK_EXTRA_RIGHT) && $HOOK_EXTRA_RIGHT}{$HOOK_EXTRA_RIGHT}{/if}
-					{if !$content_only}
-					<!-- usefull links-->
-
-					<ul id="usefull_link_block" class="clearfix no-print">
-						{if $HOOK_EXTRA_LEFT}{$HOOK_EXTRA_LEFT}{/if}
-
-						{if $have_image && !$jqZoomEnabled}{/if}
-					</ul>
 					{/if}
+				</div> <!-- end short_description_block -->
+				{/if}
+				{if ($display_qties == 1 && !$PS_CATALOG_MODE && $PS_STOCK_MANAGEMENT && $product->available_for_order)}
+				<!-- number of item in stock -->
+				<p id="pQuantityAvailable"{if $product->quantity <= 0} style="display: none;"{/if}>
+					<span id="quantityAvailable">{$product->quantity|intval}</span>
+					<span {if $product->quantity > 1} style="display: none;"{/if} id="quantityAvailableTxt">{l s='Item'}</span>
+					<span {if $product->quantity == 1} style="display: none;"{/if} id="quantityAvailableTxtMultiple">{l s='Items'}</span>
+				</p>
+
+
+				{/if}
+
+				<!-- Data sheet -->
+				<section class="page-product-box">
+					<div class="table-data-sheet">
+						{foreach from=$features item=feature}
+						<p class="{cycle values="odd,even"}">
+							{if isset($feature.value)}
+							<span class="key">{$feature.name|escape:'html':'UTF-8'}</span>:
+							<span class="value">{$feature.value|escape:'html':'UTF-8'}</span>
+							{/if}
+						</p>
+						{/foreach}
+					</div>
+				</section>
+				<!--end Data sheet -->
+
+
+				{if $PS_STOCK_MANAGEMENT}
+				<!-- availability -->
+				<p class="warning_inline" id="last_quantities"{if ($product->quantity > $last_qties || $product->quantity <= 0) || $allow_oosp || !$product->available_for_order || $PS_CATALOG_MODE} style="display: none"{/if} >{l s='Warning: Last items in stock!'}</p>
+				{/if}
+				<p id="availability_date"{if ($product->quantity > 0) || !$product->available_for_order || $PS_CATALOG_MODE || !isset($product->available_date) || $product->available_date < $smarty.now|date_format:'%Y-%m-%d'} style="display: none;"{/if}>
+					<span id="availability_date_label">{l s='Availability date:'}</span>
+					<span id="availability_date_value">{dateFormat date=$product->available_date full=false}</span>
+				</p>
+				<!-- Out of stock hook -->
+				<div id="oosHook"{if $product->quantity > 0} style="display: none;"{/if}>
+					{$HOOK_PRODUCT_OOS}
 				</div>
-	<!-- end center infos-->
+				{if isset($HOOK_EXTRA_RIGHT) && $HOOK_EXTRA_RIGHT}{$HOOK_EXTRA_RIGHT}{/if}
+				{if !$content_only}
+				<!-- usefull links-->
+
+				<ul id="usefull_link_block" class="clearfix no-print">
+					{if $HOOK_EXTRA_LEFT}{$HOOK_EXTRA_LEFT}{/if}
+
+					{if $have_image && !$jqZoomEnabled}{/if}
+				</ul>
+				{/if}
+			</div>
+			<!-- end center infos-->
 
 
 
@@ -283,7 +283,7 @@
 						<p id="quantity_wanted_p"{if (!$allow_oosp && $product->quantity <= 0) || !$product->available_for_order || $PS_CATALOG_MODE} style="display: none;"{/if}>
 							<label>{l s='Quantity:'}</label>
 
-		<a href="#" data-field-qty="qty" class="btn btn-default button-minus product_quantity_down">
+							<a href="#" data-field-qty="qty" class="btn btn-default button-minus product_quantity_down">
 								<span><i class="icon-minus"></i></span>
 							</a>
 							<input type="text" name="qty" id="quantity_wanted" class="text" value="{if isset($quantityBackup)}{$quantityBackup|intval}{else}{if $product->minimal_quantity > 1}{$product->minimal_quantity}{else}1{/if}{/if}" />
@@ -353,8 +353,9 @@
 					</div> <!-- end attributes -->
 					{/if}
 				</div> <!-- end product_attributes -->
+			</div>
 
-
+			<div class="box-info-product no-bg price-and-add-to-cart-wrapper" >
 				<div class="content_prices clearfix">
 					{if $product->show_price && !isset($restricted_country_mode) && !$PS_CATALOG_MODE}
 
@@ -447,6 +448,16 @@
 
 
 		</div> <!-- end primary_block -->
+</div>
+		<div class="row">
+			<div class="col-xs-6">
+				<h4>Shipping information</h4>
+				<p> Etc etc etc etc. Etc etc etc etc. Etc etc etc etc. Etc etc etc etc. Etc etc etc etc. </p>
+			</div>
+			<div class="col-xs-6">
+				movie
+			</div>
+		</div>
 
 		<div class="row">
 			{$HOOK_PRODUCT_ACTIONS}

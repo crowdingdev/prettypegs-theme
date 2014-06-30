@@ -7,7 +7,8 @@
 
 						position: relative;
 						float: right;
-						padding-top: 20px;
+						padding-top: 10px;
+
 
 						> a:first-child {
 							&:after {
@@ -29,7 +30,7 @@
 	 //width: 100px;
 	 //width: 270px;
 	 @media (max-width: $screen-xs) {
-	 	padding-top: 20px;
+	 	//padding-top: 20px;
 	 }
 	 @media (max-width: $screen-lg){
 	 	margin: 0 auto;
@@ -262,12 +263,12 @@
 					span {
 						padding: 7px 0;
 						font-size: 1.1em;
-						border: solid 1px lighten(#43b155,10%);
-						background: #43b155;
+						border: solid 1px lighten(#70a7aa,10%);
+						background: #70a7aa;
 					}
 					&:hover span {
-						border: solid 1px darken(#43b155,10%);
-						background: darken(#43b155,15%);
+						border: solid 1px darken(#70a7aa,10%);
+						background: darken(#70a7aa,15%);
 						color: $light-text-color;
 					}
 				}
@@ -332,10 +333,10 @@
 							}
 							.cart-prices {
 								border: none;
-								background: url(../../../img/cart-shadow.png) repeat-x #3d3d3d;
+								background: #333;
 							}
 							.cart-buttons {
-								background: url(../../../img/cart-shadow.png) repeat-x $dark-background;
+								background: url(../../../img/cart-shadow.png) repeat-x #333;
 							}
 						}
 						.block_content {

@@ -1,10 +1,6 @@
 /* Footer background color */
 /* product desc */
 /* primary_block ***************************************************************************** */
-.primary_block {
-  margin-bottom: 300px;
-}
-
 .product-heading-h5 {
   color: #999999;
   font-weight: 200;
@@ -49,6 +45,7 @@ img {
   cursor: pointer;
   padding: 5px;
   background: white;
+  border: 4px solid #ccc;
 }
 @media (max-width: 767px) {
   .pb-left-column #image-block {
@@ -528,6 +525,7 @@ span.view_scroll_spacer {
   position: relative;
   display: block;
   border: none;
+  margin: auto;
 }
 .box-info-product .exclusive:before {
   font-family: "FontAwesome";
@@ -878,7 +876,9 @@ table.table-product-discounts tr th {
 
 /* prices */
 .content_prices {
+  margin-top: 30px;
   padding: 13px 19px;
+  text-align: center;
 }
 
 .discount {
@@ -1256,8 +1256,4 @@ Quick View Styles
 }
 .ie8 .box-security {
   filter: none;
-}
-
-.pb-right-column {
-  margin-left: -30px !important;
 }
