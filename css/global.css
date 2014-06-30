@@ -10219,6 +10219,7 @@ div.star.star_hover:after {
   width: 100%;
 }
 .pp-home-categories .pp-home-category a .pp-category-text {
+  text-transform: uppercase;
   float: left;
   padding: 15px 17px;
   margin-bottom: 30px;
@@ -10236,10 +10237,9 @@ div.star.star_hover:after {
 }
 .pp-home-categories .pp-home-category a .pp-category-image {
   height: 150px;
-  background: url(../img/home-categories/pegs_for_sofa.jpg);
   background-repeat: no-repeat;
   background-position: center right;
-  background-size: cover;
+  background-size: cover !important;
   background-color: #eceaeb;
 }
 @media (max-width: 700px) {

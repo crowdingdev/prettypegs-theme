@@ -96,11 +96,6 @@
 			</div>
 		</div>
 
-		{if isset($HOOK_FOOTER) && $HOOK_FOOTER|trim}
-		<div class="clearfix">
-			{$HOOK_FOOTER}
-		</div>
-		{/if}
 
 	</div>
 </div>
@@ -110,6 +105,15 @@
 <div class="footer-container">
 	<footer id="footer" class="container">
 		<div class="row"> <!-- { $HOOK_FOOTER } -->
+
+
+		{if isset($HOOK_FOOTER) && $HOOK_FOOTER|trim}
+		<div class="clearfix">
+			{$HOOK_FOOTER}
+		</div>
+		{/if}
+
+			
 			<div class="col-xs-4 pp-shipping-options">
 				<a href="#"> <h3 class="pp-footer-header pp-shipping-header">FREE SHIPPING<br> WORLD WIDE</h3> </a>
 

@@ -3627,6 +3627,7 @@ div.star.star_hover {
 		a{
 			width: 100%;
 			.pp-category-text{
+				text-transform:uppercase;
 				float:left;
 				padding: 15px 17px;
 				margin-bottom: 30px;
@@ -3644,10 +3645,10 @@ div.star.star_hover {
 			}
 			.pp-category-image{
 				height: 150px;
-				background: url(../img/home-categories/pegs_for_sofa.jpg);
+				//background: url(../img/home-categories/pegs_for_sofa.jpg);
 				background-repeat: no-repeat;
 				background-position: center right;
-				background-size: cover;
+				background-size: cover !important;
 				background-color: #eceaeb;
 			}
 		}
@@ -3670,4 +3671,15 @@ div.star.star_hover {
 }
 
 
+// .htmlcontent-home{
+// 	a{
+// 		img{
+// 			float:right;
+// 		}
+// 	}
+// 	background: #ff0000;
+// 	.item-link{
+// 	float:left;
+// 	}
 
+// }

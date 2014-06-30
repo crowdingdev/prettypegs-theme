@@ -41,4 +41,4 @@
 		{/if}
 
 
-	{hook h='selectedCategoriesHook'}
+

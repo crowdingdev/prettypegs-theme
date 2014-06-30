@@ -146,7 +146,8 @@
 						{/foreach}
 						{/if}
 					</ul>
-				</div> <!-- end thumbs_list -->
+				</div>
+				<!-- end thumbs_list -->
 
 				{if isset($images) && count($images) > 4}
 				<a id="view_scroll_right" title="{l s='Other views'}" href="javascript:{ldelim}{rdelim}">
@@ -180,14 +181,13 @@
 
 					{if $product->description_short || $packItems|@count > 0}
 					<div id="short_description_block">
-						Info
+						<h3> Info </h3>
 
 						{if isset($product) && $product->description}
 						<!-- full description -->
 						<div  class="">{$product->description}</div>
 
 						{/if}
-
 
 
 						{if $packItems|@count > 0}
