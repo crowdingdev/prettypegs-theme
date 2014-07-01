@@ -8671,6 +8671,13 @@ div.star a:hover {
   border-top: 1px solid #515151;
   width: 100%;
 }
+.footer-container #footer .partner {
+  margin-top: 50px;
+  background: url("../img/icon/footer-partners-inner-shadow.png");
+  height: 80px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
 
 #reinsurance_block {
   clear: both !important;

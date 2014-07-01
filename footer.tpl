@@ -112,62 +112,19 @@
 			{$HOOK_FOOTER}
 		</div>
 		{/if}
+</div>
 
-			
-			<div class="col-xs-4 pp-shipping-options">
-				<a href="#"> <h3 class="pp-footer-header pp-shipping-header">FREE SHIPPING<br> WORLD WIDE</h3> </a>
+<div class="row"><!--Partners logos row-->
+	<div class="col-xs-12 partner">
 
-				<div class="col-xs-8">
-					<span class="pp-delivery-company pp-dhl"></span>
-				</div>
-			</div>
+	
+</div>
+	</div>
 
-			<div class="col-xs-4 pp-payment-options">
-				<a href="#">
-					<h3 class="pp-footer-header pp-payment-options-header">PAYMENT OPTIONS</h3>
-				</a>
-				<div class="col-xs-6">
-					<span class="pp-payment-option pp-paypal"></span>
-				</div>
-				<div class="col-xs-6">
-					<span class="pp-payment-option pp-klarna"></span>
-				</div>
-				<div class="col-xs-6">
-					<span class="pp-payment-option pp-visa"></span>
-				</div>
-				<div class="col-xs-6">
-					<span class="pp-payment-option pp-mastercard"></span>
-				</div>
-				<div class="col-xs-6">
-					<span class="pp-payment-option pp-discover-card"></span>
-				</div>
-				<div class="col-xs-6">
-					<span class="pp-payment-option pp-american-express"></span>
-				</div>
-			</div>
-
-			<div class="col-xs-4 pp-contact">
-				<a href="#"> <h3 class="pp-footer-header pp-contact-header">CONTACT US</h3> </a>
-				<a href="mailto:hello@prettypegs.com">
-					<p class="text-center">
-						hello@prettypegs.com
-					</p>
-				</a>
-				<a href="http://www.facebook.com/prettypegs">
-					<p class="text-center">
-						www.facebook.com/PRETTYPEGS
-					</p>
-				</a>
-				<p class="text-center">
-					<a href="tel:+46702841155">
-					+46 702 84 11 55
-					</>
-				</p>
-			</div>
-
-		</div>
 	</footer>
 </div><!-- #footer -->
+
+
 </div><!-- #page -->
 {/if}
 {include file="$tpl_dir./global.tpl"}
