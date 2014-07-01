@@ -1,8 +1,13 @@
 /* Footer background color */
 /*** ESSENTIAL STYLES ***/
 .sf-contener {
-  padding-top: 20px;
+  padding: 73px 0 0 30px;
   float: left;
+}
+@media (max-width: 767px) {
+  .sf-contener {
+    padding: 0;
+  }
 }
 
 .sf-menu,

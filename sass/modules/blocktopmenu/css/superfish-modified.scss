@@ -2,9 +2,11 @@
 @import "theme_variables";
 /*** ESSENTIAL STYLES ***/
 .sf-contener {
-	padding-top: 20px;
+	padding: 73px 0 0 30px;
 	float: left;
-
+@media (max-width: $screen-xs-max) { // max 767px
+		padding:0;
+	}
 }
 .sf-right {}
 .sf-menu,
