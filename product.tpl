@@ -355,7 +355,11 @@
 				</div> <!-- end product_attributes -->
 			</div>
 
-			<div class="box-info-product no-bg price-and-add-to-cart-wrapper" >
+			<div class="box-info-product border-separator price-and-add-to-cart-wrapper" >
+
+
+				<div class="row">
+					<div class="col-xs-5">
 				<div class="content_prices clearfix">
 					{if $product->show_price && !isset($restricted_country_mode) && !$PS_CATALOG_MODE}
 
@@ -365,7 +369,7 @@
 							{if $product->quantity > 0}<link itemprop="availability" href="http://schema.org/InStock"/>{/if}
 
 							{if $priceDisplay >= 0 && $priceDisplay <= 2}
-							{l s='Total'}:
+							
 							<span id="our_price_display" itemprop="price">{convertPrice price=$productPrice}</span>
 										<!--{if $tax_enabled  && ((isset($display_tax_label) && $display_tax_label == 1) || !isset($display_tax_label))}
 											{if $priceDisplay == 1}{l s='tax excl.'}{else}{l s='tax incl.'}{/if}
@@ -382,6 +386,8 @@
 											{if $priceDisplay >= 0 && $priceDisplay <= 2}
 											<span id="old_price_display">{if $productPriceWithoutReduction > $productPrice}{convertPrice price=$productPriceWithoutReduction}{/if}</span>
 											<!-- {if $tax_enabled && $display_tax_label == 1}{if $priceDisplay == 1}{l s='tax excl.'}{else}{l s='tax incl.'}{/if}{/if} -->
+											
+
 											{/if}
 										</p>
 										{if $priceDisplay == 2}
@@ -390,8 +396,13 @@
 											<span id="pretaxe_price_display">{convertPrice price=$product->getPrice(false, $smarty.const.NULL)}</span>
 											{l s='tax excl.'}
 										</span>
+
+		
 										{/if}
+										{l s='Shipping included'}
 									</div>
+
+				
 									<!-- end prices -->
 
 
@@ -421,6 +432,12 @@
 								</div> <!-- end content_prices -->
 
 
+				</div>
+
+
+												<div class="col-xs-6">
+
+
 								<div class="box-cart-bottom">
 									<div{if (!$allow_oosp && $product->quantity <= 0) || !$product->available_for_order || (isset($restricted_country_mode) && $restricted_country_mode) || $PS_CATALOG_MODE} class="unvisible"{/if}>
 									<p id="add_to_cart" class="buttons_bottom_block no-print">
@@ -429,6 +446,10 @@
 										</button>
 									</p>
 								</div>
+
+											</div>
+
+														</div><!--End row-->
 
 
 								{if isset($HOOK_PRODUCT_ACTIONS) && $HOOK_PRODUCT_ACTIONS}{/if}<strong></strong>

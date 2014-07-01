@@ -7128,33 +7128,24 @@ span.exclusive {
   font-size: 14px;
   line-height: 14px;
   color: silver;
-  text-shadow: 1px -1px rgba(0, 0, 0, 0.05);
   padding: 0;
   border: 1px solid;
-  border-color: #dedcdc #c1bfbf #b5b4b4 #dad8d8;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
+  border-radius: 200px !important;
 }
 .btn.button-plus span,
 .btn.button-minus span {
   display: block;
-  border: 1px solid white;
   vertical-align: middle;
   width: 25px;
   height: 25px;
   text-align: center;
   vertical-align: middle;
-  padding: 4px 0 0 0;
-  background: #1e5799;
-  background: white;
-  background: -moz-linear-gradient(top, white 0%, #fbfbfb 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #fbfbfb));
-  background: -webkit-linear-gradient(top, white 0%, #fbfbfb 100%);
-  background: -o-linear-gradient(top, white 0%, #fbfbfb 100%);
-  background: -ms-linear-gradient(top, white 0%, #fbfbfb 100%);
-  background: linear-gradient(to bottom, #ffffff 0%, #fbfbfb 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#fbfbfb',GradientType=0);
+  padding: 6px 0 0 0;
+  background: #fff;
+  border-radius: 200px !important;
 }
 .btn.button-plus:hover,
 .btn.button-minus:hover {
@@ -7163,7 +7154,6 @@ span.exclusive {
 .btn.button-plus:hover span,
 .btn.button-minus:hover span {
   filter: none;
-  background: #f6f6f6;
 }
 
 .button.exclusive-medium {
@@ -7367,7 +7357,7 @@ table.table_block td {
 }
 
 .price.product-price {
-  font: 600 21px/26px "Gotham", Century Gothic, Futura, sans-serif;
+  font: 21px/26px "Gotham", Century Gothic, Futura, sans-serif;
   color: #333333;
 }
 
@@ -8116,10 +8106,6 @@ ul.footer_links li + li {
   .bottom-pagination-content .product-count {
     clear: left;
   }
-}
-
-.bottom-pagination-content {
-  border-top: 1px solid #d6d4d4;
 }
 
 ul.step {

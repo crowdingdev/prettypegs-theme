@@ -50,7 +50,7 @@ img{
 		cursor: pointer;
 		padding: 5px;
 		background: $light-background;
-		border: 4px solid #ccc;
+		border: 1px solid #ccc;
 		@media (max-width: $screen-xs-max) { //max 767px
 			width: 280px;
 			margin: 0 auto;
@@ -68,7 +68,7 @@ img{
 				margin-right: 20px;
 				display: block;
 				padding: 10px 0;
-				text-align: center;
+	
 				line-height: 22px;
 				color: #777676;
 				width: 50px;
@@ -418,6 +418,7 @@ span.view_scroll_spacer {
 		label {
 			vertical-align: top;
 			display: block;
+			margin-top:20px !important; 
 		}
 	}
 	.attribute_list {
@@ -512,18 +513,33 @@ padding-bottom: 20px;
 	}
 	.exclusive{
 
-
-
-
 		@include border-radius(300px);
-		width: 160px ;
-		height: 160px ;
+		width: 160px;
+		height: 160px;
 		background: #dc7670;
-
 		position: relative;
 		display: block;
 		border: none;
-		margin:auto;
+
+
+		@media  (max-width: $screen-md-max) { //max 1199px
+			//padding: 12px 22px 14px 55px;
+			font-size: 14px;
+
+		}
+		@media (max-width: $screen-sm-max) {  //max 991px
+			//padding: 8px 12px 10px;
+			//text-align: left;
+			width: 115px;
+			height: 115px;
+		}
+
+		@media (max-width: $screen-xs-max) { //max 767px
+
+			//background:none;
+			//color:
+		}
+
 		&:before{
 			font-family: $font-icon;
 			position: absolute;
@@ -576,21 +592,23 @@ padding-bottom: 20px;
 			text-transform:uppercase;
 			font-weight: normal;
 			font-size: 14px;
-			//line-height: 99px;
+			//
 			position:relative;
 			top: 30px;
 
-			//padding: 0 12px;
 			color: $light-text-color;
 			display: block !important;
 			@include transition(all 0.3s ease);
 			@media  (max-width: $screen-md-max) { //max 1199px
-				padding: 12px 22px 14px 55px;
+				//padding: 12px 22px 14px 55px;
+
 				font-size: 14px;
 			}
 			@media (max-width: $screen-sm-max) {  //max 991px
-				padding: 8px 12px 10px;
-				text-align: left;
+				//padding: 8px 12px 10px;
+				//text-align: left;
+				height:100px;
+
 			}
 		}
 		&:hover{
@@ -764,15 +782,22 @@ table.table-product-discounts{
 /* quantity_wanted */
 #quantity_wanted_p{
 	input {
-		width: 78px;
+		width: 40px;
 		height: 27px;
 		padding: 0 6px;
 		float: left;
-		border: $main_border;
+		//border: $main_border;
 		line-height: 27px;
+		text-align: center;
+		background: none;
+		border:none !important;
+		font-weight: bold;
 	}
+
 	.btn{
 		float: left;
+		border: none !important;
+
 
 	}
 	label{
@@ -845,9 +870,9 @@ table.table-product-discounts{
 
 /* prices */
 .content_prices {
-	margin-top: 30px;
+	//margin-top: 30px;
 	padding: 13px 19px;
-	text-align:center;
+
 }
 .discount {
 	display: none;
@@ -1229,3 +1254,8 @@ Quick View Styles
 
 
 
+.border-separator{
+	border-top: 1px solid #ccc;
+	padding-top:20px;
+
+}

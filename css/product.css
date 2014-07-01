@@ -45,7 +45,7 @@ img {
   cursor: pointer;
   padding: 5px;
   background: white;
-  border: 4px solid #ccc;
+  border: 1px solid #ccc;
 }
 @media (max-width: 767px) {
   .pb-left-column #image-block {
@@ -64,7 +64,6 @@ img {
   margin-right: 20px;
   display: block;
   padding: 10px 0;
-  text-align: center;
   line-height: 22px;
   color: #777676;
   width: 50px;
@@ -432,6 +431,7 @@ span.view_scroll_spacer {
 #attributes fieldset label {
   vertical-align: top;
   display: block;
+  margin-top: 20px !important;
 }
 #attributes .attribute_list {
   width: 100%;
@@ -525,7 +525,17 @@ span.view_scroll_spacer {
   position: relative;
   display: block;
   border: none;
-  margin: auto;
+}
+@media (max-width: 959px) {
+  .box-info-product .exclusive {
+    font-size: 14px;
+  }
+}
+@media (max-width: 959px) {
+  .box-info-product .exclusive {
+    width: 115px;
+    height: 115px;
+  }
 }
 .box-info-product .exclusive:before {
   font-family: "FontAwesome";
@@ -592,14 +602,12 @@ span.view_scroll_spacer {
 }
 @media (max-width: 959px) {
   .box-info-product .exclusive span {
-    padding: 12px 22px 14px 55px;
     font-size: 14px;
   }
 }
 @media (max-width: 959px) {
   .box-info-product .exclusive span {
-    padding: 8px 12px 10px;
-    text-align: left;
+    height: 100px;
   }
 }
 
@@ -785,15 +793,19 @@ table.table-product-discounts tr th {
 
 /* quantity_wanted */
 #quantity_wanted_p input {
-  width: 78px;
+  width: 40px;
   height: 27px;
   padding: 0 6px;
   float: left;
-  border: 1px solid #d6d4d4;
   line-height: 27px;
+  text-align: center;
+  background: none;
+  border: none !important;
+  font-weight: bold;
 }
 #quantity_wanted_p .btn {
   float: left;
+  border: none !important;
 }
 #quantity_wanted_p label {
   display: block;
@@ -876,9 +888,7 @@ table.table-product-discounts tr th {
 
 /* prices */
 .content_prices {
-  margin-top: 30px;
   padding: 13px 19px;
-  text-align: center;
 }
 
 .discount {
@@ -1256,4 +1266,9 @@ Quick View Styles
 }
 .ie8 .box-security {
   filter: none;
+}
+
+.border-separator {
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
 }
