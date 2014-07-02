@@ -29,3 +29,6 @@ Here we list all the modules that are essential/integrated with/for the theme.
 ####Klarna Checkout v2.38 - by Prestaworks AB
 **Desc:** Adds a cart block with klarna checkout links. **Category:** Payments and Gateways
 
+
+####PayPal v3.7.1 - by PrestaShop -  Official
+**Desc:** Accepts payments by credit cards (CB, Visa, MasterCard, Amex, Aurore, Cofinoga, 4 stars) with PayPal. **Category:** Payments and Gateways
