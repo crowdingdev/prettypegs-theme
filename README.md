@@ -17,8 +17,14 @@ Some structural changes in the html and som removal om unwanted functionalities.
 Added function that changes the cart when empty or not.
 
 **Product-list.tpl**
-Html structural change.
+Html structural change. and removed pagination etc.
 
 **order-opc.tpl**
 The One-Page-Checkout template and the templates that it includes has been modified. Added klarna checkout. Removed registering and autheification functionalities so that only guest checkout are left.
+
+================
+##Modules
+
+####Klarna Checkout v2.38 - by Prestaworks AB
+**Desc:** Adds a cart block with klarna checkout links. **Category:** Payments and Gateways
 
