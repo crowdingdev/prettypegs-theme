@@ -52,7 +52,7 @@ img{
 		background: $light-background;
 		border: 1px solid #ccc;
 		@media (max-width: $screen-xs-max) { //max 767px
-			width: 280px;
+			width: 180px;
 			margin: 0 auto;
 		}
 		img {
@@ -130,7 +130,7 @@ img{
 		width: 164px;
 	}
 	@media (max-width: $screen-xs-max) { //max 767px
-		width: 194px;
+		width: 100px;
 	}
 	ul#thumbs_list_frame {
 		list-style-type: none;
@@ -528,25 +528,24 @@ span.view_scroll_spacer {
 		border: none;
 		float:right;
 		margin-top: -100px;
-		
-		@media  (max-width: $screen-md-max) { //max 1199px
-			//padding: 12px 22px 14px 55px;
-			font-size: 14px;
 
+		@media  (max-width: $screen-md-max) { //max 1199px
+			font-size: 14px;
 		}
 		@media (max-width: $screen-sm-max) {  //max 991px
-			//padding: 8px 12px 10px;
-			//text-align: left;
-			width: 115px;
-			height: 115px;
+			width: 120px;
+			height: 120px;
+			line-height: 32px;
 			float:none;
 			margin:0;
 		}
-
 		@media (max-width: $screen-xs-max) { //max 767px
-
-			//background:none;
-			//color:
+			width: 70px;
+			height: 70px;
+			line-height: 12px;
+			span{
+				margin-top:-10px;
+			}
 		}
 
 		&:before{
@@ -558,13 +557,10 @@ span.view_scroll_spacer {
 			color: $light-text-color;
 			font-size: 57px;
 			line-height: 47px;
-
 			content: "\f07a";
-			//color: #dc7670;
 			z-index: 2;
 			width: 157px;
 			top: 30px;
-
 			text-align: center;
 
 			@include border-radius(5px 0 0 5px);
@@ -881,10 +877,16 @@ table.table-product-discounts{
 .content_prices {
 	//margin-top: 30px;
 	padding: 13px 19px;
-
+	.shipping-included{
+		white-space: pre-wrap !important;
+	}
 }
 .discount {
 	display: none;
+}
+
+.total-price{
+	white-space: pre-line !important;
 }
 
 .our_price_display {
@@ -897,6 +899,7 @@ table.table-product-discounts{
 		font-size: 26px;
 		line-height: 28px;
 	}
+
 }
 
 #old_price {
@@ -1274,36 +1277,37 @@ Quick View Styles
 
 #buy_block{
 	@media  (max-width: $screen-md-max) { //max 1199px
-			//padding: 12px 22px 14px 55px;
-			font-size: 14px !important;
 
-		}
+		font-size: 14px !important;
+
+	}
 		@media (max-width: $screen-sm-max) {  //max 991px
-			//padding: 8px 12px 10px;
-			//text-align: left;
+
 			h1,label{font-size: 14px !important;}
-			//overflow:hidden;
+			overflow:hidden;
 
 		}
 
 		@media (max-width: $screen-xs-max) { //max 767px
 
-			//background:none;
-			//color:
+
 			font-size: 14px !important;
 
 		}
 
 	}
 
-	.row{
+	#image-block{
+	@media  (max-width: $screen-md-max) { //max 1199px
 
+	}
+		@media (max-width: $screen-sm-max) {  //max 991px
 
-				@media (max-width: $screen-sm-max) {  //max 991px
-			//padding: 8px 12px 10px;
-			//text-align: left;
-
-			//margin-right: 0;
 		}
+
+		@media (max-width: $screen-xs-max) { //max 767px
+			width: 100%;
+		}
+
 
 	}
