@@ -21,7 +21,7 @@
 .box-security .product-heading-h5{
 	margin: 3px 0 -8px;
 	@media  (max-width: $screen-md-max) { //max 1199px
-	margin-bottom: 8px;
+		margin-bottom: 8px;
 	}
 }
 #productscategory_list .product-name,
@@ -68,7 +68,7 @@ img{
 				margin-right: 20px;
 				display: block;
 				padding: 10px 0;
-	
+
 				line-height: 22px;
 				color: #777676;
 				width: 50px;
@@ -379,6 +379,12 @@ span.view_scroll_spacer {
 				padding: 0;
 			}
 		}
+
+
+
+
+
+
 	}
 	#color_picker p {
 		padding-bottom: 5px;
@@ -469,8 +475,8 @@ span.view_scroll_spacer {
 				}
 				&.selected{
 					a{
-				padding:16px;
-				margin-top:-16px;
+						padding:16px;
+						margin-top:-16px;
 					}
 				}
 				&:hover{
@@ -497,7 +503,7 @@ span.view_scroll_spacer {
 }
 
 .box-info-product {
-padding-bottom: 20px;
+	padding-bottom: 20px;
 
 
 	//padding: 20px;
@@ -520,8 +526,9 @@ padding-bottom: 20px;
 		position: relative;
 		display: block;
 		border: none;
-
-
+		float:right;
+		margin-top: -100px;
+		
 		@media  (max-width: $screen-md-max) { //max 1199px
 			//padding: 12px 22px 14px 55px;
 			font-size: 14px;
@@ -532,6 +539,8 @@ padding-bottom: 20px;
 			//text-align: left;
 			width: 115px;
 			height: 115px;
+			float:none;
+			margin:0;
 		}
 
 		@media (max-width: $screen-xs-max) { //max 767px
@@ -565,7 +574,7 @@ padding-bottom: 20px;
 		}
 		&.added {
 			&:before {
-			content: "\f00c";
+				content: "\f00c";
 			}
 		}
 		&.added.disabled,
@@ -661,7 +670,7 @@ padding-bottom: 20px;
 				}
 				&.added {
 					&:before {
-					content: "\f00c";
+						content: "\f00c";
 					}
 				}
 				&.added.disabled,
@@ -723,9 +732,9 @@ padding-bottom: 20px;
 	width: 100%;
 	margin: 0 0 20px;
 	//background: $light-background;
-.key{
-	font-weight: bold;
-}
+	.key{
+		font-weight: bold;
+	}
 
 }
 
@@ -1258,4 +1267,43 @@ Quick View Styles
 	border-top: 1px solid #ccc;
 	padding-top:20px;
 
+	padding-bottom: 76px;
+
 }
+
+
+#buy_block{
+	@media  (max-width: $screen-md-max) { //max 1199px
+			//padding: 12px 22px 14px 55px;
+			font-size: 14px !important;
+
+		}
+		@media (max-width: $screen-sm-max) {  //max 991px
+			//padding: 8px 12px 10px;
+			//text-align: left;
+			h1,label{font-size: 14px !important;}
+			//overflow:hidden;
+
+		}
+
+		@media (max-width: $screen-xs-max) { //max 767px
+
+			//background:none;
+			//color:
+			font-size: 14px !important;
+
+		}
+
+	}
+
+	.row{
+
+
+				@media (max-width: $screen-sm-max) {  //max 991px
+			//padding: 8px 12px 10px;
+			//text-align: left;
+
+			//margin-right: 0;
+		}
+
+	}

@@ -525,6 +525,8 @@ span.view_scroll_spacer {
   position: relative;
   display: block;
   border: none;
+  float: right;
+  margin-top: -100px;
 }
 @media (max-width: 959px) {
   .box-info-product .exclusive {
@@ -535,6 +537,8 @@ span.view_scroll_spacer {
   .box-info-product .exclusive {
     width: 115px;
     height: 115px;
+    float: none;
+    margin: 0;
   }
 }
 .box-info-product .exclusive:before {
@@ -1271,4 +1275,21 @@ Quick View Styles
 .border-separator {
   border-top: 1px solid #ccc;
   padding-top: 20px;
+  padding-bottom: 76px;
+}
+
+@media (max-width: 959px) {
+  #buy_block {
+    font-size: 14px !important;
+  }
+}
+@media (max-width: 959px) {
+  #buy_block h1, #buy_block label {
+    font-size: 14px !important;
+  }
+}
+@media (max-width: 767px) {
+  #buy_block {
+    font-size: 14px !important;
+  }
 }
