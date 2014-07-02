@@ -434,6 +434,7 @@
 		</table>
 	</div> <!-- end order-detail-content -->
 
+
 	{if $show_option_allow_separate_package}
 	<p>
 		<input type="checkbox" name="allow_seperated_package" id="allow_seperated_package" {if $cart->allow_seperated_package}checked="checked"{/if} autocomplete="off"/>
@@ -524,6 +525,8 @@
 			{/if}
 		</div>
 	{/if}
+
+
 	<div id="HOOK_SHOPPING_CART">{$HOOK_SHOPPING_CART}</div>
 	<p class="cart_navigation clearfix">
 		{if !$opc}

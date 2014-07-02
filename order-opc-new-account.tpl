@@ -3,6 +3,7 @@
 	<h1 class="page-heading step-num"><span>1</span> {l s='Account'}</h1>
 	<form action="{$link->getPageLink('authentication', true, NULL, "back=order-opc")|escape:'html':'UTF-8'}" method="post" id="login_form" class="box">
 		<fieldset>
+
 			<h3 class="page-subheading">{l s='Already registered?'}</h3>
 			<p><a href="{$link->getPageLink('authentication', true)|escape:'html'}" id="openLoginFormBlock">&raquo; {l s='Click here'}</a></p>
 			<div id="login_form_content" style="display:none;">
@@ -48,7 +49,9 @@
                         </p>
                     </div>
                 </div>
-				<div id="opc_account_form" class="unvisible">
+
+                <!--Here's where the guest chckout form are / Linus -->
+				<div id="opc_account_form" class="">
 				{$HOOK_CREATE_ACCOUNT_TOP}
 				<!-- Error return block -->
 				<div id="opc_account_errors" class="alert alert-danger" style="display:none;"></div>

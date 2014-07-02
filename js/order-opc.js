@@ -29,8 +29,12 @@ $(document).ready(function(){
 		if (guestCheckoutEnabled && !isLogged)
 		{
 			$('#opc_account_choice').show();
-			$('#opc_account_form, #opc_invoice_address').hide();
-			
+
+			$('#opc_invoice_address').hide();
+
+			/*$('#opc_account_form').show();*/
+
+
 			$(document).on('click', '#opc_createAccount',function(e){
 				e.preventDefault();
 				$('.is_customer_param').show();
