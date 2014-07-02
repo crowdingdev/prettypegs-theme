@@ -24,6 +24,7 @@ The One-Page-Checkout template and the templates that it includes has been modif
 
 ================
 ##Modules
+Here we list all the modules that are essential/integrated with/for the theme.
 
 ####Klarna Checkout v2.38 - by Prestaworks AB
 **Desc:** Adds a cart block with klarna checkout links. **Category:** Payments and Gateways
