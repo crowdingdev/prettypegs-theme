@@ -41,11 +41,15 @@
 	{include file="$tpl_dir./errors.tpl"}
 {else}
 	<div id="opc_payment_methods" class="opc-main-block">
+	
+
 		{if $no_active_countries > 1}
 			1111
 		{else}
 		222222
 		{/if}
+	
+
 	{assign var='active_c' value=$active_countries}
 
 p{$active_c}p

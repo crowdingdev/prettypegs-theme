@@ -364,6 +364,7 @@
 						<div class="clearfix"></div>
 						{foreach from=$groups key=id_attribute_group item=group}
 						{if $group.attributes|@count}
+
 						<fieldset class="attribute_fieldset">
 							<label class="attribute_label" {if $group.group_type != 'color' && $group.group_type != 'radio'}for="group_{$id_attribute_group|intval}"{/if}>{$group.name|escape:'html':'UTF-8'} :&nbsp;</label>
 
@@ -450,6 +451,7 @@
 
 
 											{/if}
+
 										</p>
 										{if $priceDisplay == 2}
 										<br />
@@ -460,8 +462,6 @@
 										{/if}
 										<p class="shipping-included">{l s='Shipping included'}</p>
 									</div><!-- end prices -->
-
-
 
 
 
