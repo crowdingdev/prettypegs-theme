@@ -32,6 +32,9 @@ title="{l s='Check out' mod='klarnacheckout'}">
 </a>
 ```
 
+**order-opc-new-account**
+This file contains the form for guest checkout. Some fields has been removed (birtday, gender). And some other changes has been made to shipping step and payment. 
+
 **order-opc.js**
 Changed so that it show only the guest checkout for users.
 
