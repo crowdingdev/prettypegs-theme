@@ -38,6 +38,8 @@ This file contains the form for guest checkout. Some fields has been removed (bi
 **order-opc.js**
 Changed so that it show only the guest checkout for users.
 
+**shopping-cart.tpl**
+Some hook (HOOK_SHOPPING_CART_EXTRA) has been removed.
 
 ================
 ##Modules
