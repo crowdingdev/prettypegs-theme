@@ -20,7 +20,16 @@ Added function that changes the cart when empty or not.
 Html structural change. and removed pagination etc.
 
 **order-opc.tpl**
-The One-Page-Checkout template and the templates that it includes has been modified. Added klarna checkout. Removed registering and autheification functionalities so that only guest checkout are left.
+The One-Page-Checkout template and the templates that it includes has been modified. Added klarna checkout. Removed registering and autheification functionalities so that only guest checkout are left. And extracted the Klarna and paypal choice buttons/divs into order-checkout-options.tpl
+
+**order-checkout-options.tpl**
+Contains Klarna and Paypal buttons that are displayed under the shopping cart on checkout page. The klarna link are made to work with the Klarna checkout module by prestaworks v2.38. 
+
+`<a href="{$link->getModuleLink('klarnacheckout', 'checkout_klarna')}" rel="nofollow" id="button_order_cart" class="btn btn-default button button-medium exclusive" title="{l s='Check out' mod='klarnacheckout'}"> <span>{l s='Continue' mod='klarnacheckout'} >></span> </a>`
+
+**order-opc.js**
+Changed so that it show only the guest checkout for users.
+
 
 ================
 ##Modules
