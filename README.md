@@ -24,8 +24,13 @@ The One-Page-Checkout template and the templates that it includes has been modif
 
 **order-checkout-options.tpl**
 Contains Klarna and Paypal buttons that are displayed under the shopping cart on checkout page. The klarna link are made to work with the Klarna checkout module by prestaworks v2.38. 
-
-`<a href="{$link->getModuleLink('klarnacheckout', 'checkout_klarna')}" rel="nofollow" id="button_order_cart" class="btn btn-default button button-medium exclusive" title="{l s='Check out' mod='klarnacheckout'}"> <span>{l s='Continue' mod='klarnacheckout'} >></span> </a>`
+```
+<a href="{$link->getModuleLink('klarnacheckout', 'checkout_klarna')}" rel="nofollow" 
+id="button_order_cart" class="btn btn-default button button-medium exclusive" 
+title="{l s='Check out' mod='klarnacheckout'}"> 
+<span>{l s='Continue' mod='klarnacheckout'} >></span> 
+</a>
+```
 
 **order-opc.js**
 Changed so that it show only the guest checkout for users.
