@@ -3,15 +3,15 @@
 
 /********************************************************
 			One-Page Checkout Styles
-********************************************************/
+			********************************************************/
 
-#order-opc {
-	line-height: 20px;
-	.box {
-		padding-bottom: 20px;
-	}
-	.cart_navigation {
-		margin-bottom: 53px;
+			#order-opc {
+				line-height: 20px;
+				.box {
+					padding-bottom: 20px;
+				}
+				.cart_navigation {
+		//margin-bottom: 53px;
 	}
 	.page-heading.step-num {
 		position: relative;
@@ -30,9 +30,9 @@
 	}
 	.form-group {
 		margin-bottom: 2px;
-			.form-control {
-				max-width: 271px;
-			}
+		.form-control {
+			max-width: 271px;
+		}
 	}
 	.lost_password {
 		display: inline-block;
@@ -87,4 +87,96 @@
 #new_account_form .dni,
 #new_account_form .postcode {
 	display: none;
+}
+
+
+
+
+#checkout-options{
+	margin-bottom: 40px;
+
+
+	.pp-checkout-heading{
+		margin-top:-60px;
+		h3{
+		font-weight:bold;
+		font-size: 30px;
+		}
+		
+	}
+
+	.pp-checkout-options{
+		float:right;
+	}
+
+	.pp-klarna-checkout{
+
+	}
+	.pp-paypal-checkout{
+
+	}
+	.pp-checkout-option{
+		margin-bottom: 20px;
+		padding: 20px;
+		border: 1px solid #ccc;
+			background-color: rgba(245,245,245,0.5);
+
+		.pp-payment-provider-services-logo{
+			margin-bottom: 10px;
+
+
+			&.pp-mastercard-logo{
+				background: url(../img/icon/mastercard_2x.png) no-repeat;
+			}
+
+			&.pp-americanexpress-logo{
+				background: url(../img/icon/americanexpress_2x.png) no-repeat;
+			}
+			&.pp-discovercard-logo{
+				background: url(../img/icon/discovercard_2x.png) no-repeat;
+			}
+			&.pp-visa-logo{
+				background: url(../img/icon/visa_2x.png) no-repeat;
+			}
+			&.pp-mastercard-logo{
+				background: url(../img/icon/mastercard_2x.png) no-repeat;
+			}
+			&.pp-mastercard-logo{
+				background: url(../img/icon/mastercard_2x.png) no-repeat;
+			}
+
+
+			&.pp-payment-provider-services-logo{
+				background-size: 100%;
+				background-position: center;
+				height: 40px;
+				width: 40px;
+				margin-right:5px;
+				float:left;
+			}
+
+
+		}
+
+		.pp-payment-provider-logo{
+
+			&.pp-klarna-logo{
+				background: url(../img/icon/klarna_2x.png) no-repeat;
+			}
+			&.pp-paypal-logo{
+				background: url(../img/icon/paypal_2x.png) no-repeat;
+			}
+			&.pp-payment-provider-logo{
+				background-size: 50%;
+				width: 200px;
+				height: 40px;
+				display:block;
+			}
+		}
+	}
+}
+
+
+#opc_account_saved{
+	margin-top: 30px;
 }

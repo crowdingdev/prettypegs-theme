@@ -41,22 +41,6 @@
 	{include file="$tpl_dir./errors.tpl"}
 {else}
 	<div id="opc_payment_methods" class="opc-main-block">
-	
-
-		{if $no_active_countries > 1}
-			1111
-		{else}
-		222222
-		{/if}
-	
-
-	{assign var='active_c' value=$active_countries}
-
-p{$active_c}p
-
-
-
-	<a href="{$link->getModuleLink('klarnacheckout', 'checkout_klarna')}" rel="nofollow" id="button_order_cart" class="exclusive_large" title="{l s='Check out' mod='klarnacheckout'}"><span></span>{l s='Check out' mod='klarnacheckout'}</a>
 
 		<div id="opc_payment_methods-overlay" class="opc-overlay" style="display: none;"></div>
 {/if}

@@ -547,7 +547,7 @@
 	{if !empty($HOOK_SHOPPING_CART_EXTRA)}
 		<div class="clear"></div>
 		<div class="cart_navigation_extra">
-			<div id="HOOK_SHOPPING_CART_EXTRA">{$HOOK_SHOPPING_CART_EXTRA}</div>
+
 		</div>
 	{/if}
 {strip}

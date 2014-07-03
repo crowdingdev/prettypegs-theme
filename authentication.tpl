@@ -100,6 +100,7 @@
 		</div>
 	</div>
 	{if isset($inOrderProcess) && $inOrderProcess && $PS_GUEST_CHECKOUT_ENABLED}
+	
 		<form action="{$link->getPageLink('authentication', true, NULL, "back=$back")|escape:'html':'UTF-8'}" method="post" id="new_account_form" class="std clearfix">
 			<div class="box">
 				<div id="opc_account_form" style="display: block; ">
@@ -111,6 +112,7 @@
 					</div>
 					<div class="cleafix gender-line">
 						<label>{l s='Title'}</label>
+
 						{foreach from=$genders key=k item=gender}
 							<div class="radio-inline">
 								<label for="id_gender{$gender->id}" class="top">
@@ -119,6 +121,7 @@
 								</label>
 							</div>
 						{/foreach}
+
 					</div>
 					<div class="required form-group">
 						<label for="firstname">{l s='First name'} <sup>*</sup></label>
