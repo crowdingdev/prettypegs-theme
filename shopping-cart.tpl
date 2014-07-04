@@ -26,11 +26,7 @@
 	{capture name=path}{l s='Your shopping cart'}{/capture}
 
 	<h1 id="cart_title" class="page-heading">{l s='Shopping-cart summary'}
-		{if !isset($empty) && !$PS_CATALOG_MODE}
-		<span class="heading-counter">{l s='Your shopping cart contains:'}
-			<span id="summary_products_quantity">{$productNumber} {if $productNumber == 1}{l s='product'}{else}{l s='products'}{/if}</span>
-		</span>
-		{/if}
+		
 	</h1>
 
 	{if isset($account_created)}

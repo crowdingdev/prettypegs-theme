@@ -132,7 +132,8 @@ header {
 		}
 
 		#header_logo {
-			margin-left: -30px;
+			width:220px;
+			//margin-left: -30px;
 			img {
 				//height: 114px !important;
 				//width: 160px !important;
@@ -392,7 +393,7 @@ span.exclusive {
 	border-color: #666666 #5f5f5f #292929 #5f5f5f;
 	padding: 0;
 	text-shadow: 1px 1px rgba(0, 0, 0, 0.24);
-	@include border-radius(0);
+	@include border-radius(4);
 	span {
 		display: block;
 		padding: 3px 8px 3px 8px;
@@ -423,7 +424,7 @@ span.exclusive {
 	background: rgb(112, 167, 170);
 	border: 1px solid;
 	border-color: #70a7aa;
-	@include border-radius(0);
+	@include border-radius(4);
 	span {
 		display: block;
 		padding: 10px 10px 10px 14px;

@@ -290,11 +290,16 @@ $(document).ready(function(){
 							/*Start - Added by linus*/
 							$('#submitAccount').hide();
 							updateAddressSelection();
+
+							/* Start - this will trigger paypal after guest account is saved - Linus */
+									/*$('#paypal_payment_form').submit();*/
+							/* End - this will trigger paypal after guest account is saved - Linus */
 						}
 						else
 							updateNewAccountToAddressBlock();
 					}
 					$('#opc_new_account-overlay, #opc_delivery_methods-overlay, #opc_payment_methods-overlay').fadeIn('slow');
+
 				},
 				error: function(XMLHttpRequest, textStatus, errorThrown) {
 					if (textStatus !== 'abort')

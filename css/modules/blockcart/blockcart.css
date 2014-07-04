@@ -1,18 +1,11 @@
 /* Footer background color */
-/*******************************************************************
-					Cart Block Styles
-					********************************************************************/
+.shopping-cart-wrapper {
+  float: right;
+}
+
 #header .shopping_cart {
   position: relative;
-  float: right;
-  padding-top: 10px;
-}
-#header .shopping_cart > a:first-child:after {
-  /*	display: inline-block;
-  	float: right;
-  	font-size: 18px;
-  	color: #686666;
-  	padding: 6px 0 0 0;*/
+  margin-top: 20px;
 }
 
 @media (max-width: 960px) {
@@ -23,35 +16,32 @@
   }
 }
 .shopping_cart .cart-icon:after {
+  position: relative;
   float: right;
   content: "\f07a";
   font-family: "FontAwesome";
   font-size: 31px;
   line-height: 6px;
-  color: white;
-  margin-right: -8px;
-  margin-top: -59px;
   color: #db7770;
   padding: 26px 16px;
   border-radius: 100px;
+  z-index: 40	!important;
 }
 .shopping_cart .cart-icon.not-empty:after {
   background-color: #fff;
 }
-.shopping_cart > a:first-child {
-  padding-left: 17px;
-  float: left;
-  width: 120px;
-  height: 60px;
-  background: url(../../../img/shopping-cart/shopping_cart_bg.svg) no-repeat;
-}
-.shopping_cart > a:first-child p {
+.shopping_cart > a:first-child p span {
+  position: relative;
   font-size: 11px;
-  width: 35px;
-  height: 60px;
-  display: table-cell;
-  vertical-align: middle;
-  line-height: 15px;
+  float: right;
+  background: #e40019;
+  padding: 10px 8px;
+  border-radius: 20px;
+  line-height: 0;
+  color: #fff;
+  margin-left: -30px;
+  border: 3px solid #fff;
+  z-index: 41	!important;
 }
 @media (min-width: 768px) and (max-width: 959px) {
   .shopping_cart > a:first-child span.ajax_cart_product_txt, .shopping_cart > a:first-child span.ajax_cart_product_txt_s {
@@ -191,7 +181,7 @@
 .cart_block .cart-buttons a#button_order_cart span {
   padding: 7px 0;
   font-size: 1.1em;
-  border: solid 1px #90bbbd;
+  border: solid 1px #70a7aa;
   background: #70a7aa;
 }
 .cart_block .cart-buttons a#button_order_cart:hover span {
@@ -205,7 +195,7 @@
 					********************************************************************/
 #header .cart_block {
   position: absolute;
-  top: 95px;
+  top: 85px;
   right: 0;
   z-index: 100;
   display: none;
@@ -213,11 +203,6 @@
   background: #484848;
   color: white;
   width: 270px;
-}
-@media (max-width: 480px) {
-  #header .cart_block {
-    width: 100%;
-  }
 }
 @media (max-width: 960px) {
   #header .cart_block {

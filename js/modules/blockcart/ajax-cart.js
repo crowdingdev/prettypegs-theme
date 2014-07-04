@@ -791,6 +791,8 @@ var ajaxCart = {
 
 			/*Linus has added this*/
 			$('.cart-icon').addClass('not-empty');
+
+			
 			/*END Linus has added this*/
 
 			if (parseInt(jsonData.nbTotalProducts) > 1)
