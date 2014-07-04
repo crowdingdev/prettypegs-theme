@@ -38,9 +38,13 @@
 	<!-- Shopping Cart -->
 	{include file="$tpl_dir./shopping-cart.tpl"}
 
-	{include file="$tpl_dir./order-checkout-options.tpl"}
 
+		
+	{include file="$tpl_dir./order-checkout-options.tpl"}
 	<!-- End Shopping Cart -->
+
+
+
 	<div id="opc_checkout" style="display:none;">
 
 		{if $is_logged AND !$is_guest}

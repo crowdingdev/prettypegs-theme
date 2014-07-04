@@ -57,6 +57,13 @@
   margin-top: 20px;
   padding-top: 20px;
 }
+#order-opc .opc-add-save button {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
 #order-opc #message {
   margin-bottom: 35px;
 }
@@ -96,11 +103,24 @@
 #checkout-options .pp-checkout-options {
   float: right;
 }
+@media (max-width: 767px) {
+  #checkout-options .pp-checkout-options {
+    float: left;
+    margin: 50px 0 0 20px;
+  }
+}
 #checkout-options .pp-checkout-option {
   margin-bottom: 20px;
   padding: 20px;
   border: 1px solid #ccc;
   background-color: rgba(245, 245, 245, 0.5);
+}
+#checkout-options .pp-checkout-option a, #checkout-options .pp-checkout-option button {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
 }
 #checkout-options .pp-checkout-option .pp-payment-provider-services-logo {
   margin-bottom: 10px;
@@ -146,4 +166,8 @@
 
 #opc_account_saved {
   margin-top: 30px;
+}
+
+#back-to-checkout-options {
+  float: right;
 }

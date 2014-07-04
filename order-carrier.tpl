@@ -26,6 +26,7 @@
 	{capture name=path}{l s='Shipping:'}{/capture}
 	{assign var='current_step' value='shipping'}
 	<div id="carrier_area">
+
 		<h1 class="page-heading">{l s='Shipping:'}</h1>
 		{include file="$tpl_dir./order-steps.tpl"}
 		{include file="$tpl_dir./errors.tpl"}
@@ -67,6 +68,7 @@
 							{/if}
 						</p>
 						<div class="delivery_options">
+
 							{foreach $option_list as $key => $option}
 								<div class="delivery_option {if ($option@index % 2)}alternate_{/if}item">
 									<div>
