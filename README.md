@@ -39,7 +39,8 @@ This file contains the form for guest checkout. Some fields has been removed (bi
 Changed so that it show only the guest checkout for users.
 
 **shopping-cart.tpl**
-Some hook (HOOK_SHOPPING_CART_EXTRA) has been removed.
+Some hook (HOOK_SHOPPING_CART_EXTRA) has been removed. The span inside the h1 that showed number of articles has been removed.
+
 
 ================
 ##Modules
