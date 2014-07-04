@@ -8,7 +8,7 @@ This theme is originated/forked from prestashop bootstrap-theme that comes with 
 ##Changes
 We have resorted to a method of changing as little as possible from the original theme as to use most of it's functionalities and to save time.
 
-Here we're listing all (mostly) changes to *.tpl *.js and *.php files that are in any way altered from the original theme. 
+Here we're listing all (mostly) changes to *.tpl *.js and *.php files that are in any way altered from the original theme.
 
 **Products.tpl**
 Some structural changes in the html and som removal om unwanted functionalities.
@@ -23,17 +23,17 @@ Html structural change. and removed pagination etc.
 The One-Page-Checkout template and the templates that it includes has been modified. Added klarna checkout. Removed registering and autheification functionalities so that only guest checkout are left. And extracted the Klarna and paypal choice buttons/divs into order-checkout-options.tpl
 
 **order-checkout-options.tpl**
-Contains Klarna and Paypal buttons that are displayed under the shopping cart on checkout page. The klarna link are made to work with the Klarna checkout module by prestaworks v2.38. 
+Contains Klarna and Paypal buttons that are displayed under the shopping cart on checkout page. The klarna link are made to work with the Klarna checkout module by prestaworks v2.38.
 ```
-<a href="{$link->getModuleLink('klarnacheckout', 'checkout_klarna')}" rel="nofollow" 
-id="button_order_cart" class="btn btn-default button button-medium exclusive" 
-title="{l s='Check out' mod='klarnacheckout'}"> 
-<span>{l s='Continue' mod='klarnacheckout'} >></span> 
+<a href="{$link->getModuleLink('klarnacheckout', 'checkout_klarna')}" rel="nofollow"
+id="button_order_cart" class="btn btn-default button button-medium exclusive"
+title="{l s='Check out' mod='klarnacheckout'}">
+<span>{l s='Continue' mod='klarnacheckout'} >></span>
 </a>
 ```
 
 **order-opc-new-account**
-This file contains the form for guest checkout. Some fields has been removed (birtday, gender). And some other changes has been made to shipping step and payment. 
+This file contains the form for guest checkout. Some fields has been removed (birtday, gender). And some other changes has been made to shipping step and payment.
 
 **order-opc.js**
 Changed so that it show only the guest checkout for users.
