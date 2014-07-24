@@ -67,6 +67,11 @@
 			<header id="header">
 				<div>
 					<div class="container">
+						<div class="row shop-slogan">
+							
+							<h1>{l s='Designed furniture legs'}</h1>
+						</div>
+						
 						<div class="row">
 							<div class="">
 

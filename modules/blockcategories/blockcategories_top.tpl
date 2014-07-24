@@ -35,13 +35,6 @@
 						{include file="$branche_tpl_path" node=$child}
 					{/if}
 
-					{if isset($blockCategTree.thumbnails) && $blockCategTree.thumbnails|count > 0}
-						<div id="category-thumbnails">
-							{foreach $blockCategTree.thumbnails as $thumbnail}
-								<div>{$thumbnail}</div>
-							{/foreach}
-						</div>
-					{/if}
 					{if ($smarty.foreach.blockCategTree.iteration mod $numberColumn) == 0 AND !$smarty.foreach.blockCategTree.last}
 			</ul>
 		</div>

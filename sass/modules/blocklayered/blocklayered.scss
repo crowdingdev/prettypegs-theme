@@ -19,6 +19,9 @@
 	/*background: url(./delete.gif) no-repeat 0 0 transparent;*/
 	cursor: pointer;
 }
+#layered_block_left{
+	margin-top: 20px;
+}
 #layered_block_left .layered_close {
 	float: right;
 	padding-right: 5px;
@@ -148,6 +151,7 @@
 }
 .layered_ajax_loader p {
 	margin: 20px 0;
+	margin-left: 100px;
 	text-align: center;
 }
 .hide-action {

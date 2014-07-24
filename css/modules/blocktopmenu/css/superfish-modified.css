@@ -75,7 +75,7 @@
   }
 }
 .sf-menu > li > a {
-  font: 600 24px/22px "Gotham", Century Gothic, Futura, sans-serif;
+  font: 600 18px/22px "Gotham", Century Gothic, Futura, sans-serif;
   text-transform: uppercase;
   color: #484848;
   display: block;
@@ -93,7 +93,9 @@
   color: #777777;
   font-size: 13px;
   line-height: 16px;
-  padding-bottom: 10px;
+  /*padding-bottom: 10px;*/
+  display: none;
+  margin-left: 5px;
 }
 .sf-menu li li li a:before {
   content: "\f105";
@@ -111,7 +113,7 @@
   top: 59px;
   /* match top ul list item height */
   z-index: 99;
-  padding: 12px 0px 18px 0px;
+  /*padding: 12px 0px 18px 0px;*/
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 13px;
   -moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 13px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 13px;
@@ -168,6 +170,9 @@ ul.sf-menu li li li.sfHover ul {
   padding: 26px 30px 31px;
   width: 100%;
 }
+.sf-menu > li > ul > li {
+  margin-top: 15px !important;
+}
 .sf-menu > li > ul > li > a {
   text-transform: uppercase;
   font: 600 16px/20px "Gotham", Century Gothic, Futura, sans-serif;
@@ -175,9 +180,10 @@ ul.sf-menu li li li.sfHover ul {
 }
 
 .sf-menu > li > ul > li {
-  float: left;
-  width: 20%;
+  /*float: left;*/
+  /*width: 20%;*/
   padding-right: 15px;
+  /* This affects sub category from parent */
 }
 @media (max-width: 767px) {
   .sf-menu > li > ul > li {
@@ -198,6 +204,9 @@ ul.sf-menu li li li.sfHover ul {
   .sf-menu > li > ul > li.first-in-line-xs {
     clear: left;
   }
+}
+.sf-menu > li > ul > li:hover ul li a {
+  display: inline-block;
 }
 
 .sf-menu > li > ul > li#category-thumbnail {

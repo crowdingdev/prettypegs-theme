@@ -1830,7 +1830,8 @@ div.star a:hover {
 		}
 		h4 {
 			font: 600 18px / 22px $font-custom;
-			color: $light-text-color;
+			color: #777777;
+			font-weight:  normal;
 			margin: 0 0 13px 0;
 			// max 767px
 			@media (max-width: $screen-xs-max) {
@@ -2458,7 +2459,6 @@ table#cart_summary .gift-icon {
 	}
 	.waitimage {
 		display: none;
-		float: left;
 		width: 24px;
 		height: 24px;
 		background-image: url("../../../img/loader.gif");
@@ -3686,4 +3686,27 @@ div.star.star_hover {
 
 .no-bg{
 	background:none !important;
+}
+
+
+.header-container{
+	.shop-slogan{
+		width: 100%;
+		height: 0px;
+		
+		h1{
+			margin-top: 13px;
+			text-align: center;
+			text-transform:uppercase;
+			font-size: 12px;
+		}
+	}
+
+	@media (max-width: 700px) {
+		.shop-slogan{
+			h1{
+text-align:right;
+}
+		}
+	}
 }
