@@ -108,7 +108,7 @@ img {
 #thumbs_list {
   overflow: hidden;
   float: left;
-  width: 470px;
+  width: 487px;
 }
 @media (min-width: 960px) and (max-width: 959px) {
   #thumbs_list {
@@ -473,23 +473,20 @@ span.view_scroll_spacer {
 }
 #attributes .attribute_list #color_to_pick_list li a.color_pick {
   display: block;
-  padding: 8px 16px;
+  padding: 16px;
   cursor: pointer;
-  border-top-right-radius: 30px;
-  border-top-left-radius: 30px;
+  border-radius: 3px;
   vertical-align: middle;
 }
 #attributes .attribute_list #color_to_pick_list li.selected a {
-  padding: 16px;
-  margin-top: -16px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 6px;
 }
 #attributes .attribute_list #color_to_pick_list li:hover a {
-  -webkit-transition: 0.2s ease-in-out;
-  -moz-transition: 0.2s ease-in-out;
-  -o-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
-  padding: 16px;
-  margin-top: -16px;
+  -webkit-transition: 0.05s ease-in-out;
+  -moz-transition: 0.05s ease-in-out;
+  -o-transition: 0.05s ease-in-out;
+  transition: 0.05s ease-in-out;
+  margin-top: -2px;
 }
 
 .product_attributes,
