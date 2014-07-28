@@ -53,10 +53,7 @@
 		{/if}
 
 
-
 		<div class="pb-left-column col-xs-7">
-
-
 
 			<!-- product img-->
 			<div id="image-block" class="clearfix">

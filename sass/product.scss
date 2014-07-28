@@ -48,9 +48,7 @@ img{
 		position: relative;
 		display: block;
 		cursor: pointer;
-		padding: 5px;
 		background: $light-background;
-		border: 1px solid #ccc;
 		@media (max-width: $screen-xs-max) { //max 767px
 			width: 180px;
 			margin: 0 auto;
@@ -122,7 +120,7 @@ img{
 #thumbs_list {
 	overflow: hidden;
 	float: left;
-	width: 487px;
+	width: 470px;
 	@media (min-width: $screen-md) and (max-width: $screen-md-max) { //min 992px max 1199px
 		width: 290px;
 	}
@@ -143,7 +141,6 @@ img{
 		height: 90px;
 		width: 90px;
 		cursor: pointer;
-		border: 1px solid $product-image-border;
 		//margin-right: 8px;
 		line-height: 0;
 		@include box-sizing(border-box);
@@ -462,29 +459,29 @@ span.view_scroll_spacer {
 				padding: 1px;
 				margin-top:15px;
 				clear: none;
-
+	// padding: 11px;
 				a.color_pick {
 
 					display: block;
 					//margin-top:-16px;
-					padding: 16px;
+					width: 20px;
+					height: 20px;
 					cursor: pointer;
 					border-radius: 3px;
 
 					vertical-align: middle;
+					img{
+						border-radius: 3px;						
+					}
 				}
 				&.selected{
 					a{
-						 box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 6px;
+						 box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px;
 					}
 				}
 				&:hover{
 					a{
-						-webkit-transition: 0.05s ease-in-out;
-						-moz-transition: 0.05s ease-in-out;
-						-o-transition: 0.05s ease-in-out;
-						transition: 0.05s ease-in-out;
-						margin-top:-2px;
+						 box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px;
 					}
 				}
 			}

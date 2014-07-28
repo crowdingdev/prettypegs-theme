@@ -65,6 +65,8 @@
 
 #layered_block_left ul li label {
   cursor: pointer;
+  display: block;
+  font-size: 12px;
 }
 
 #layered_block_left ul {
@@ -107,11 +109,13 @@
 }
 
 #layered_block_left .color-option {
-  border: 1px solid #666666;
-  height: 16px;
+  height: 22px;
   margin-left: 0;
   padding: 0;
-  width: 16px;
+  width: 22px;
+  background-size: 100% !important;
+  border-radius: 3px;
+  border: none;
 }
 
 #layered_block_left .color-option.disable {
@@ -130,10 +134,11 @@
 
 #layered_form .color-option {
   margin-left: 0;
-  width: 16px;
-  height: 16px;
+  width: 22px;
+  height: 22px;
   padding: 0;
-  border: 1px solid #666;
+  background-size: 100% !important;
+  border-radius: 3px;
 }
 
 #layered_form .color-option.on {
@@ -201,7 +206,6 @@
 }
 
 #layered_form div div ul {
-  max-height: 200px;
   overflow-x: auto;
 }
 

@@ -1,20 +1,16 @@
 /* Footer background color */
-/* line 3, ../../../sass/modules/blockcurrencies/blockcurrencies.scss */
 #currencies-block-top {
   float: right;
   position: relative;
 }
 @media (max-width: 479px) {
-  /* line 3, ../../../sass/modules/blockcurrencies/blockcurrencies.scss */
   #currencies-block-top {
     width: 25%;
   }
 }
-/* line 10, ../../../sass/modules/blockcurrencies/blockcurrencies.scss */
 #currencies-block-top span.firstWord {
   display: none;
 }
-/* line 13, ../../../sass/modules/blockcurrencies/blockcurrencies.scss */
 #currencies-block-top div.current {
   padding: 8px 10px 10px 10px;
   margin: 3px 10px 0 0;
@@ -22,14 +18,12 @@
   line-height: 18px;
 }
 @media (max-width: 479px) {
-  /* line 13, ../../../sass/modules/blockcurrencies/blockcurrencies.scss */
   #currencies-block-top div.current {
     text-align: center;
     padding: 9px 5px 10px;
     font-size: 11px;
   }
 }
-/* line 33, ../../../sass/modules/blockcurrencies/blockcurrencies.scss */
 #currencies-block-top div.current:after {
   content: "\f0d7";
   font-family: "FontAwesome";
@@ -39,7 +33,6 @@
   padding-left: 5px;
 }
 @media (max-width: 479px) {
-  /* line 33, ../../../sass/modules/blockcurrencies/blockcurrencies.scss */
   #currencies-block-top div.current:after {
     padding-left: 2px;
     font-size: 13px;
@@ -48,12 +41,10 @@
   }
 }
 @media (max-width: 479px) {
-  /* line 49, ../../../sass/modules/blockcurrencies/blockcurrencies.scss */
   #currencies-block-top div.current .cur-label {
     display: none;
   }
 }
-/* line 56, ../../../sass/modules/blockcurrencies/blockcurrencies.scss */
 #currencies-block-top ul {
   display: none;
   position: absolute;
@@ -61,22 +52,19 @@
   left: 0;
   width: 157px;
   background: #333333;
-  z-index: 2;
+  z-index: 2 !important;
 }
-/* line 64, ../../../sass/modules/blockcurrencies/blockcurrencies.scss */
 #currencies-block-top ul li {
   color: white;
   line-height: 35px;
   font-size: 13px;
 }
-/* line 69, ../../../sass/modules/blockcurrencies/blockcurrencies.scss */
 #currencies-block-top ul li a,
 #currencies-block-top ul li > span {
   padding: 0 10px 0 12px;
   display: block;
   color: white;
 }
-/* line 74, ../../../sass/modules/blockcurrencies/blockcurrencies.scss */
 #currencies-block-top ul li.selected, #currencies-block-top ul li:hover a {
   background: #484848;
 }

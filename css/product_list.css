@@ -33,6 +33,10 @@ ul.product_list .color-list-container ul li a {
 ul.product_list .color-list-container ul li a:hover {
   box-shadow: 0px 0px 3px  #ccc;
 }
+ul.product_list .color-list-container ul li a:nth-child(4) {
+  width: 300px;
+  display: none !important;
+}
 ul.product_list .product-image-container {
   font-size: 30px !important;
   text-align: center;
@@ -137,7 +141,7 @@ ul.product_list .functional-buttons div.compare a.checked:before {
 Product list(Grid) Styles
 ********************************************************/
 ul.product_list.grid > li {
-  padding-bottom: 30px;
+  padding-bottom: 5px;
   text-align: center;
 }
 @media (min-width: 480px) and (max-width: 767px) {
@@ -150,6 +154,15 @@ ul.product_list.grid > li .product-container {
   overflow: hidden;
   padding: 0;
   position: relative;
+  height: 217px;
+}
+@media (max-width: 767px) {
+  ul.product_list.grid > li .product-container {
+    height: 300px;
+  }
+  ul.product_list.grid > li .product-container img {
+    border: none;
+  }
 }
 ul.product_list.grid > li .product-container .product-image-container {
   border: 1px solid #d6d4d4;
@@ -444,7 +457,7 @@ ul.product_list.list > li .right-block .right-block-content .functional-buttons 
 
 .pp-product-color-overlay {
   position: relative;
-  bottom: 220px;
+  bottom: 195px;
 }
 .pp-product-color-overlay ul {
   float: right;

@@ -25,7 +25,9 @@ ul.product_list {
 	}
 	.color-list-container {
 		margin-bottom: 12px;
+
 		ul {
+
 			li {
 				display: inline-block;
 
@@ -40,8 +42,12 @@ ul.product_list {
 						box-shadow: 0px 0px 3px  #ccc;
 					}
 				}
-
+				a:nth-child(4){
+				width: 300px;
+				display:none !important;
 			}
+			}
+			
 		}
 	}
 
@@ -150,16 +156,23 @@ Product list(Grid) Styles
 
 ul.product_list.grid {
 	> li {
-		padding-bottom: 30px;
+		padding-bottom: 5px;
 		text-align: center;
 		@media (min-width: $screen-xs) and (max-width: $screen-xs-max) { // min 480px max 767px
 			width: 50%;
 			float: left;
+
 		}
 		.product-container {
 			overflow: hidden;
 			padding: 0;
 			position: relative;
+			height: 217px; 
+				@media (max-width: $screen-xs-max) { // max 767px
+					height: 300px;
+					img{border:none;} 
+				}
+
 			.product-image-container {
 				border: 1px solid $base-listing-border-color;
 				//padding: 9px;
@@ -241,7 +254,6 @@ ul.product_list.grid {
 		@media (min-width: $screen-lg) { // min 1200px
 			&.hovered {
 				.product-container {
-					//@include box-shadow(rgba(black, 0.17) 0 0 13px);
 					position: relative;
 					z-index: 10;
 					.content_price {
@@ -479,7 +491,7 @@ ul.product_list.list {
 
 .pp-product-color-overlay{
 	position:relative;
-	bottom: 220px;
+	bottom: 195px;
 
 	ul{
 		//margin-top:-100px;
