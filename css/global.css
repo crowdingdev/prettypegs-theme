@@ -6720,6 +6720,7 @@ textarea {
 
 .columns-container {
   background: url(../img/bg_patterns/noise.png) white;
+  PADDING-bottom: 30px;
 }
 
 #columns {
@@ -8671,7 +8672,7 @@ div.star a:hover {
   width: 100%;
 }
 .footer-container #footer .partner {
-  margin-top: 50px;
+  margin-top: 20px;
   background: url("../img/icon/footer-partners-inner-shadow.png");
   height: 80px;
   background-size: 100%;
@@ -10248,4 +10249,9 @@ div.star.star_hover:after {
   .header-container .shop-slogan h1 {
     text-align: right;
   }
+}
+
+#block_various_links_footer {
+  border-left: 1px solid #515151;
+  height: 100%;
 }

@@ -73,6 +73,9 @@ $(document).ready(function(){
 		combinationImages = combinationImagesJS;
     }
 
+
+
+
 	if (typeof combinations !== 'undefined' && combinations)
 	{
 		combinationsJS = [];
@@ -184,18 +187,28 @@ $(document).ready(function(){
 		e.preventDefault();
 		colorPickerClick($(this));
 		getProductAttribute();
+
+		console.log("colorpick.");
+	$( ".attribute_radio").trigger( "priceCalucation" );
 	});
 
 	$(document).on('change', '.attribute_select', function(e){
 		e.preventDefault();
 		findCombination();
 		getProductAttribute();
+	
+
 	});
 
 	$(document).on('click', '.attribute_radio', function(e){
 		e.preventDefault();
 		findCombination();
 		getProductAttribute();
+		//Attribute
+ 		
+
+ 		$( ".attribute_radio").trigger( "priceCalucation" );
+
 	});
 
 	$(document).on('click', 'button[name=saveCustomization]', function(e){
@@ -252,22 +265,57 @@ $(document).ready(function(){
 		} else {
 				quantityAvailableT = 100000000;
 		}
-        if (!isNaN(currentVal) && currentVal < quantityAvailableT) {
+
+
+
+ 				if (!isNaN(currentVal) && currentVal < quantityAvailableT) {
             $('input[name='+fieldName+']').val(currentVal + 1).trigger('keyup');
+            var total = (productPrice * (currentVal + 1));
+           
+           
+            var total = total.toFixed(0);
+            $('p.our_price_display').fadeOut();
+            $('span#our_price_display').text(total + ' ' + currencySign)
+            $('p.our_price_display').fadeIn();
         } else {
             $('input[name='+fieldName+']').val(quantityAvailableT);
         }
-    });
-	 // The button to decrement the product value
-    $(document).on('click', '.product_quantity_down', function(e){
-        e.preventDefault();
-        fieldName = $(this).data('field-qty');
-        var currentVal = parseInt($('input[name='+fieldName+']').val());
-        if (!isNaN(currentVal) && currentVal > 1) {
-            $('input[name='+fieldName+']').val(currentVal - 1).trigger('keyup');
-        } else {
-            $('input[name='+fieldName+']').val(1);
-        }
+
+        //Replaced
+
+        // if (!isNaN(currentVal) && currentVal < quantityAvailableT) {
+        //     $('input[name='+fieldName+']').val(currentVal + 1).trigger('keyup');
+        // } else {
+        //     $('input[name='+fieldName+']').val(quantityAvailableT);
+        // }
+
+		    });
+			 // The button to decrement the product value
+		    $(document).on('click', '.product_quantity_down', function(e){
+		        e.preventDefault();
+		        fieldName = $(this).data('field-qty');
+		          var currentVal = parseInt($('input[name='+fieldName+']').val());
+		        if (!isNaN(currentVal) && currentVal > 1) {
+		            $('input[name='+fieldName+']').val(currentVal - 1).trigger('keydown');
+		            
+		            var total = (productPrice * (currentVal - 1));
+
+
+		            var total = total.toFixed(0);
+		            $('p.our_price_display').fadeOut();
+		            $('span#our_price_display').text(total + ' ' + currencySign)
+		            $('p.our_price_display').fadeIn();
+		        } else {
+		            //$('input[name='+fieldName+']').val(quantityAvailableT);
+		        }
+
+        //Replaced
+
+        // if (!isNaN(currentVal) && currentVal > 1) {
+        //     $('input[name='+fieldName+']').val(currentVal - 1).trigger('keyup');
+        // } else {
+        //     $('input[name='+fieldName+']').val(1);
+        // }
     });
 
 	if (typeof minimalQuantity != 'undefined' && minimalQuantity)

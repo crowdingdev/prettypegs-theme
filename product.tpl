@@ -337,12 +337,14 @@
 					<!-- quantity wanted -->
 					{if !$PS_CATALOG_MODE}
 					<p id="quantity_wanted_p"{if (!$allow_oosp && $product->quantity <= 0) || !$product->available_for_order || $PS_CATALOG_MODE} style="display: none;"{/if}>
+
+
 						<label>{l s='Quantity:'}</label>
 
 						<a href="#" data-field-qty="qty" class="btn btn-default button-minus product_quantity_down">
 							<span><i class="icon-minus"></i></span>
 						</a>
-						<input type="text" name="qty" id="quantity_wanted" class="text" value="{if isset($quantityBackup)}{$quantityBackup|intval}{else}{if $product->minimal_quantity > 1}{$product->minimal_quantity}{else}1{/if}{/if}" />
+						<input type="text" name="qty" id="quantity_wanted" class="text" value="4" />
 
 
 						<a href="#" data-field-qty="qty" class="btn btn-default button-plus product_quantity_up ">
@@ -429,7 +431,7 @@
 
 						{if $priceDisplay >= 0 && $priceDisplay <= 2}
 
-						<span id="our_price_display" class="total-price" itemprop="price">{convertPrice price=$productPrice}</span>
+						<span id="our_price_display" data-price="{$productPrice}" class="total-price" itemprop="price">{convertPrice price=$productPrice}</span>
 										<!--{if $tax_enabled  && ((isset($display_tax_label) && $display_tax_label == 1) || !isset($display_tax_label))}
 											{if $priceDisplay == 1}{l s='tax excl.'}{else}{l s='tax incl.'}{/if}
 											{/if}-->
@@ -457,7 +459,7 @@
 											{l s='tax excl.'}
 										</span>
 										{/if}
-										<p class="shipping-included">{l s='Shipping included'}</p>
+										<p class="shipping-included">({l s='Shipping included'})</p>
 									</div><!-- end prices -->
 
 
@@ -720,8 +722,13 @@
 			</section>
 
 			<!--end Customization -->
+
 			{/if}
 			{/if}
+
+
+
+
 			{if isset($packItems) && $packItems|@count > 0}
 			<section id="blockpack">
 				<h3 class="page-product-heading">{l s='Pack content'}</h3>
@@ -820,3 +827,26 @@
 			{addJsDefL name=uploading_in_progress}{l s='Uploading in progress, please be patient.' js=1}{/addJsDefL}
 			{/strip}
 			{/if}
+
+
+	<script type="text/javascript">
+	
+		$(document).ready(function(){
+			/* This sets the price multiplied to the quantity on page load. */
+        var quantityOnPageLoad = $('#quantity_wanted').val();
+        var priceOnLoad = $('span#our_price_display').attr('data-price');
+        var total = (parseFloat(priceOnLoad) * ( parseFloat(quantityOnPageLoad) ));
+        $('span#our_price_display').text(parseInt(total, 10) + ' ' + currencySign);
+
+
+      //$( ".attribute_radio" ).on( "custom", function( event, param1, param2 ) {
+      $( ".attribute_radio").on('priceCalucation', function(e){
+        console.log("doidiod");
+	 			var quantityOnPageLoad = $('#quantity_wanted').val();
+        var priceOnLoad = $('span#our_price_display').attr('data-price');
+        var total = (parseFloat(priceOnLoad) * ( parseFloat(quantityOnPageLoad) ));
+        setTimeout(function(){ $('span#our_price_display').text(parseInt(total, 10) + ' ' + currencySign)}, 200 );
+			});
+   });
+	
+	</script>

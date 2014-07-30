@@ -88,6 +88,7 @@ textarea {
 
 .columns-container {
 	background: url(../img/bg_patterns/noise.png) #fff;
+	padding-bottom: 30px;
 }
 
 #columns {
@@ -2017,7 +2018,7 @@ div.star a:hover {
 
 
 		.partner{
-			margin-top:50px;
+			margin-top:20px;
 			background: url('../img/icon/footer-partners-inner-shadow.png');
 			height: 80px;
 			background-size: 100%;
@@ -2753,6 +2754,7 @@ p.cheque-indent {
 #authentication,
 #order-opc {
 	#center_column {
+
 		form.std {
 			.row {
 				margin-left: -5px;
@@ -3709,4 +3711,9 @@ text-align:right;
 }
 		}
 	}
+}
+
+#block_various_links_footer{
+	border-left: 1px solid #515151;
+	height:100%;
 }
