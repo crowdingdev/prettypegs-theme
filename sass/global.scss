@@ -1298,7 +1298,7 @@ ul.footer_links {
 	div.pagination {
 		margin: 0;
 		float: right;
-		width: 530px;
+		width: 100%;
 		text-align: center;
 		// min 992px max 1199px
 		@media (min-width: $screen-md) and (max-width: $screen-md-max) {
@@ -1310,8 +1310,8 @@ ul.footer_links {
 			width: auto;
 		}
 		.showall {
-			float: right;
-			margin: 8px 53px 8px 14px;
+			float: left;
+			margin: 8px 53px 8px 0;
 			// min 992px max 1199px
 			@media (min-width: $screen-md) and (max-width: $screen-md-max) {
 				margin-right: 11px;
@@ -1323,7 +1323,7 @@ ul.footer_links {
 			.btn {
 				span {
 					font-size: 13px;
-					padding: 3px 5px 4px 5px;
+					padding: 3px 5px 4px 0;
 					line-height: normal;
 				}
 			}

@@ -831,22 +831,22 @@
 
 	<script type="text/javascript">
 	
-		$(document).ready(function(){
-			/* This sets the price multiplied to the quantity on page load. */
-        var quantityOnPageLoad = $('#quantity_wanted').val();
-        var priceOnLoad = $('span#our_price_display').attr('data-price');
-        var total = (parseFloat(priceOnLoad) * ( parseFloat(quantityOnPageLoad) ));
-        $('span#our_price_display').text(parseInt(total, 10) + ' ' + currencySign);
+		// $(document).ready(function(){
+		// 	/* This sets the price multiplied to the quantity on page load. */
+  //       var quantityOnPageLoad = $('#quantity_wanted').val();
+  //       var priceOnLoad = $('span#our_price_display').attr('data-price');
+  //       var total = (parseFloat(priceOnLoad) * ( parseFloat(quantityOnPageLoad) ));
+  //       $('span#our_price_display').text(parseInt(total, 10) + ' ' + currencySign);
 
 
-      //$( ".attribute_radio" ).on( "custom", function( event, param1, param2 ) {
-      $( ".attribute_radio").on('priceCalucation', function(e){
-        console.log("doidiod");
-	 			var quantityOnPageLoad = $('#quantity_wanted').val();
-        var priceOnLoad = $('span#our_price_display').attr('data-price');
-        var total = (parseFloat(priceOnLoad) * ( parseFloat(quantityOnPageLoad) ));
-        setTimeout(function(){ $('span#our_price_display').text(parseInt(total, 10) + ' ' + currencySign)}, 200 );
-			});
-   });
+  //     //$( ".attribute_radio" ).on( "custom", function( event, param1, param2 ) {
+  //     $( ".attribute_radio").on('priceCalucation', function(e){
+  //       console.log("doidiod");
+	 // 			var quantityOnPageLoad = $('#quantity_wanted').val();
+  //       var priceOnLoad = $('span#our_price_display').attr('data-price');
+  //       var total = (parseFloat(priceOnLoad) * ( parseFloat(quantityOnPageLoad) ));
+  //       setTimeout(function(){ $('span#our_price_display').text(parseInt(total, 10) + ' ' + currencySign)}, 200 );
+		// 	});
+  //  });
 	
 	</script>

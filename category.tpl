@@ -66,10 +66,7 @@
 		{/if}
 		{if $products}
 			<div class="content_sortPagiBar clearfix">
-            	<div class="sortPagiBar clearfix">
-            	
-                	{include file="./nbr-product-page.tpl"}
-				</div>
+        
                 <div class="top-pagination-content clearfix">
                 	{include file="./product-compare.tpl"}
 					{include file="$tpl_dir./pagination.tpl"}

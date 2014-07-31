@@ -65,7 +65,7 @@
 					{if isset($tag) AND $tag AND !is_array($tag)}
 						<input type="hidden" name="tag" value="{$tag|escape:'html':'UTF-8'}" />
 					{/if}
-	                <button type="submit" class="btn btn-default button exclusive-medium">
+	                <button type="submit" style="" class="btn btn-default button exclusive-medium">
 	                	<span>{l s='Show all'}</span>
 	                </button>
 					{if is_array($requestNb)}
@@ -80,7 +80,7 @@
 			</form>
 		{/if}
 		{if $start!=$stop}
-			<ul class="pagination">
+			<ul class="pagination" style="display:none;">
 				{if $p != 1}
 					{assign var='p_previous' value=$p-1}
 					<li id="pagination_previous{if isset($paginationId)}_{$paginationId}{/if}" class="pagination_previous">

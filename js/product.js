@@ -188,8 +188,6 @@ $(document).ready(function(){
 		colorPickerClick($(this));
 		getProductAttribute();
 
-		console.log("colorpick.");
-	$( ".attribute_radio").trigger( "priceCalucation" );
 	});
 
 	$(document).on('change', '.attribute_select', function(e){
@@ -204,10 +202,6 @@ $(document).ready(function(){
 		e.preventDefault();
 		findCombination();
 		getProductAttribute();
-		//Attribute
- 		
-
- 		$( ".attribute_radio").trigger( "priceCalucation" );
 
 	});
 
@@ -273,9 +267,9 @@ $(document).ready(function(){
             var total = (productPrice * (currentVal + 1));
            
            
-            var total = total.toFixed(0);
+            //var total = total.toFixed(0);
             $('p.our_price_display').fadeOut();
-            $('span#our_price_display').text(total + ' ' + currencySign)
+            $('span#our_price_display').text(formatCurrency(total, currencyFormat, currencySign, currencyBlank) );
             $('p.our_price_display').fadeIn();
         } else {
             $('input[name='+fieldName+']').val(quantityAvailableT);
@@ -301,9 +295,9 @@ $(document).ready(function(){
 		            var total = (productPrice * (currentVal - 1));
 
 
-		            var total = total.toFixed(0);
+		            //var total = total.toFixed(0);
 		            $('p.our_price_display').fadeOut();
-		            $('span#our_price_display').text(total + ' ' + currencySign)
+		            $('span#our_price_display').text(formatCurrency(total, currencyFormat, currencySign, currencyBlank) );
 		            $('p.our_price_display').fadeIn();
 		        } else {
 		            //$('input[name='+fieldName+']').val(quantityAvailableT);
@@ -704,9 +698,12 @@ function updateDisplay()
 		else
 			productPriceWithoutReductionDisplay += ecotaxAmount;
 
+
+		// Linus Multiplies price by quantity
+		var quantityOnPageLoad = $('#quantity_wanted').val();
 		var our_price = '';
 		if (productPriceDisplay > 0) {
-			our_price = formatCurrency(productPriceDisplay, currencyFormat, currencySign, currencyBlank);
+			our_price = formatCurrency(productPriceDisplay * quantityOnPageLoad, currencyFormat, currencySign, currencyBlank);
 		} else {
 			our_price = formatCurrency(0, currencyFormat, currencySign, currencyBlank);
 		}
