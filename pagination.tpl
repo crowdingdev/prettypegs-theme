@@ -65,8 +65,9 @@
 					{if isset($tag) AND $tag AND !is_array($tag)}
 						<input type="hidden" name="tag" value="{$tag|escape:'html':'UTF-8'}" />
 					{/if}
-	                <button type="submit" style="" class="btn btn-default button exclusive-medium">
-	                	<span>{l s='Show all'}</span>
+	                <button type="submit" class="btn btn-default button button-medium exclusive-medium">
+	                	<span>{l s='Show all'}<i class="icon-star  right"></i></span>
+
 	                </button>
 					{if is_array($requestNb)}
 						{foreach from=$requestNb item=requestValue key=requestKey}

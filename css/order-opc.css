@@ -10,7 +10,6 @@
 }
 #order-opc .page-heading.step-num {
   position: relative;
-  padding-left: 45px;
   overflow: visible;
 }
 #order-opc .page-heading.step-num span {
@@ -27,7 +26,7 @@
   margin-bottom: 2px;
 }
 #order-opc .form-group .form-control {
-  max-width: 271px;
+  width: 271px;
 }
 #order-opc .lost_password {
   display: inline-block;

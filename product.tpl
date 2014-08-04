@@ -385,7 +385,7 @@
 
 
 										{if file_exists($col_img_dir|cat:$id_attribute|cat:'.jpg')}
-										<img src="{$img_col_dir}{$id_attribute|intval}.jpg" alt="{$colors.$id_attribute.name|escape:'html':'UTF-8'}" width="20" height="20" />
+										<img src="{$img_col_dir}{$id_attribute|intval}.jpg" alt="{$colors.$id_attribute.name|escape:'html':'UTF-8'}" width="40px" height="40px" />
 										{/if}
 									</a>
 								</li>
@@ -828,25 +828,3 @@
 			{/strip}
 			{/if}
 
-
-	<script type="text/javascript">
-	
-		// $(document).ready(function(){
-		// 	/* This sets the price multiplied to the quantity on page load. */
-  //       var quantityOnPageLoad = $('#quantity_wanted').val();
-  //       var priceOnLoad = $('span#our_price_display').attr('data-price');
-  //       var total = (parseFloat(priceOnLoad) * ( parseFloat(quantityOnPageLoad) ));
-  //       $('span#our_price_display').text(parseInt(total, 10) + ' ' + currencySign);
-
-
-  //     //$( ".attribute_radio" ).on( "custom", function( event, param1, param2 ) {
-  //     $( ".attribute_radio").on('priceCalucation', function(e){
-  //       console.log("doidiod");
-	 // 			var quantityOnPageLoad = $('#quantity_wanted').val();
-  //       var priceOnLoad = $('span#our_price_display').attr('data-price');
-  //       var total = (parseFloat(priceOnLoad) * ( parseFloat(quantityOnPageLoad) ));
-  //       setTimeout(function(){ $('span#our_price_display').text(parseInt(total, 10) + ' ' + currencySign)}, 200 );
-		// 	});
-  //  });
-	
-	</script>

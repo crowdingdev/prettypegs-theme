@@ -49,10 +49,10 @@
 					{/foreach}
 				</select><span class="waitimage"></span>
 			</div>
-			<p class="checkbox addressesAreEquals"{if $cart->isVirtualCart()} style="display:none;"{/if}>
-				<input type="checkbox" name="same" id="addressesAreEquals" value="1"{if $cart->id_address_invoice == $cart->id_address_delivery || $addresses|@count == 1} checked="checked"{/if} />
-				<label for="addressesAreEquals">{l s='Use the delivery address as the billing address.'}</label>
-			</p>
+				<p class="checkbox addressesAreEquals"{if $cart->isVirtualCart()} style="display:none;"{/if}>
+<input type="checkbox" name="same" id="addressesAreEquals" value="1"{if $cart->id_address_invoice == $cart->id_address_delivery || $addresses|@count == 1} checked="checked"{/if} />
+<label for="addressesAreEquals">{l s='Use the delivery address as the billing address.'}</label>
+</p>
 		</div>
 		<div class="col-xs-12 col-sm-6">
 			<div id="address_invoice_form" class="select form-group selector1"{if $cart->id_address_invoice == $cart->id_address_delivery} style="display: none;"{/if}>

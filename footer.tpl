@@ -44,19 +44,19 @@
 
 				<div class="col-xs-4">
 					<a href="#">
-						<span class="pp-link pp-see-all-pegs"></span>
+						<span class="pp-link pp-see-all-pegs">see all pegs</span>
 					</a>
 				</div>
 
 				<div class="col-xs-4">
 					<a href="#">
-						<span class="pp-link pp-campaigns"></span>
+						<span class="pp-link pp-campaigns">campaigns</span>
 					</a>
 				</div>
 
 				<div class="col-xs-4">
 					<a href="#">
-						<span class="pp-link pp-inspiration"></span>
+						<span class="pp-link pp-inspiration">inspiration</span>
 					</a>
 				</div>
 			</div>
@@ -95,15 +95,24 @@
 				</div>
 			</div>
 		</div>
-
+	
 
 	</div>
+
+</div>
+<div class="pre-footer-banner-container">
+	<div class="container">
+		<div class="row shipping-banner"><h5>WE SHIP WORLD WIDE</h5></div>
+
+	</div>
+
 </div>
 
 <!-- END Moved from index.tpl -->
 <!-- Footer -->
 <div class="footer-container">
 	<footer id="footer" class="container">
+
 		<div class="row"> <!-- { $HOOK_FOOTER } -->
 
 

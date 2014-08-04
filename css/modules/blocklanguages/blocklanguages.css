@@ -2,7 +2,7 @@
 #languages-block-top {
   float: right;
   position: relative;
-  z-index: 42;
+  z-index: 90;
 }
 @media (max-width: 479px) {
   #languages-block-top {

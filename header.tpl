@@ -69,7 +69,7 @@
 					<div class="container">
 						<div class="row shop-slogan">
 							
-							<h1>{l s='Designed furniture legs'}</h1>
+							<h1>{l s='Designed furniture legs'}</h1> <a href="shipping"> Free shipping world wide</a>
 						</div>
 						
 						<div class="row">

@@ -169,6 +169,8 @@
 					</div>
 					<input type="hidden" name="alias" id="alias" value="{l s='My address'}"/>
 
+
+
 					<div id="opc_invoice_address" class="is_customer_param">
 						{assign var=stateExist value=false}
 						{assign var=postCodeExist value=false}

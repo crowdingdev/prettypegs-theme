@@ -15,7 +15,6 @@
 	}
 	.page-heading.step-num {
 		position: relative;
-		padding-left: 45px;
 		overflow: visible;
 		span {
 			font-weight: bold;
@@ -31,7 +30,7 @@
 	.form-group {
 		margin-bottom: 2px;
 		.form-control {
-			max-width: 271px;
+			width: 271px;
 		}
 	}
 	.lost_password {

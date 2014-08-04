@@ -470,8 +470,8 @@ span.view_scroll_spacer {
 }
 #attributes .attribute_list #color_to_pick_list li a.color_pick {
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 28px;
   cursor: pointer;
   border-radius: 3px;
   vertical-align: middle;
@@ -479,11 +479,15 @@ span.view_scroll_spacer {
 #attributes .attribute_list #color_to_pick_list li a.color_pick img {
   border-radius: 3px;
 }
-#attributes .attribute_list #color_to_pick_list li.selected a {
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px;
-}
-#attributes .attribute_list #color_to_pick_list li:hover a {
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px;
+#attributes .attribute_list #color_to_pick_list li.selected:after {
+  height: 10px;
+  overflow: hidden;
+  position: relative;
+  top: -23px;
+  left: 9px;
+  font-family: "FontAwesome";
+  content: "\f046";
+  text-shadow: white 0px 0px 8px;
 }
 
 .product_attributes,

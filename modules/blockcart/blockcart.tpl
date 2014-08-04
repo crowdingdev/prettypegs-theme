@@ -254,9 +254,9 @@
 							<strong class="dark">
 								{l s='Total products' mod='blockcart'}
 								{if $priceDisplay == 1}
-								{l s='(tax excl.)' mod='blockcart'}
+								
 								{else}
-								{l s='(tax incl.)' mod='blockcart'}
+								
 								{/if}
 							</strong>
 							<span class="ajax_block_products_total">
@@ -287,7 +287,7 @@
 						{/if}
 						<div class="layer_cart_row">
 							<strong class="dark">
-								{l s='Total shipping' mod='blockcart'}&nbsp;{l s='(tax excl.)' mod='blockcart'}
+								{l s='Total shipping' mod='blockcart'}&nbsp;
 							</strong>
 							<span class="ajax_cart_shipping_cost">
 								{if $shipping_cost_float == 0}
@@ -307,9 +307,9 @@
 							<strong class="dark">
 								{l s='Total' mod='blockcart'}
 								{if $priceDisplay == 1}
-								{l s='(tax excl.)' mod='blockcart'}
+								
 								{else}
-								{l s='(tax incl.)' mod='blockcart'}
+								
 								{/if}
 							</strong>
 							<span class="ajax_block_cart_total">
@@ -323,11 +323,7 @@
 							</span>
 						</div>
 						<div class="button-container">
-							<span class="continue btn btn-default button exclusive-medium" title="{l s='Continue shopping' mod='blockcart'}">
-								<span>
-									<i class="icon-chevron-left left"></i>{l s='Continue shopping' mod='blockcart'}
-								</span>
-							</span>
+							
 							<a class="btn btn-default button button-medium"	href="{$link->getPageLink("$order_process", true)|escape:"html":"UTF-8"}" title="{l s='Proceed to checkout' mod='blockcart'}" rel="nofollow">
 								<span>
 									{l s='Proceed to checkout' mod='blockcart'}<i class="icon-chevron-right right"></i>

@@ -1,3 +1,4 @@
+@import "compass";
 @import '../../_theme_variables';
 #enabled_filters {
 	margin: 0 0 10px 0;
@@ -102,6 +103,7 @@
 	background-size: 100% !important;
 	border-radius: 3px;
 	border:none;
+	border: 1px solid #EEEEEE;
 }
 #layered_block_left .color-option.disable {
 	opacity: 0.5;
@@ -123,7 +125,9 @@
 	border-radius: 3px;
 }
 #layered_form  .color-option.on {
-	border: 1px solid red;
+	// box-shadow: inset 2px 2px 3px #000;
+	@include box-shadow(rgba(black, 0.40) 2px 2px 3px);
+	border:none;
 }
 #layered_form input[type=radio] {
 	margin-left: 2px;
@@ -162,6 +166,7 @@
 	margin-left: 100px;
 	text-align: center;
 }
+
 .hide-action {
 	text-align: center;
 	text-align: right;

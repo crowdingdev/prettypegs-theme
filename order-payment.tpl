@@ -32,7 +32,7 @@
 	{capture name=path}{l s='Your payment method'}{/capture}
 	<h1 class="page-heading">{l s='Please choose your payment method'}</h1>
 {else}
-	<h1 class="page-heading step-num"><span>3</span> {l s='Please choose your payment method'}</h1>
+	<h1 class="page-heading step-num"> {l s='Please choose your payment method'}</h1>
 {/if}
 
 {if !$opc}

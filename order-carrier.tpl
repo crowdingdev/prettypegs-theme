@@ -33,7 +33,7 @@
 		<form id="form" action="{$link->getPageLink('order', true, NULL, "multi-shipping={$multi_shipping}")|escape:'html':'UTF-8'}" method="post" name="carrier_area">
 {else}
 	<div id="carrier_area" class="opc-main-block">
-		<h1 class="page-heading step-num"><span>2</span> {l s='Delivery methods'}</h1>
+		
 			<div id="opc_delivery_methods" class="opc-main-block">
 				<div id="opc_delivery_methods-overlay" class="opc-overlay" style="display: none;"></div>
 {/if}
@@ -58,7 +58,10 @@
 				</div>
 			{/if}
 			<div class="delivery_options_address">
-				{if isset($delivery_option_list)}
+
+				<h3>Shipping with dhl [place logo here]</h3>
+
+				{if isset($delivery_option_list) && false}
 					{foreach $delivery_option_list as $id_address => $option_list}
 						<p class="carrier_title">
 							{if isset($address_collection[$id_address])}
@@ -67,8 +70,12 @@
 								{l s='Choose a shipping option'}
 							{/if}
 						</p>
-						<div class="delivery_options">
 
+
+
+{if ($option@index > 1)}
+
+						<div class="delivery_options">
 							{foreach $option_list as $key => $option}
 								<div class="delivery_option {if ($option@index % 2)}alternate_{/if}item">
 									<div>
@@ -182,6 +189,8 @@
 								</div> <!-- end delivery_option -->
 							{/foreach}
 						</div> <!-- end delivery_options -->
+
+						{/if}
 						<div class="hook_extracarrier" id="HOOK_EXTRACARRIER_{$id_address}">
 							{if isset($HOOK_EXTRACARRIER_ADDR) &&  isset($HOOK_EXTRACARRIER_ADDR.$id_address)}{$HOOK_EXTRACARRIER_ADDR.$id_address}{/if}
 						</div>

@@ -322,6 +322,7 @@
   width: 84%;
   margin-right: 8%;
   margin-left: 8%;
+  padding-left: 20px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -329,12 +330,11 @@
   border-radius: 4px;
 }
 #layer_cart .layer_cart_product {
-  padding: 30px 30px 30px 30px;
   overflow: hidden;
   position: static;
 }
 #layer_cart .layer_cart_product h2 {
-  font: 400 23px/29px "Gotham", Century Gothic, Futura, sans-serif;
+  font: 400 17px/29px "Gotham", Century Gothic, Futura, sans-serif;
   color: #46a74e;
   margin-bottom: 22px;
   padding-right: 100px;
