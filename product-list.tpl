@@ -84,7 +84,7 @@
 					{/if}
 				</div>
 
-				{if isset($product.color_list)}
+				{if isset($product.color_list) && false}
 				<div class="pp-product-color-overlay">
 					<div class="color-list-container">{$product.color_list} </div>
 				</div>

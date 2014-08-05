@@ -1861,8 +1861,6 @@ div.star a:hover {
 			li {
 				padding-bottom: 8px;
 				a {
-					font-weight: bold;
-					text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4);
 				}
 			}
 		}
@@ -2640,7 +2638,13 @@ p.payment_module {
 			font-weight: bold;
 			color: $base-body-color;
 		}
+		&:after{
+				font-family: $font-icon;
+				content: "\f054";
+				margin-left: 8px;
 	}
+	}
+
 }
 
 .payment_module.box {
@@ -3589,7 +3593,7 @@ a{
 
 }
 	.pp-link{
-		font-size: 30px;
+		font-size: 35px;
 		font-weight: bold;
 		padding: 40px 0;
 		float:left;
@@ -3747,6 +3751,7 @@ a{
 #block_various_links_footer{
 	border-left: 1px solid #515151;
 	height:100%;
+	min-height: 160px;
 }
 
 p.ajax-spinner{

@@ -8525,10 +8525,6 @@ div.star a:hover {
 .footer-container #footer ul li {
   padding-bottom: 8px;
 }
-.footer-container #footer ul li a {
-  font-weight: bold;
-  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4);
-}
 .footer-container #footer #block_contact_infos {
   border-left: 1px solid #515151;
 }
@@ -9218,6 +9214,11 @@ p.payment_module a:hover {
 p.payment_module a span {
   font-weight: bold;
   color: #777777;
+}
+p.payment_module a:after {
+  font-family: "FontAwesome";
+  content: "\f054";
+  margin-left: 8px;
 }
 
 .payment_module.box {
@@ -10148,7 +10149,7 @@ div.star.star_hover:after {
   text-align: center;
 }
 .navigation-wrapper .pp-link {
-  font-size: 30px;
+  font-size: 35px;
   font-weight: bold;
   padding: 40px 0;
   float: left;
@@ -10267,6 +10268,7 @@ div.star.star_hover:after {
 #block_various_links_footer {
   border-left: 1px solid #515151;
   height: 100%;
+  min-height: 160px;
 }
 
 p.ajax-spinner {

@@ -69,6 +69,7 @@ img {
   font-weight: 700;
 }
 .pb-left-column #image-block #view_full_size .span_link:after {
+  display: none;
   font-family: "FontAwesome";
   color: #c0c0c0;
   font-size: 20px;
@@ -463,15 +464,14 @@ span.view_scroll_spacer {
 }
 #attributes .attribute_list #color_to_pick_list li {
   float: left;
-  margin: 0 3px 3px 0;
+  margin: 1px 3px 3px 0;
   padding: 1px;
-  margin-top: 7px;
   clear: none;
 }
 #attributes .attribute_list #color_to_pick_list li a.color_pick {
   display: block;
   width: 30px;
-  height: 28px;
+  height: 30px;
   cursor: pointer;
   border-radius: 3px;
   vertical-align: middle;
@@ -479,15 +479,11 @@ span.view_scroll_spacer {
 #attributes .attribute_list #color_to_pick_list li a.color_pick img {
   border-radius: 3px;
 }
-#attributes .attribute_list #color_to_pick_list li.selected:after {
-  height: 10px;
-  overflow: hidden;
-  position: relative;
-  top: -23px;
-  left: 9px;
-  font-family: "FontAwesome";
-  content: "\f046";
-  text-shadow: white 0px 0px 8px;
+#attributes .attribute_list #color_to_pick_list li.selected a {
+  border: 3px solid #ccc;
+}
+#attributes .attribute_list #color_to_pick_list li:hover a {
+  border: 3px solid #ccc;
 }
 
 .product_attributes,

@@ -59,6 +59,7 @@ img{
 		}
 
 		#view_full_size {
+
 			.span_link {
 				position: absolute;
 				bottom: 20px;
@@ -74,6 +75,7 @@ img{
 				font-weight: 700;
 
 				&:after{
+					display:none;
 					font-family: $font-icon;
 					color: #c0c0c0;
 					font-size: 20px;
@@ -90,6 +92,7 @@ img{
 		a.jqzoom {
 			div div {
 				img {
+
 					width: auto;
 					max-width: 10000px;
 				}
@@ -455,9 +458,8 @@ span.view_scroll_spacer {
 			list-style-type: none;
 			li {
 				float: left;
-				margin: 0 3px 3px 0;
+				margin: 1px 3px 3px 0;
 				padding: 1px;
-				margin-top:7px;
 				clear: none;
 
 	// padding: 11px;
@@ -466,7 +468,7 @@ span.view_scroll_spacer {
 					display: block;
 					//margin-top:-16px;
 					width: 30px;
-					height: 28px;
+					height: 30px;
 					cursor: pointer;
 					border-radius: 3px;
 
@@ -476,22 +478,24 @@ span.view_scroll_spacer {
 					}
 				}
 				&.selected{
+
 						&:after{
-							height: 10px;
-						overflow: hidden;
-							position:relative;
-							top: -23px;
-							left: 9px;
-						 	font-family: $font-icon;
-						 	content: "\f046";
-						 	@include text-shadow(rgba(#fff, 1) 0px 0px 8px);
+							// height: 10px;
+							// overflow: hidden;
+							// position:relative;
+							// top: -23px;
+							// left: 9px;
+						 // 	font-family: $font-icon;
+						 // 	content: "\f046";
+						 // 	@include text-shadow(rgba(#fff, 1) 0px 0px 8px);
 						 }
 					a{
+						border: 3px solid #ccc;
 					}
 				}
 				&:hover{
 					a{
-
+						border: 3px solid #ccc;
 					}
 				}
 			}

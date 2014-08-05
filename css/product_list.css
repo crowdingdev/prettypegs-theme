@@ -441,7 +441,7 @@ ul.product_list.list > li .right-block .right-block-content .functional-buttons 
 .pp-product-info-overlay {
   background: rgba(0, 0, 0, 0.5);
   position: relative;
-  top: -80px;
+  bottom: 70px;
   margin-bottom: -81px;
   text-align: left !important;
   padding: 10px;
@@ -455,6 +455,7 @@ ul.product_list.list > li .right-block .right-block-content .functional-buttons 
 }
 
 .pp-product-color-overlay {
+  display: none;
   position: relative;
   bottom: 195px;
 }

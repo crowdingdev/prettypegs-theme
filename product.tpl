@@ -365,7 +365,7 @@
 						{if $group.attributes|@count}
 
 						<fieldset class="attribute_fieldset">
-							<label class="attribute_label" {if $group.group_type != 'color' && $group.group_type != 'radio'}for="group_{$id_attribute_group|intval}"{/if}>{$group.name|escape:'html':'UTF-8'} :&nbsp;</label>
+							<label class="attribute_label" {if $group.group_type != 'color' && $group.group_type != 'radio'}for="group_{$id_attribute_group|intval}"{/if}>{$group.name|escape:'html':'UTF-8'}&nbsp;</label>
 
 							{assign var="groupName" value="group_$id_attribute_group"}
 
@@ -533,11 +533,9 @@
 		</div>
 		<div class="row">
 			<div class="col-xs-6">
-				<h4>Shipping information</h4>
-				<p> Etc etc etc etc. Etc etc etc etc. Etc etc etc etc. Etc etc etc etc. Etc etc etc etc. </p>
-			</div>
-			<div class="col-xs-6">
-				movie
+				<h4>{l s='Shipping information'}</h4>
+				<p>{l s='Shipping explanation'}</p>
+				<a href="/content/8-shipping-info">{l s='Read more'}</a>
 			</div>
 		</div>
 

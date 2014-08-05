@@ -59,7 +59,7 @@
 			{/if}
 			<div class="delivery_options_address">
 
-				<h3>Shipping with dhl [place logo here]</h3>
+				<h3>{l s='Delivered by'} <img class="logo" src="{$img_dir}logo/dhl_with_plane.png"  width="170px" alt="{$shop_name|escape:'html':'UTF-8'}" /></h3>
 
 				{if isset($delivery_option_list) && false}
 					{foreach $delivery_option_list as $id_address => $option_list}
