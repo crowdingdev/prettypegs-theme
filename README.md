@@ -11,7 +11,7 @@ We have resorted to a method of changing as little as possible from the original
 Here we're listing all (mostly) changes to *.tpl *.js and *.php files that are in any way altered from the original theme.
 
 **Products.tpl**
-Some structural changes in the html and som removal om unwanted functionalities.
+Some structural changes in the html and som removal om unwanted functionalities. Shipping information are placed in this file.
 
 **ajax-cart.js**
 Added function that changes the cart when empty or not.
@@ -38,6 +38,9 @@ This file contains the form for guest checkout. Some fields has been removed (bi
 **order-opc.js**
 Changed so that it show only the guest checkout for users.
 
+**product.js**
+Changed so the price are updated on every attribute and quantity change for a product on product page. 
+
 **shopping-cart.tpl**
 Some hook (HOOK_SHOPPING_CART_EXTRA) has been removed. The span inside the h1 that showed number of articles has been removed.
 
@@ -63,3 +66,16 @@ Here we list all the modules that are essential/integrated with/for the theme.
 ####Theme configurator v1.1.0 - by PrestaShop
 **Desc:** Configure the main elements of your theme. **Category:** Front Office Features
 
+
+
+##Typography
+Here we list all the fonts that are essential for this theme. 
+
+####AwesomeFonts 
+Used for icons. 
+**Url:** http://fortawesome.github.io/Font-Awesome/
+**Updated:** 2014-07-01 
+
+####Gotham
+Embedded as webfonts in global.scss.
+**weights:** medium, bold and normal. 
