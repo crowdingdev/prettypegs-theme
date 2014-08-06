@@ -1028,11 +1028,8 @@ table.table_block td {
 					display: none;
 				}
 				&:before {
-					content: "\f105";
-					display: inline;
-					font-family: $font-icon;
-					color: $base-text-color;
-					padding-right: 8px;
+					
+					
 				}
 				&:hover {
 					color: $base-text-color;
@@ -3670,7 +3667,14 @@ a{
 				//background-size: cover !important;
 				background-color: #eceaeb !important;
 			}
+			&:hover{
+				 .pp-category-text{
+				 		color: #000;
+				 }
+
+			}
 		}
+
 	}
 
 	@media (max-width: 700px) {

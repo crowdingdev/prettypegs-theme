@@ -1589,13 +1589,13 @@ table th[class*="col-"] {
 .table > tfoot > tr > th.warning,
 .table > tfoot > tr.warning > td,
 .table > tfoot > tr.warning > th {
-  background-color: #fe9126;
+  background-color: #db7770;
   border-color: #e4752b;
 }
 
 .table-hover > tbody > tr > td.warning:hover,
 .table-hover > tbody > tr > th.warning:hover, .table-hover > tbody > tr.warning:hover > td {
-  background-color: #fe840d;
+  background-color: #d6645c;
   border-color: #da681c;
 }
 
@@ -1884,7 +1884,7 @@ textarea.input-lg, .input-group-lg > textarea.form-control,
 .has-warning .input-group-addon {
   color: white;
   border-color: white;
-  background-color: #fe9126;
+  background-color: #db7770;
 }
 
 .has-error .help-block,
@@ -3542,11 +3542,11 @@ input[type="button"].btn-block {
 }
 
 .label-warning {
-  background-color: #fe9126;
+  background-color: #db7770;
   border: 1px solid #e4752b;
 }
 .label-warning[href]:hover, .label-warning[href]:focus {
-  background-color: #f07701;
+  background-color: #d15047;
 }
 
 .label-danger {
@@ -3676,7 +3676,7 @@ a.thumbnail:focus {
 }
 
 .alert-warning {
-  background-color: #fe9126;
+  background-color: #db7770;
   border-color: #e4752b;
   color: white;
 }
@@ -4058,7 +4058,7 @@ a.list-group-item:hover, a.list-group-item:focus {
 }
 .panel-warning > .panel-heading {
   color: white;
-  background-color: #fe9126;
+  background-color: #db7770;
   border-color: #e4752b;
 }
 .panel-warning > .panel-heading + .panel-collapse .panel-body {
@@ -7675,13 +7675,6 @@ table.table_block td {
 .block .list-block li a i {
   display: none;
 }
-.block .list-block li a:before {
-  content: "\f105";
-  display: inline;
-  font-family: "FontAwesome";
-  color: #333333;
-  padding-right: 8px;
-}
 .block .list-block li a:hover {
   color: #333333;
   font-weight: bold;
@@ -10214,6 +10207,9 @@ div.star.star_hover:after {
   height: 150px;
   background-repeat: no-repeat !important;
   background-color: #eceaeb !important;
+}
+.pp-home-categories .pp-home-category a:hover .pp-category-text {
+  color: #000;
 }
 @media (max-width: 700px) {
   .pp-home-categories .pp-category-image {

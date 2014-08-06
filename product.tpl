@@ -423,9 +423,10 @@
 
 			<div class="content_prices clearfix">
 				{if $product->show_price && !isset($restricted_country_mode) && !$PS_CATALOG_MODE}
-
+<h4>{l s='Total'}</h4>
 				<!-- prices -->
 				<div class="price">
+					
 					<p class="our_price_display" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
 						{if $product->quantity > 0}<link itemprop="availability" href="http://schema.org/InStock"/>{/if}
 

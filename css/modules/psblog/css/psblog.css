@@ -1,0 +1,39 @@
+#psblog h2.bt_left {
+  margin: 0 0 20px 0 !important;
+}
+#psblog ul, #psblog ol {
+  list-style: none;
+}
+#psblog .navigation-wrapper {
+  margin-top: 0 !important;
+}
+#psblog .navigation-wrapper a {
+  text-align: center;
+}
+#psblog .navigation-wrapper .pp-link {
+  font-size: 20px !important;
+  font-weight: bold;
+  padding: 40px 0;
+  width: 100%;
+  text-transform: uppercase;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+#psblog .navigation-wrapper .pp-link.pp-see-all-pegs {
+  background-color: #aeb4af;
+  color: #32666B;
+}
+#psblog .navigation-wrapper .pp-link.pp-inspiration {
+  background-color: #a9bec4;
+  color: #B37C3B;
+}
+#psblog .navigation-wrapper .pp-link.pp-campaigns {
+  background-color: #d6cbbe;
+  color: #BD8585;
+}
+#psblog .navigation-wrapper .pp-link:hover {
+  opacity: 0.9;
+}
+#psblog .contact-blogger {
+  margin-top: 30px;
+}

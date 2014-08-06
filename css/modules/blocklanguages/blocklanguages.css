@@ -3,7 +3,7 @@
   float: right;
   position: relative;
   z-index: 90;
-  width: 120px;
+  width: 90px;
 }
 @media (max-width: 479px) {
   #languages-block-top {

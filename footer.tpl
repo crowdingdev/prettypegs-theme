@@ -43,19 +43,19 @@
 			<div class="row navigation-wrapper">
 
 				<div class="col-xs-4">
-					<a href="#">
+					<a href="/all-pegs">
 						<span class="pp-link pp-see-all-pegs">see all pegs</span>
 					</a>
 				</div>
 
 				<div class="col-xs-4">
-					<a href="#">
+					<a href="/campaigns">
 						<span class="pp-link pp-campaigns">campaigns</span>
 					</a>
 				</div>
 
 				<div class="col-xs-4">
-					<a href="#">
+					<a href="/inspiration">
 						<span class="pp-link pp-inspiration">inspiration</span>
 					</a>
 				</div>

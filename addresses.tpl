@@ -1,6 +1,6 @@
 {*
 * 2007-2014 PrestaShop
-*d
+*
 * NOTICE OF LICENSE
 *
 * This source file is subject to the Academic Free License (AFL 3.0)

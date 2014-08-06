@@ -5,7 +5,7 @@
 
 #header .shopping_cart {
   position: relative;
-  margin-top: 20px;
+  margin-top: 29px;
 }
 
 @media (max-width: 960px) {
@@ -195,7 +195,7 @@
 					********************************************************************/
 #header .cart_block {
   position: absolute;
-  top: 85px;
+  top: 75px;
   right: 0;
   z-index: 100;
   display: none;

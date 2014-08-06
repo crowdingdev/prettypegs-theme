@@ -2,12 +2,10 @@
 /********************************************************
 			Right to Left Styles
 ********************************************************/
-/* line 8, ../sass/rtl.scss */
 * {
   direction: rtl !important;
 }
 
-/* line 11, ../sass/rtl.scss */
 #page {
   text-align: right !important;
 }

@@ -1,14 +1,11 @@
 /* Footer background color */
-/* line 4, ../sass/my-account.scss */
 #my-account .addresses-lists {
   margin-bottom: 30px;
 }
-/* line 9, ../sass/my-account.scss */
 #my-account ul.myaccount-link-list li {
   overflow: hidden;
   padding-bottom: 10px;
 }
-/* line 12, ../sass/my-account.scss */
 #my-account ul.myaccount-link-list li a {
   display: block;
   overflow: hidden;
@@ -31,7 +28,6 @@
   -o-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 25, ../sass/my-account.scss */
 #my-account ul.myaccount-link-list li a i {
   font-size: 25px;
   color: #fd7e01;
@@ -50,7 +46,6 @@
   -webkit-border-bottom-left-radius: 4px;
   border-bottom-left-radius: 4px;
 }
-/* line 39, ../sass/my-account.scss */
 #my-account ul.myaccount-link-list li a span {
   display: block;
   padding: 13px 15px 15px 17px;
@@ -65,7 +60,6 @@
   -webkit-border-bottom-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-/* line 49, ../sass/my-account.scss */
 #my-account ul.myaccount-link-list li a:hover {
   filter: none;
   background: #e7e7e7;

@@ -1,0 +1,48 @@
+#psblog{
+
+	h2.bt_left{
+
+		margin:0 0 20px 0 !important;
+	}
+	ul, ol{
+		list-style: none;
+	}
+
+	.navigation-wrapper{
+		margin-top: 0 !important;
+
+		a{
+			text-align:center;
+		}
+		.pp-link{
+			font-size: 20px !important;
+			font-weight: bold;
+			padding: 40px 0;
+
+			width: 100%;
+			text-transform:uppercase;
+
+			background-repeat: no-repeat !important;
+			background-position: center !important;
+			&.pp-see-all-pegs{
+				background-color: #aeb4af;
+				color: #32666B;
+			}
+			&.pp-inspiration{
+				background-color: #a9bec4;
+				color: #B37C3B;
+			}
+			&.pp-campaigns{
+				background-color: #d6cbbe;
+				color: #BD8585;
+			}
+			&:hover{
+				opacity: 0.9;
+			}
+		}
+	}
+
+	.contact-blogger{
+		margin-top: 30px;
+	}
+}
