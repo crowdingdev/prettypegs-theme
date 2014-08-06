@@ -67,6 +67,10 @@ Here we list all the modules that are essential/integrated with/for the theme.
 **Desc:** Configure the main elements of your theme. **Category:** Front Office Features
 
 
+================
+####blockcategories  - by PrestaShop
+**Desc:** Part of this module has been overridden by this theme. Its used in the footer to display categories. 
+
 
 ##Typography
 Here we list all the fonts that are essential for this theme. 
