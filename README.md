@@ -50,6 +50,12 @@ Here we list all the modules that are essential/integrated with/for the theme.
 **Desc:** Adds a cart block with klarna checkout links. **Category:** Payments and Gateways
 
 ================
+####Blog Prestashop Pro Module v2.4 - by Community
+**Desc:** Used for blogging  **Category:** Front Office Features
+**Url:** http://addons.prestashop.com/en/content-management/2500-blog-prestashop-pro.html
+**Overides:** list.tpl, view.tpl, psblog.css/scss, blockposts.tpl are overidden by this theme. 
+
+================
 ####PayPal v3.7.1 - by PrestaShop -  Official
 **Desc:** Accepts payments by credit cards (CB, Visa, MasterCard, Amex, Aurore, Cofinoga, 4 stars) with PayPal. **Category:** Payments and Gateways
 
