@@ -9799,8 +9799,8 @@ div.star.star_hover:after {
   text-align: center;
 }
 
-.blockcategories_footer ul ul {
-  display: none !important;
+.blockcategories_footer ul li:first-child {
+  display: none;
 }
 
 .form-group.form-error input, .form-group.form-error textarea {
@@ -10264,7 +10264,13 @@ div.star.star_hover:after {
 #block_various_links_footer {
   border-left: 1px solid #515151;
   height: 100%;
-  min-height: 160px;
+  min-height: 120px;
+}
+@media (max-width: 959px) {
+  #block_various_links_footer {
+    border: none;
+    min-height: 0;
+  }
 }
 
 p.ajax-spinner {

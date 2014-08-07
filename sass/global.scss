@@ -3211,8 +3211,11 @@ div.star.star_hover {
 }
 
 //footer
+.blockcategories_footer ul li:first-child{
+display:none;
+}
 .blockcategories_footer ul ul {
-	display: none !important;
+	
 }
 
 //Form validate
@@ -3755,7 +3758,11 @@ a{
 #block_various_links_footer{
 	border-left: 1px solid #515151;
 	height:100%;
-	min-height: 160px;
+	min-height: 120px;
+	@media (max-width: $screen-md-max) {
+		border:none;
+			min-height: 0;
+				}
 }
 
 p.ajax-spinner{

@@ -2,7 +2,7 @@
 #currencies-block-top {
   float: right;
   position: relative;
-  z-index: 100;
+  z-index: 90;
 }
 @media (max-width: 479px) {
   #currencies-block-top {

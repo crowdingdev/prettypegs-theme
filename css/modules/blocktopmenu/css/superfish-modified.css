@@ -37,6 +37,9 @@
     position: relative;
   }
 }
+.sf-menu ul:before {
+  content: "Pegs for:";
+}
 
 .sf-menu ul li {
   width: 100%;
@@ -168,7 +171,7 @@ ul.sf-menu li li li.sfHover ul {
 
 .sf-menu > li > ul {
   padding: 26px 30px 31px;
-  width: 100%;
+  width: 50%;
 }
 .sf-menu > li > ul > li {
   margin-top: 15px !important;

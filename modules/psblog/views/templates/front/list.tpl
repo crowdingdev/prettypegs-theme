@@ -1,5 +1,5 @@
 <div id="psblog" class="row">
-    <div class="col-sm-8 col-xs-12">
+    <div class="col-sm-9 col-xs-12">
 
         {if isset($notfound) && $notfound == true}
         <p class="warning">{l s='The page was not found' mod='psblog'}</p>

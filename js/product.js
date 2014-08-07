@@ -699,7 +699,8 @@ function updateDisplay()
 			productPriceWithoutReductionDisplay += ecotaxAmount;
 
 
-		// Linus Multiplies price by quantity
+		// @Author: Linus Karlsson
+		// Multiplies price by quantity
 		var quantityOnPageLoad = $('#quantity_wanted').val();
 		var our_price = '';
 		if (productPriceDisplay > 0) {

@@ -116,7 +116,7 @@
   background-size: 100% !important;
   border-radius: 3px;
   border: none;
-  border: 1px solid #EEEEEE;
+  border: 1px solid #ccc;
 }
 
 #layered_block_left .color-option.disable {
@@ -143,10 +143,7 @@
 }
 
 #layered_form .color-option.on {
-  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 2px 2px 3px;
-  -moz-box-shadow: rgba(0, 0, 0, 0.4) 2px 2px 3px;
-  box-shadow: rgba(0, 0, 0, 0.4) 2px 2px 3px;
-  border: none;
+  border: 3px solid #bbb;
 }
 
 #layered_form input[type=radio] {

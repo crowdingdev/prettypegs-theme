@@ -32,6 +32,10 @@
 	@media (max-width: $screen-xs-max) { // max 767px
 		position: relative;
 	}
+	&:before{
+
+		content: "Pegs for:";
+	}
 }
 .sf-menu ul li {
 	width: 100%;
@@ -146,7 +150,7 @@ ul.sf-menu li li li.sfHover ul {
 }
 .sf-menu > li > ul {
 	padding: 26px 30px 31px;
-	width: 100%;
+	width: 50%;
 	> li {
 			margin-top: 15px !important;
 		> a {

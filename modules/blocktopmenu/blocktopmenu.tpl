@@ -1,6 +1,7 @@
 {if $MENU != ''}
 <!-- Menu -->
 <div class="">
+
 	<div id="block_top_menu" class="sf-contener">
 		<div class="cat-title">{l s="Menu" mod="blocktopmenu"}</div>
 		<ul class="sf-menu clearfix menu-content">
@@ -8,6 +9,7 @@
 			{$MENU}
 			{if $MENU_SEARCH}
 			<li class="sf-search noBack" style="float:right">
+
 				<form id="searchbox" action="{$link->getPageLink('search')|escape:'html':'UTF-8'}" method="get">
 					<p>
 						<input type="hidden" name="controller" value="search" />

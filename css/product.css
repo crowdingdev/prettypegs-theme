@@ -549,8 +549,7 @@ span.view_scroll_spacer {
 .box-info-product .exclusive:before {
   font-family: "FontAwesome";
   position: absolute;
-  top: 0;
-  left: 0;
+  left: -3px;
   bottom: 0;
   color: white;
   font-size: 57px;
@@ -558,7 +557,7 @@ span.view_scroll_spacer {
   content: "\f07a";
   z-index: 2;
   width: 157px;
-  top: 30px;
+  top: 39px;
   text-align: center;
   -webkit-border-radius: 5px 0 0 5px;
   -moz-border-radius: 5px 0 0 5px;
