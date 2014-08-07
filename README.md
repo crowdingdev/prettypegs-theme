@@ -109,3 +109,35 @@ Header always set Access-Control-Allow-Headers "X-Accept-Charset,X-Accept,Conten
 RewriteEngine On
 RewriteCond %{REQUEST_METHOD} OPTIONS
 RewriteRule ^(.*)$ $1 [R=200,L,E=HTTP_ORIGIN:%{HTTP:ORIGIN}]
+
+
+
+And change this to be compatible with https:
+
+ classes/Tools.php
+ getShopDomain
+ public static function getProtocol($use_ssl = null)
+ {
+  return (!is_null($use_ssl) && $use_ssl ? 'https://' : 'https://');
+ }
+[07/08/14 17:06:48] Magnus Olsen: public static function getHttpHost($http = false, $entities = false, $ignore_port = false)
+ {
+  $host = (isset($_SERVER['HTTP_X_FORWARDED_HOST']) ? $_SERVER['HTTP_X_FORWARDED_HOST'] : $_SERVER['HTTP_HOST']);
+  if ($ignore_port && $pos = strpos($host, ':'))
+   $host = substr($host, 0, $pos);
+  if ($entities)
+   $host = htmlspecialchars($host, ENT_COMPAT, 'UTF-8');
+  if ($http)
+   $host = (Configuration::get('PS_SSL_ENABLED') ? 'https://' : 'https://').$host;
+  return $host;
+ }
+ public static function getShopDomain($http = false, $entities = false)
+ {
+  if (!$domain = ShopUrl::getMainShopDomain())
+   $domain = Tools::getHttpHost();
+  if ($entities)
+   $domain = htmlspecialchars($domain, ENT_COMPAT, 'UTF-8');
+  if ($http)
+   $domain = 'https://'.$domain;
+  return $domain;
+ }
