@@ -43,7 +43,7 @@
 			<div class="row navigation-wrapper">
 
 				<div class="col-xs-4">
-					<a href="/all-pegs">
+					<a href="/39-pegs">
 						<span class="pp-link pp-see-all-pegs">see all pegs</span>
 					</a>
 				</div>
@@ -69,25 +69,25 @@
 				<div class="col-sm-10 col-sm-offset-1">
 
 					<div class="col-sm-3">
-						<a href="#">
+						<a href="http://instagram.com/prettypegs" target="blank">
 							<span class="pp-social pp-instagram"></span>
 						</a>
 					</div>
 
 					<div class="col-sm-3">
-						<a href="#">
+						<a href="http://se.pinterest.com/prettypegs2012/" target="blank">
 							<span class="pp-social pp-pinterest"></span>
 						</a>
 					</div>
 
 					<div class="col-sm-3">
-						<a href="#">
+						<a href="https://www.facebook.com/Prettypegs" target="blank">
 							<span class="pp-social pp-facebook"></span>
 						</a>
 					</div>
 
 					<div class="col-sm-3 ">
-						<a href="#">
+						<a href="/blog">
 							<span class="pp-social pp-blog"></span>
 						</a>
 					</div>

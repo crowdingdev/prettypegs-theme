@@ -56,6 +56,21 @@
 		<![endif]-->
 	</head>
 	<body{if isset($page_name)} id="{$page_name|escape:'html':'UTF-8'}"{/if} class="{if isset($page_name)}{$page_name|escape:'html':'UTF-8'}{/if}{if isset($body_classes) && $body_classes|@count} {implode value=$body_classes separator=' '}{/if}{if $hide_left_column} hide-left-column{/if}{if $hide_right_column} hide-right-column{/if}{if $content_only} content_only{/if} lang_{$lang_iso}">
+
+{literal}
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MWVGZ8"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MWVGZ8');</script>
+<!-- End Google Tag Manager -->
+{/literal}
+
+
+
 	{if !$content_only}
 	{if isset($restricted_country_mode) && $restricted_country_mode}
 	<div id="restricted-country">
@@ -69,14 +84,14 @@
 					<div class="container">
 						<div class="row shop-slogan">
 							
-							<h1>{l s='Designed furniture legs'}</h1> <a href="shipping"> Free shipping world wide</a>
+							<h1>{l s='Designed furniture legs'}</h1> <a href="/content/1-"> Free shipping world wide</a>
 						</div>
 						
 						<div class="row">
 							<div class="">
 
 								<div id="header_logo" >
-									<a href="{$base_dir}" title="{$shop_name|escape:'html':'UTF-8'}">
+									<a href="/" title="{$shop_name|escape:'html':'UTF-8'}">
 										<img class="logo" src="{$img_dir}logo/header.png" height="114px" width="190px" alt="{$shop_name|escape:'html':'UTF-8'}" />
 									</a>
 								</div>

@@ -536,7 +536,7 @@
 			<div class="col-xs-6">
 				<h4>{l s='Shipping information'}</h4>
 				<p>{l s='Shipping explanation'}</p>
-				<a href="/content/8-shipping-info">{l s='Read more'}</a>
+				<a href="/content/1-">{l s='Read more'}</a>
 			</div>
 		</div>
 

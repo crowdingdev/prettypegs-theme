@@ -1313,3 +1313,7 @@ Quick View Styles
     width: 100%;
   }
 }
+
+.obsDescElement {
+  background: #fff !important;
+}

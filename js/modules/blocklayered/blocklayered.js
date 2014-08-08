@@ -30,8 +30,6 @@ var slidersInit = false;
 
 $(document).ready(function()
 {
-
-	console.log("fdfififi");
 	cancelFilter();
 	openCloseFilter();
 
