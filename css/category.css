@@ -67,7 +67,7 @@
 #subcategories ul li {
   float: left;
   width: 145px;
-  margin: 0 0 7px 33px;
+  margin: 0 0 7px 20px;
 }
 #subcategories ul li .subcategory-image {
   padding: 0 0 8px 0;
@@ -87,6 +87,7 @@
 }
 #subcategories ul li .subcategory-name:hover {
   color: #515151;
+  font-weight: bold;
 }
 #subcategories ul li .cat_desc {
   display: none;

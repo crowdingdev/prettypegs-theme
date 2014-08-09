@@ -168,3 +168,21 @@
 {addJsDef comparator_max_item=$comparator_max_item}
 {addJsDef comparedProductsIds=$compared_products}
 {/if}
+
+
+
+{literal}
+<script>
+/*This makes a product item clickable everywere.*/
+$(document).ready(function(){
+	$(".product-image-container, .pp-product-info-overlay").click(function(){
+	     window.location=$(this).find("a").attr("href"); 
+	     return false;
+	});
+});
+
+</script>
+{/literal}
+
+
+

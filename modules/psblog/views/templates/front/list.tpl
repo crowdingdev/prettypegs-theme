@@ -129,7 +129,7 @@
                 <h4>STORE</h4>
             <div class="row navigation-wrapper">
                 <div class="col-xs-12">
-                   <a href="all-pegs">
+                   <a href="/39-pegs">
                       <span class="pp-link pp-see-all-pegs">see all pegs</span> 
                   </a>
               </div>
