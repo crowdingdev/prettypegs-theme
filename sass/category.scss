@@ -64,7 +64,7 @@
 		li {
 			float: left;
 			width: 145px;
-			margin: 0 0 7px 20px;
+			margin: 0 0 7px 33px;
 			
 			.subcategory-image {
 				padding: 0 0 8px 0;
@@ -83,7 +83,6 @@
 				text-transform: uppercase;
 				&:hover {
 					color: $link-hover-color;
-					font-weight: bold;
 				}
 			}
 			.cat_desc {

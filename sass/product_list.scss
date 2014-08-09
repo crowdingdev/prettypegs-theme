@@ -55,11 +55,8 @@ ul.product_list {
 		font-size: 30px !important;
 		text-align: center;
 		img {
-			
 			margin: 0 auto;
 		}
-
-
 		.quick-view {
 			font:  13px/16px $font-family;
 			color: #777676;
@@ -182,12 +179,9 @@ ul.product_list.grid {
 				//margin-bottom: 13px;
 				position: relative;
 				@media (max-width: $screen-xs-max) { // max 767px
-					// max-width: 290px;
-					// margin-left: auto;
-					// margin-right: auto;
-					img{
-						width: 100%;
-					}
+					max-width: 290px;
+					margin-left: auto;
+					margin-right: auto;
 				}
 				.content_price {
 					position: absolute;
@@ -477,14 +471,13 @@ ul.product_list.list {
 
 
 .pp-product-info-overlay{
-	cursor: pointer;
 	background: rgba(0,0,0,0.5);
 	position:relative;
 	bottom: 70px;
 	margin-bottom: -81px;
 	text-align: left !important;
 	padding: 10px;
-	height: 80px;
+
 
 	.product-name, .product-price{
 		color: #fff !important;

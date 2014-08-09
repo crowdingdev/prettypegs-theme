@@ -168,8 +168,10 @@ ul.product_list.grid > li .product-container .product-image-container {
   position: relative;
 }
 @media (max-width: 767px) {
-  ul.product_list.grid > li .product-container .product-image-container img {
-    width: 100%;
+  ul.product_list.grid > li .product-container .product-image-container {
+    max-width: 290px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 ul.product_list.grid > li .product-container .product-image-container .content_price {
@@ -437,14 +439,12 @@ ul.product_list.list > li .right-block .right-block-content .functional-buttons 
 }
 
 .pp-product-info-overlay {
-  cursor: pointer;
   background: rgba(0, 0, 0, 0.5);
   position: relative;
   bottom: 70px;
   margin-bottom: -81px;
   text-align: left !important;
   padding: 10px;
-  height: 80px;
 }
 .pp-product-info-overlay .product-name, .pp-product-info-overlay .product-price {
   color: #fff !important;

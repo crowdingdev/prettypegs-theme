@@ -83,30 +83,3 @@ Used for icons.
 ####Gotham
 Embedded as webfonts in global.scss.
 **weights:** medium, bold and normal. 
-
-
-
-####.htaccess
-
-
-[07/08/14 16:51:18] Magnus Olsen: XMLHttpRequest cannot load https://www.prettypegs.com/?controller=cart&ajax=true&token=49da0ce240ab7e9299ad7055f3c938f3&_=1407423055253. No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin 'http://www.prettypegs.com' is therefore not allowed access.
-
-
-[07/08/14 16:52:16] Magnus Olsen: # with AJAX withCredentials=false (cookies NOT sent)
-Header always set Access-Control-Allow-Origin "*"                   
-Header always set Access-Control-Allow-Methods "POST, GET, PUT, OPTIONS, PATCH, DELETE" 
-Header always set Access-Control-Allow-Headers "X-Accept-Charset,X-Accept,Content-Type,Auth-Token,X-Auth-Token"
-RewriteEngine On                  
-RewriteCond %{REQUEST_METHOD} OPTIONS 
-RewriteRule ^(.*)$ $1 [R=200,L,E=HTTP_ORIGIN:%{HTTP:ORIGIN}]]
-
-# with AJAX withCredentials=true (cookies sent, SSL allowed...)
-SetEnvIfNoCase ORIGIN (.*) ORIGIN=$1
-Header always set Access-Control-Allow-Methods "POST, GET, PUT, OPTIONS, PATCH, DELETE" 
-Header always set Access-Control-Allow-Origin "%{ORIGIN}e"
-Header always set Access-Control-Allow-Credentials "true"
-Header always set Access-Control-Allow-Headers "X-Accept-Charset,X-Accept,Content-Type,Auth-Token,X-Auth-Token"
-RewriteEngine On
-RewriteCond %{REQUEST_METHOD} OPTIONS
-RewriteRule ^(.*)$ $1 [R=200,L,E=HTTP_ORIGIN:%{HTTP:ORIGIN}]
-
