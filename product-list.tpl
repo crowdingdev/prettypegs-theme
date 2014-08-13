@@ -139,14 +139,8 @@
 						<span class="discount">{l s='Reduced price!'}</span>
 						{/if}
 					</div>
-
 				</div> <!-- END Product info  overlay-->
-
 			</div>
-
-
-
-
 
 
 			{if $page_name != 'index'}
@@ -176,7 +170,7 @@
 /*This makes a product item clickable everywere.*/
 $(document).ready(function(){
 	$(".product-image-container, .pp-product-info-overlay").click(function(){
-	     window.location=$(this).find("a").attr("href"); 
+	     window.location=$(this).find("a").attr("href");
 	     return false;
 	});
 });

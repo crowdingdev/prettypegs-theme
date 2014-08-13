@@ -372,6 +372,8 @@ var ajaxCart = {
 	//remove a product from the cart via ajax
 	remove : function(idProduct, idCombination, customizationId, idAddressDelivery){
 		//send the ajax request to the server
+
+		console.log("remove");
 		$.ajax({
 			type: 'POST',
 			headers: { "cache-control": "no-cache" },

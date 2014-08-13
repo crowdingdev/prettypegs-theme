@@ -91,7 +91,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 							<div class="">
 
 								<div id="header_logo" >
-									<a href="/" title="{$shop_name|escape:'html':'UTF-8'}">
+									<a href="{$base_dir}" title="{$shop_name|escape:'html':'UTF-8'}">
 										<img class="logo" src="{$img_dir}logo/header.png" height="114px" width="190px" alt="{$shop_name|escape:'html':'UTF-8'}" />
 									</a>
 								</div>
