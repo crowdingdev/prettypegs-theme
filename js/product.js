@@ -617,7 +617,8 @@ function updateDisplay()
 		comb2 = combinationsFromController[combID];
 		if (comb2.price != 0)
 		{
-			var taxExclPrice = productPriceTaxExcluded + comb2.price;
+			var taxExclPrice = productPriceTaxExcluded + (comb2.price * currencyRate);
+			// Linus - added currency rate to the equatiion
 			productPriceWithoutReductionDisplay = productPriceWithoutReductionDisplay + (comb2.price * tax);
 		}
 		else

@@ -814,7 +814,7 @@ if(error!=='indexOf')
 {i=i+1;tmp+='<li>'+jsonData.errors[error]+'</li>';}
 tmp+='</ol>';var errors='<b>'+txtThereis+' '+i+' '+txtErrors+':</b><ol>'+tmp;$('#opc_account_errors').slideUp('fast',function(){$(this).html(errors).slideDown('slow',function(){$.scrollTo('#opc_account_errors',800);});});$('#opc_account-overlay, #opc_delivery_methods-overlay, #opc_payment_methods-overlay').fadeOut('slow');result=false;}
 else
-{$('input#opc_id_address_delivery').val(jsonData.id_address_delivery);$('input#opc_id_address_invoice').val(jsonData.id_address_invoice);result=true;}},error:function(XMLHttpRequest,textStatus,errorThrown){if(textStatus!=='abort')
+{$('input#opc_id_address_delivery').val(jsonData.id_address_delivery);$('input#opc_id_address_invoice').val(jsonData.id_address_invoice);result=true;}},error:function(XMLHttpRequest,textStatus,errorThrown){console.log(XMLHttpRequest);console.log(textStatus);console.log(errorThrown);if(textStatus!=='abort')
 {error="TECHNICAL ERROR: unable to save adresses \n\nDetails:\nError thrown: "+XMLHttpRequest+"\n"+'Text status: '+textStatus;if(!!$.prototype.fancybox)
 $.fancybox.open([{type:'inline',autoScale:true,minHeight:30,content:'<p class="fancybox-error">'+error+'</p>'}],{padding:0});else
 alert(error);}

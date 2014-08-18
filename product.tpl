@@ -53,7 +53,7 @@
 		{/if}
 
 
-		<div class="pb-left-column col-xs-7">
+		<div class="pb-left-column col-xs-12 col-lg-7">
 
 			<!-- product img-->
 			<div id="image-block" class="clearfix">
@@ -284,8 +284,7 @@
 
 
 
-	<div class="pb-right-column col-xs-5">
-
+	<div class="pb-right-column col-xs-12 col-lg-5">
 
 
 
@@ -444,15 +443,7 @@
 												{if $product->specificPrice && $product->specificPrice.reduction_type == 'percentage'}-{$product->specificPrice.reduction*100}%{/if}
 											</span>
 										</p>
-										<p id="old_price"{if (!$product->specificPrice || !$product->specificPrice.reduction) && $group_reduction == 0} class="hidden"{/if}>
-											{if $priceDisplay >= 0 && $priceDisplay <= 2}
-											<span id="old_price_display">{if $productPriceWithoutReduction > $productPrice}{convertPrice price=$productPriceWithoutReduction}{/if}</span>
-											<!-- {if $tax_enabled && $display_tax_label == 1}{if $priceDisplay == 1}{l s='tax excl.'}{else}{l s='tax incl.'}{/if}{/if} -->
-
-
-											{/if}
-
-										</p>
+										
 										{if $priceDisplay == 2}
 										<br />
 										<span id="pretaxe_price">

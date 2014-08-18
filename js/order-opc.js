@@ -332,7 +332,7 @@ $('#opc_account_form input,select,textarea').change(function() {
 	{
 		$('#opc_account_saved').fadeOut('slow');
 		/*Start - Added by linus*/
-		$('#opc_checkout_carrier_and_payment').fadeIn('slow');
+		/*$('#opc_checkout_carrier_and_payment').fadeIn('slow');*/
 		/*Start - Added by linus*/
 		$('#submitAccount').show();
 	}
@@ -708,6 +708,9 @@ function saveAddress(type)
 	if (type !== 'delivery' && type !== 'invoice')
 		return false;
 
+console.log("dod:");
+console.log('address1='+encodeURIComponent($('#address1'+(type == 'invoice' ? '_invoice' : '')).val())+'&');
+
 	var params = 'firstname='+encodeURIComponent($('#firstname'+(type == 'invoice' ? '_invoice' : '')).val())+'&lastname='+encodeURIComponent($('#lastname'+(type == 'invoice' ? '_invoice' : '')).val())+'&';
 	if ($('#company'+(type == 'invoice' ? '_invoice' : '')).length)
 		params += 'company='+encodeURIComponent($('#company'+(type == 'invoice' ? '_invoice' : '')).val())+'&';
@@ -775,6 +778,9 @@ function saveAddress(type)
 			}
 		},
 		error: function(XMLHttpRequest, textStatus, errorThrown) {
+			console.log(XMLHttpRequest);
+			console.log(textStatus);
+			console.log(errorThrown);
 			if (textStatus !== 'abort')
 			{
 				error = "TECHNICAL ERROR: unable to save adresses \n\nDetails:\nError thrown: " + XMLHttpRequest + "\n" + 'Text status: ' + textStatus;
