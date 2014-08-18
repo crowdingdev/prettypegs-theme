@@ -130,17 +130,17 @@
             <div class="row navigation-wrapper">
                 <div class="col-xs-12">
                    <a href="/39-pegs">
-                      <span class="pp-link pp-see-all-pegs">see all pegs</span> 
+                      <span class="pp-link pp-see-all-pegs"  style="font-size: 20px;">see all pegs</span> 
                   </a>
               </div>
               <div class="col-xs-12">
                <a href="campaigns"> 
-                <span class="pp-link pp-campaigns">campaigns</span> 
+                <span class="pp-link pp-campaigns" style="font-size: 20px;">campaigns</span> 
             </a>
         </div>
         <div class="col-xs-12"> 
             <a href="/inspiration">
-               <span class="pp-link pp-inspiration">inspiration</span>
+               <span class="pp-link pp-inspiration" style="font-size: 20px;">inspiration</span>
            </a>
        </div>
    </div>

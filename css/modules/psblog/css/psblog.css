@@ -6,6 +6,7 @@
 }
 #psblog .navigation-wrapper {
   margin-top: 0 !important;
+  font-size: 20px !important;
 }
 #psblog .navigation-wrapper a {
   text-align: center;
@@ -33,6 +34,9 @@
 }
 #psblog .navigation-wrapper .pp-link:hover {
   opacity: 0.9;
+}
+#psblog .pp-link {
+  font-size: 20px !important;
 }
 #psblog .contact-blogger {
   margin-top: 30px;

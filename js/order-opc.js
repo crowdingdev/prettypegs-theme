@@ -178,7 +178,8 @@ $(document).ready(function(){
 			var callingFile = '';
 			var params = '';
 
-			if (parseInt($('#opc_id_customer').val()) == 0)
+			/* Linus - ugly fix for not being able to submit edit customer data. */
+			if (true) /*parseInt($('#opc_id_customer').val()) == 0)*/
 			{
 				callingFile = authenticationUrl;
 				params = 'submitAccount=true&';
@@ -188,6 +189,7 @@ $(document).ready(function(){
 				callingFile = orderOpcUrl;
 				params = 'method=editCustomer&';
 			}
+				//console.log(orderOpcUrl);
 
 			$('#opc_account_form input:visible, #opc_account_form input[type=hidden]').each(function() {
 				if ($(this).is('input[type=checkbox]'))
@@ -708,8 +710,9 @@ function saveAddress(type)
 	if (type !== 'delivery' && type !== 'invoice')
 		return false;
 
-console.log("dod:");
+/*console.log("dod:");
 console.log('address1='+encodeURIComponent($('#address1'+(type == 'invoice' ? '_invoice' : '')).val())+'&');
+*/
 
 	var params = 'firstname='+encodeURIComponent($('#firstname'+(type == 'invoice' ? '_invoice' : '')).val())+'&lastname='+encodeURIComponent($('#lastname'+(type == 'invoice' ? '_invoice' : '')).val())+'&';
 	if ($('#company'+(type == 'invoice' ? '_invoice' : '')).length)

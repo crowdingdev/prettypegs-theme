@@ -7,15 +7,15 @@
 	ul, ol{
 		list-style: none;
 	}
-
 	.navigation-wrapper{
 		margin-top: 0 !important;
+				font-size: 20px !important;
 
 		a{
 			text-align:center;
 		}
 		.pp-link{
-			font-size: 20px !important;
+					font-size: 20px !important;
 			font-weight: bold;
 			padding: 40px 0;
 
@@ -39,10 +39,16 @@
 			&:hover{
 				opacity: 0.9;
 			}
+
 		}
 	}
 
+	.pp-link{
+		font-size: 20px !important;
+	}
 	.contact-blogger{
 		margin-top: 30px;
 	}
 }
+
+

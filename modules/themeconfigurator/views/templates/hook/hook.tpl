@@ -48,7 +48,7 @@
 
 						{else}
 						<h4>PEGS</h4>
-						<h4>FOR</h4>
+						<h4>{l s='FOR' mod='themeconfigurator'}</h4>
 						{/if}
 
 						<h4 class="pp-category-name">{$hItem.title|escape:'htmlall':'UTF-8'}</h4>
