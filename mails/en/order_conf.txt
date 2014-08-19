@@ -1,0 +1,84 @@
+
+[{shop_url}] 
+
+
+Dear {firstname}, 
+
+Thank you for your order. We hope you will enjoy your new Pegs and that they will add colour and character to your furniture.
+
+Prettypegs are manufactured after each order and the delivery time is approximately 10 days. You will receive a notification as soon as your order has been picked up by our delivery partner DHL. If DHL can't reach you when delivering the package, they'll leave a note in your postbox. You can then book a new delivery or change the delivery address.
+
+DHL will hold on to your package for maximum one week. So it is very important that you contact DHL (DHL.com) asap, or your package will automatically be sent back to us. In this case we need to charge you 24 EURO for administration and return delivery fees.
+Not to forget, if you'd like to share a photo of your furniture with new Pegs we would be very happy! Upload it to Instagram.com/prettypegs or Facebook.com/prettypegs. Alternatively send it to - hello@prettypegs.com
+
+Please let us know if you have any questions! - hello@prettypegs.com
+
+All the best,
+
+Prettypegs team
+
+
+
+ORDER: {order_name} Placed on {date}
+
+PAYMENT: {payment} 		 
+
+REFERENCE
+
+PRODUCT
+
+UNIT PRICE
+
+QUANTITY
+
+TOTAL PRICE
+
+{products_txt} 
+
+{discounts} 
+
+PRODUCTS 
+
+{total_products} 
+
+DISCOUNTS 
+
+{total_discounts} 
+
+GIFT-WRAPPING 
+
+{total_wrapping} 
+
+SHIPPING 
+
+{total_shipping} 
+
+TOTAL TAX PAID 
+
+{total_tax_paid} 
+
+TOTAL PAID 
+
+{total_paid} 
+
+CARRIER: {carrier}
+
+PAYMENT: {payment} 		 
+
+{delivery_block_txt} 
+
+{invoice_block_txt} 
+
+You can review your order and download your invoice from the
+"Order history" [{history_url}] section of your
+customer account by clicking "My account"
+[{my_account_url}] on our shop. 
+
+If you have a guest account, you can follow your order via the
+"Guest Tracking"
+[{guest_tracking_url}?id_order={order_name}] section
+on our shop. 
+
+{shop_name} [{shop_url}] powered by
+PrestaShop(tm) [http://www.prestashop.com/] 
+
