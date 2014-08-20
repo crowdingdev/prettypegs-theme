@@ -112,8 +112,9 @@
 					{if (!$PS_CATALOG_MODE AND ((isset($product.show_price) && $product.show_price) || (isset($product.available_for_order) && $product.available_for_order)))}
 					<div itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="content_price">
 						{if isset($product.show_price) && $product.show_price && !isset($restricted_country_mode)}
+						<span class="price product-price offer-quantity"> {l s='4 pcs /'}</span>
 						<span itemprop="price" class="price product-price">
-							{if !$priceDisplay}{convertPrice price=$product.price}{else}{convertPrice price=$product.price_tax_exc}{/if}
+							{if !$priceDisplay} {convertPrice price=$product.price * 4}{else}{convertPrice price=$product.price_tax_exc}{/if}
 						</span>
 						<meta itemprop="priceCurrency" content="{$priceDisplay}" />
 						{if isset($product.specific_prices) && $product.specific_prices && isset($product.specific_prices.reduction) && $product.specific_prices.reduction > 0}

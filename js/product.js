@@ -573,6 +573,7 @@ function updateDisplay()
 		if (allowBuyWhenOutOfStock && !selectedCombination['unavailable'] && productAvailableForOrder == 1)
 		{
 			$('#add_to_cart:hidden').fadeIn(600);
+				$('.not-available-text').fadeOut(600);
 
 			if (availableLaterValue != '')
 			{
@@ -586,6 +587,9 @@ function updateDisplay()
 		else
 		{
 			$('#add_to_cart:visible').fadeOut(600);
+
+			$('.not-available-text').fadeIn(600);
+
 			if(stock_management == 1)
 				$('#availability_statut:hidden').show('slow');
 		}

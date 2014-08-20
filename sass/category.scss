@@ -65,6 +65,7 @@
 			float: left;
 			width: 145px;
 			margin: 0 0 7px 20px;
+			height: 20px;
 			
 			.subcategory-image {
 				padding: 0 0 8px 0;
@@ -84,6 +85,7 @@
 				&:hover {
 					color: $link-hover-color;
 					font-weight: bold;
+
 				}
 			}
 			.cat_desc {

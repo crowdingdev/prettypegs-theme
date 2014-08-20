@@ -35,10 +35,8 @@
 @media (max-width: 767px) {
   .sf-menu ul {
     position: relative;
+    background: none;
   }
-}
-.sf-menu ul:before {
-  content: "Pegs for:";
 }
 
 .sf-menu ul li {
@@ -124,6 +122,7 @@
 @media (max-width: 767px) {
   .sf-menu li ul {
     top: 0;
+    box-shadow: none;
   }
 }
 

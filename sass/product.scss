@@ -1324,3 +1324,17 @@ Quick View Styles
 .obsDescElement{
 	background: #fff !important;
 }
+
+.not-available-text{
+	background: #db7770;
+	color:#fff;
+	padding: 20px;
+	@include border-radius(5px);
+	&.small{
+
+	}
+	&.big{
+		margin: 0 20px;
+	}
+
+}

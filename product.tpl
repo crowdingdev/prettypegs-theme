@@ -393,6 +393,9 @@
 								{/if}
 								{/foreach}
 							</ul>
+
+							<p class="not-available-text small" style="display:none;">{l s='Color not available in this size'}</p>
+
 							<input type="hidden" class="color_pick_hidden" name="{$groupName|escape:'html':'UTF-8'}" value="{$default_colorpicker|intval}" />
 							{elseif ($group.group_type == 'radio')}
 							<ul>
@@ -496,6 +499,8 @@
 											</button>
 										</p>
 									</div>
+
+									<h3 class="not-available-text big" style="display:none;">{l s='Color not available in this size'}</h3>
 								</div>
 
 

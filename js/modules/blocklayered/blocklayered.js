@@ -498,7 +498,9 @@ function reloadContent(params_plus)
 
 			if (result.heading != '')
 			{
-				$('h1.page-heading .cat-name').html(result.heading);
+				/* linus special solution*/
+				var pp_heading = result.heading.replace(">", "<span style='font-weight: normal;'> >") + "</span>";
+				$('h1.page-heading .cat-name').html(pp_heading);
 				$('span.category-name').html(result.heading);
 			}
 

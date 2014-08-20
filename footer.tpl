@@ -44,19 +44,19 @@
 
 				<div class="col-xs-4">
 					<a href="/39-pegs">
-						<span class="pp-link pp-see-all-pegs">see all pegs</span>
+						<span class="pp-link pp-see-all-pegs">{l s='see all pegs'}</span>
 					</a>
 				</div>
 
 				<div class="col-xs-4">
 					<a href="/campaigns">
-						<span class="pp-link pp-campaigns">campaigns</span>
+						<span class="pp-link pp-campaigns">{l s='campaigns'}</span>
 					</a>
 				</div>
 
 				<div class="col-xs-4">
 					<a href="/inspiration">
-						<span class="pp-link pp-inspiration">inspiration</span>
+						<span class="pp-link pp-inspiration">{l s='inspiration'}</span>
 					</a>
 				</div>
 			</div>

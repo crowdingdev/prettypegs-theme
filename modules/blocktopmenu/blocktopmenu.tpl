@@ -1,12 +1,20 @@
+<style>
+.sf-menu ul:before {
+  content: "{l s='Pegs for:' mod='blocktopmenu'}";
+}
+</style>
+
 {if $MENU != ''}
 <!-- Menu -->
 <div class="">
 
 	<div id="block_top_menu" class="sf-contener">
 		<div class="cat-title">{l s="Menu" mod="blocktopmenu"}</div>
+
 		<ul class="sf-menu clearfix menu-content">
 
 			{$MENU}
+
 			{if $MENU_SEARCH}
 			<li class="sf-search noBack" style="float:right">
 
