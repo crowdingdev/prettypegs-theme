@@ -33,3 +33,18 @@
 </div>
 <!--/ Menu -->
 {/if}
+
+
+
+
+<script type="text/javascript">
+$(function(){
+
+var el = $('ul.sf-menu').find('ul.submenu-container').first();
+var liElPegs = $('ul.sf-menu').find("li .sf-with-ul")
+var href = liElPegs.attr('href');
+liElPegs.attr('href','#');
+el.append('<li><a href="'+href+'">' + "{l s='See all pegs' mod='blocktopmenu'}" +'</a></li>');
+
+});
+</script>

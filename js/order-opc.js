@@ -369,6 +369,7 @@ function updatePaymentMethods(json)
 
 function updatePaymentMethodsDisplay()
 {
+	console.log('updatePaymentMethodsDisplay');
 	var checked = '';
 	if ($('#cgv:checked').length !== 0)
 		checked = 1;
@@ -705,14 +706,15 @@ function confirmFreeOrder()
 	});
 }
 
+/*
+	Linus -
+	The server responds with an error if some of theese params are omitted.
+	Adress1 for example needs to be atleast a space or it returns an error.
+*/
 function saveAddress(type)
 {
 	if (type !== 'delivery' && type !== 'invoice')
 		return false;
-
-/*console.log("dod:");
-console.log('address1='+encodeURIComponent($('#address1'+(type == 'invoice' ? '_invoice' : '')).val())+'&');
-*/
 
 	var params = 'firstname='+encodeURIComponent($('#firstname'+(type == 'invoice' ? '_invoice' : '')).val())+'&lastname='+encodeURIComponent($('#lastname'+(type == 'invoice' ? '_invoice' : '')).val())+'&';
 	if ($('#company'+(type == 'invoice' ? '_invoice' : '')).length)
