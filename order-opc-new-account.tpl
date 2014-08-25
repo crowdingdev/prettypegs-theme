@@ -290,7 +290,11 @@
 						<p class="required opc-required pull-right">
 							<sup>*</sup>{l s='Required field'}
 						</p>
-						<button type="submit" name="submitAccount" id="submitAccount" class="btn btn-default button button-medium"><span>{l s='Continue'}<i class="icon-chevron-right right"></i></span></button>
+						<img src="{$img_ps_dir}loader.gif" style="display:none;" class="ajax_spinner" alt="" />
+
+						<button type="submit" name="submitAccount" id="submitAccount" class="btn btn-default button button-medium"><span>{l s='Continue'}<i class="icon-chevron-right right"></i></span>
+						</button>
+
 
 					</div>
 					<div style="display: none;" id="opc_account_saved" class="alert alert-success">

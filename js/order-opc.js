@@ -173,6 +173,9 @@ $(document).ready(function(){
 		// VALIDATION / CREATION AJAX
 		$(document).on('click', '#submitAccount, #submitGuestAccount', function(e){
 			e.preventDefault();
+
+
+			$('.ajax_spinner').show();
 			$('#opc_new_account-overlay, #opc_delivery_methods-overlay, #opc_payment_methods-overlay').fadeIn('slow')
 
 			var callingFile = '';
@@ -301,7 +304,7 @@ $(document).ready(function(){
 							updateNewAccountToAddressBlock();
 					}
 					$('#opc_new_account-overlay, #opc_delivery_methods-overlay, #opc_payment_methods-overlay').fadeIn('slow');
-
+					$('.ajax_spinner').hide();
 				},
 				error: function(XMLHttpRequest, textStatus, errorThrown) {
 					if (textStatus !== 'abort')
@@ -321,7 +324,8 @@ $(document).ready(function(){
 						else
 							alert(error);
 					}
-					$('#opc_new_account-overlay, #opc_delivery_methods-overlay, #opc_payment_methods-overlay').fadeIn('slow')
+					$('#opc_new_account-overlay, #opc_delivery_methods-overlay, #opc_payment_methods-overlay').fadeIn('slow');
+					$('.ajax_spinner').hide();
 				}
 			});
 });

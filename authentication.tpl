@@ -395,7 +395,9 @@
 			<p class="cart_navigation required submit clearfix">
 				<span><sup>*</sup>{l s='Required field'}</span>
 				<input type="hidden" name="display_guest_checkout" value="1" />
+
 				<button type="submit" class="button btn btn-default button-medium" name="submitGuestAccount" id="submitGuestAccount">
+
 					<span>
 						{l s='Proceed to checkout'}
 						<i class="icon-chevron-right right"></i>
