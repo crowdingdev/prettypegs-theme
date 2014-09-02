@@ -44,6 +44,9 @@ Changed so the price are updated on every attribute and quantity change for a pr
 **shopping-cart.tpl**
 Some hook (HOOK_SHOPPING_CART_EXTRA) has been removed. The span inside the h1 that showed number of articles has been removed.
 
+**order-confirmation.tpl**
+There are a conversion tracking pixel in ->/views/templates/front/thankyoupage.tpl
+
 
 ================
 ##Modules
@@ -51,6 +54,7 @@ Here we list all the modules that are essential/integrated with/for the theme.
 
 ####Klarna Checkout v2.38 - by Prestaworks AB
 **Desc:** Adds a cart block with klarna checkout links. **Category:** Payments and Gateways
+There are a conversion tracking pixel in ->/views/templates/front/thankyoupage.tpl
 
 ================
 ####Blog Prestashop Pro Module v2.4 - by Community
