@@ -32,7 +32,7 @@
 			{if $tax_exempt}
 				{l s='Exempt of VAT according section 259B of the General Tax Code.' pdf='true'}
 			{else}
-			<table style="width: 70%" >
+			<table style="width: 70%">
 				<tr style="line-height:5px;">
 					<td style="text-align: left; background-color: #4D4D4D; color: #FFF; padding-left: 10px; font-weight: bold; width: 30%">{l s='Vat Detail' pdf='true'}</td>
 					<td style="text-align: right; background-color: #4D4D4D; color: #FFF; padding-left: 10px; font-weight: bold; width: 20%">{l s='Vat Rate' pdf='true'}</td>
