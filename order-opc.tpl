@@ -45,7 +45,7 @@
 
 
 
-	<div id="opc_checkout" style="display:none;">
+	<div id="opc_checkout" style="">
 
 		{if $is_logged AND !$is_guest}
 		{include file="$tpl_dir./order-address.tpl"}

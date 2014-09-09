@@ -74,8 +74,6 @@ $(document).ready(function(){
     }
 
 
-
-
 	if (typeof combinations !== 'undefined' && combinations)
 	{
 		combinationsJS = [];
@@ -188,20 +186,20 @@ $(document).ready(function(){
 		colorPickerClick($(this));
 		getProductAttribute();
 
+
 	});
 
 	$(document).on('change', '.attribute_select', function(e){
 		e.preventDefault();
 		findCombination();
 		getProductAttribute();
-	
-
 	});
 
 	$(document).on('click', '.attribute_radio', function(e){
 		e.preventDefault();
 		findCombination();
 		getProductAttribute();
+
 
 	});
 
@@ -363,6 +361,7 @@ function oosHookJsCode()
 //add a combination of attributes in the global JS sytem
 function addCombination(idCombination, arrayOfIdAttributes, quantity, price, ecotax, id_image, reference, unit_price, minimal_quantity, available_date, combination_specific_price)
 {
+
 	globalQuantity += quantity;
 
 	var combination = [];
@@ -385,6 +384,7 @@ function addCombination(idCombination, arrayOfIdAttributes, quantity, price, eco
 // search the combinations' case of attributes and update displaying of availability, prices, ecotax, and image
 function findCombination(firstTime)
 {
+
 	$('#minimal_quantity_wanted_p').fadeOut();
 	if (typeof $('#minimal_quantity_label').text() === 'undefined' || $('#minimal_quantity_label').html() > 1)
 		$('#quantity_wanted').val(1);
@@ -404,6 +404,7 @@ function findCombination(firstTime)
 		var combinationMatchForm = true;
 		$.each(combinations[combination]['idsAttributes'], function(key, value)
 		{
+
 			if (!in_array(parseInt(value), choice))
 				combinationMatchForm = false;
 		});
@@ -443,6 +444,42 @@ function findCombination(firstTime)
 			//get available_date for combination product
 			selectedCombination['available_date'] = combinations[combination]['available_date'];
 
+
+// START - hide unavaible attributes - linus
+
+			var choosenCombination = combinations[combination];
+			var availableColorsIdsArray = [];
+
+			for (var i in combinations) {
+
+		  	var color = combinations[i]['idsAttributes'][0];
+		  	var size = combinations[i]['idsAttributes'][1];
+		  	var fitting = combinations[i]['idsAttributes'][2];
+
+		  	// Add color id to array if color is available for this combination.
+		  	if (fitting === choosenCombination['idsAttributes'][2] && size === choosenCombination['idsAttributes'][1] ){
+		  		availableColorsIdsArray.push(color);
+		  	}
+			}
+
+		$('#color_to_pick_list li').each(function(e){
+
+			//Extract the color id from the anchor element id.
+			var colorId = parseInt($(this).find('a').attr('id').split('_')[1], 10);
+
+			var showColor = false;
+			for (var i in availableColorsIdsArray) {
+				if (availableColorsIdsArray[i] === colorId ){
+					showColor = true;
+				}
+			}
+
+			showColor ? $(this).show() : $(this).hide();
+		});
+
+
+// END - hide unavaible attributes
+
 			//update the display
 			updateDisplay();
 
@@ -459,11 +496,13 @@ function findCombination(firstTime)
 	if (typeof(selectedCombination['available_date']) != 'undefined')
 		delete selectedCombination['available_date'];
 	updateDisplay();
+
 }
 
 //update display of the availability of the product AND the prices of the product
 function updateDisplay()
 {
+
 	var productPriceDisplay = productPrice;
 	var productPriceWithoutReductionDisplay = productPriceWithoutReduction;
 
@@ -573,7 +612,7 @@ function updateDisplay()
 		if (allowBuyWhenOutOfStock && !selectedCombination['unavailable'] && productAvailableForOrder == 1)
 		{
 			$('#add_to_cart:hidden').fadeIn(600);
-				$('.not-available-text').fadeOut(600);
+			$('.not-available-text').fadeOut(600);
 
 			if (availableLaterValue != '')
 			{

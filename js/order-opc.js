@@ -33,8 +33,8 @@ $(document).ready(function(){
 		/*	$('#opc_account_choice').show();
 		$('#opc_account_form, #opc_invoice_address').hide();*/
 
-		$('#opc_checkout').hide();
-		$('#opc_checkout_carrier_and_payment').hide();
+		//$('#opc_checkout').hide();
+		//$('#opc_checkout_carrier_and_payment').hide();
 
 		/*Start - This shows the guest checkout form - Linus*/
 		$('.is_customer_param').hide();
@@ -46,16 +46,14 @@ $(document).ready(function(){
 		if (typeof bindUniform !=='undefined')
 			bindUniform();
 		/*Start - This shows the guest checkout form*/
-
 		$(document).on('click', '#opc_regular_checkout',function(e){
 			e.preventDefault();
-
 			/* Start - Hiding checkout options and display a back button - Linus */
 			$('#checkout-options').slideUp();
 			$('#back-to-checkout-options').show();
 			/* END - Hiding checkout options and display a back button */
-
 			$('#opc_checkout').slideDown();
+
 		});
 
 
