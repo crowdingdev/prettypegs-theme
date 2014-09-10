@@ -69,13 +69,13 @@
                     {foreach from=$post_list item=post name=publications}
                     <li {if $smarty.foreach.publications.last} class="last_item col-xs-12 col-sm-9" {elseif $smarty.foreach.publications.first} class="first_item col-xs-12 col-sm-9" {else} class="col-xs-12 col-sm-9"{/if}>
                         {if $post.default_img}
-                        <div class="img_default">
+                        <div class="img_default col-sm-3">
                             <a href="{$post.link}" title="{$post.title}">
                                 <img src="{$posts_img_path}list/{$post.default_img_name}" width="{$blog_conf.img_list_width}" alt="{$post.title}" />
                             </a>
                         </div>
                         {/if}
-                        <div class="{if $post.default_img} detail_left {else} detail_large {/if}">
+                        <div class="{if $post.default_img} detail_left {else} detail_large {/if} col-sm-9">
                             <h3><a href="{$post.link}" title="{$post.title}">{$post.title}</a></h3>
                             <p>
                                 {if $blog_conf.list_display_date}<span>{dateFormat date=$post.date_on|escape:'html':'UTF-8' full=0}</span>{/if}

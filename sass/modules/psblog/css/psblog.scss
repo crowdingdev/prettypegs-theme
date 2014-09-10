@@ -9,13 +9,13 @@
 	}
 	.navigation-wrapper{
 		margin-top: 0 !important;
-				font-size: 20px !important;
+		font-size: 20px !important;
 
 		a{
 			text-align:center;
 		}
 		.pp-link{
-					font-size: 20px !important;
+			font-size: 20px !important;
 			font-weight: bold;
 			padding: 40px 0;
 
@@ -46,9 +46,31 @@
 	.pp-link{
 		font-size: 20px !important;
 	}
+
 	.contact-blogger{
 		margin-top: 30px;
 	}
+
+	.products{
+		ul{
+			li{
+				float:left !important;
+			}
+		}
+	}
+	.img_default{
+		a{
+			margin-top: 15px !important;
+		}
+	}
+
+	.post_list{
+		h3{
+			color: #000 !important;
+		}
+
+	}
+
 }
 
 

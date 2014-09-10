@@ -75,13 +75,12 @@
 				{foreach from=$post_products item=relatedProduct name=related_product_list}
 				{cycle values='odd,even' assign='alternate'} 
 
-				<li class="{if $smarty.foreach.related_product_list.first}first_item{elseif $smarty.foreach.related_product_list.last}last_item{else}item{/if} {$alternate}">   
+				<li  class="{if $smarty.foreach.related_product_list.first}first_item{elseif $smarty.foreach.related_product_list.last}last_item{else}item{/if}" style="float:left; margin-right: 3px;">   
 					{if isset($relatedProduct.id_image) && $relatedProduct.id_image}
 					<a href="{$relatedProduct.link}" title="{$relatedProduct.name|escape:'htmlall':'UTF-8'}" class="content_img"><img src="{$relatedProduct.imageLink}" class="img-responsive" alt="{$relatedProduct.name|escape:'htmlall':'UTF-8'}" /></a>
 					{/if}
 
 					<h5><a href="{$relatedProduct.link}">{$relatedProduct.name|truncate:25:'...':true|escape:'htmlall':'UTF-8'}</a> {if $relatedProduct.reference != ''}<span>{$relatedProduct.reference}</span>{/if}</h5>
-					<p><a href="{$relatedProduct.link}" title="{l s='More'}">{$relatedProduct.description_short|strip_tags|truncate:58:'...'}</a></p>
 
 					<div class="clear"></div>
 				</li>
