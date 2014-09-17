@@ -71,12 +71,12 @@
                         {if $post.default_img}
                         <div class="img_default col-sm-3">
                             <a href="{$post.link}" title="{$post.title}">
-                                <img src="{$posts_img_path}list/{$post.default_img_name}" width="{$blog_conf.img_list_width}" alt="{$post.title}" />
+                                <img  style="margin: 20px 0 10px 0;" src="{$posts_img_path}list/{$post.default_img_name}" width="{$blog_conf.img_list_width}" alt="{$post.title}" />
                             </a>
                         </div>
                         {/if}
                         <div class="{if $post.default_img} detail_left {else} detail_large {/if} col-sm-9">
-                            <h3><a href="{$post.link}" title="{$post.title}">{$post.title}</a></h3>
+                            <h3><a href="{$post.link}" title="{$post.title}" style="color: #000;">{$post.title}</a></h3>
                             <p>
                                 {if $blog_conf.list_display_date}<span>{dateFormat date=$post.date_on|escape:'html':'UTF-8' full=0}</span>{/if}
                                 {if $blog_conf.comment_active && $post.allow_comments && $post.nb_comments > 0}
@@ -134,7 +134,7 @@
                   </a>
               </div>
               <div class="col-xs-12">
-               <a href="campaigns"> 
+               <a href="/en/{l s='campaigns'}"> 
                 <span class="pp-link pp-campaigns" style="font-size: 20px;">campaigns</span> 
             </a>
         </div>
@@ -147,7 +147,7 @@
 
             <div class="contact-blogger">
                 <h4>CONTACT ME FOR MORE INFO</h4>
-                <img style="float:left;vertical-align:middle;margin-right:10px;" src="http://www.prettypegs.com/img/jana.jpg"><div style="float:left">Jana Cagin<br><span class="archivelink"><a href="mailto: jana@prettypegs.com">jana@prettypegs.com</a></span></div><div class="clear"></div><br>
+                <img style="float:left;vertical-align:middle;margin-right:10px;" src="{$img_dir}jana.jpg"><div style="float:left">Jana Cagin<br><span class="archivelink"><a href="mailto: jana@prettypegs.com">jana@prettypegs.com</a></span></div><div class="clear"></div><br>
 
             </div>
 

@@ -486,6 +486,11 @@ ul.product_list.list {
 	padding: 10px;
 	height: 70px;
 
+	&.reduced-price{
+		bottom: 90px;
+		height: 90px;
+
+	}
 	.product-name, .product-price{
 		color: #fff !important;
 	}

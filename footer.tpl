@@ -49,7 +49,7 @@
 				</div>
 
 				<div class="col-xs-4">
-					<a href="/campaigns">
+					<a href="/{$lang_iso}/{l s='campaigns'}">
 						<span class="pp-link pp-campaigns">{l s='campaigns'}</span>
 					</a>
 				</div>

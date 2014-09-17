@@ -49,7 +49,6 @@
 		{/foreach}
 		{/if}
 		{$HOOK_HEADER}
-		<link rel="stylesheet" href="http{if Tools::usingSecureMode()}s{/if}://fonts.googleapis.com/css?family=Open+Sans:300,600" type="text/css" media="all" />
 		<!--[if IE 8]>
 		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
@@ -60,15 +59,17 @@
 
 
 {literal}
-<!--
-<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MWVGZ8"
+<!--Start Google Tag Manager -->
+
+<!--<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MWVGZ8"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-MWVGZ8');</script>
-End Google Tag Manager -->
+-->
+<!--End Google Tag Manager -->
 {/literal}
 
 
@@ -90,7 +91,6 @@ End Google Tag Manager -->
 						
 						<div class="row">
 							<div class="">
-
 								<div id="header_logo" >
 									<a href="{$base_dir}" title="{$shop_name|escape:'html':'UTF-8'}">
 										<img class="logo" src="{$img_dir}logo/header.png" height="114px" width="190px" alt="{$shop_name|escape:'html':'UTF-8'}" />

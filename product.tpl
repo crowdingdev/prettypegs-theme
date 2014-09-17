@@ -195,6 +195,11 @@
 					{/foreach}
 				</div>
 				{/if}
+				
+				<div class="product_tab_content">
+					{if isset($HOOK_PRODUCT_TAB_CONTENT) && $HOOK_PRODUCT_TAB_CONTENT}{$HOOK_PRODUCT_TAB_CONTENT}{/if}
+				</div>
+
 			</div> <!-- end short_description_block -->
 			{/if}
 			{if ($display_qties == 1 && !$PS_CATALOG_MODE && $PS_STOCK_MANAGEMENT && $product->available_for_order)}
@@ -529,6 +534,14 @@
 
 			</div> <!-- end primary_block -->
 		</div>
+
+	{if isset($HOOK_PRODUCT_FOOTER) && $HOOK_PRODUCT_FOOTER}
+
+	{$HOOK_PRODUCT_FOOTER}
+
+	{/if}
+
+
 		<div class="row">
 			<div class="col-xs-6">
 				<h4>{l s='Shipping information'}</h4>
@@ -603,11 +616,12 @@
 		<!--HOOK_PRODUCT_TAB -->
 		<section class="page-product-box">
 			{$HOOK_PRODUCT_TAB}
-			{if isset($HOOK_PRODUCT_TAB_CONTENT) && $HOOK_PRODUCT_TAB_CONTENT}{$HOOK_PRODUCT_TAB_CONTENT}{/if}
+	
+
 		</section>
 		<!--end HOOK_PRODUCT_TAB -->
 
-		{if isset($HOOK_PRODUCT_FOOTER) && $HOOK_PRODUCT_FOOTER}{$HOOK_PRODUCT_FOOTER}{/if}
+	
 		<!-- description & features -->
 		{if (isset($product) && $product->description) || (isset($features) && $features) || (isset($accessories) && $accessories) || (isset($HOOK_PRODUCT_TAB) && $HOOK_PRODUCT_TAB) || (isset($attachments) && $attachments) || isset($product) && $product->customizable}
 		{if isset($attachments) && $attachments}

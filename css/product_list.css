@@ -446,6 +446,10 @@ ul.product_list.list > li .right-block .right-block-content .functional-buttons 
   padding: 10px;
   height: 70px;
 }
+.pp-product-info-overlay.reduced-price {
+  bottom: 90px;
+  height: 90px;
+}
 .pp-product-info-overlay .product-name, .pp-product-info-overlay .product-price {
   color: #fff !important;
 }

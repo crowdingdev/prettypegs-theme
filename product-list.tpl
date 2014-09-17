@@ -90,7 +90,7 @@
 				</div>
 				{/if}
 
-				<div class="pp-product-info-overlay">
+				<div class="pp-product-info-overlay {if isset($product.specific_prices) && $product.specific_prices && isset($product.specific_prices.reduction) && $product.specific_prices.reduction > 0}reduced-price{/if}">
 					<h5 itemprop="name">
 
 						{if isset($product.pack_quantity) && $product.pack_quantity}{$product.pack_quantity|intval|cat:' x '}{/if}
@@ -119,7 +119,7 @@
 						<meta itemprop="priceCurrency" content="{$priceDisplay}" />
 						{if isset($product.specific_prices) && $product.specific_prices && isset($product.specific_prices.reduction) && $product.specific_prices.reduction > 0}
 						<span class="old-price product-price">
-							{displayWtPrice p=$product.price_without_reduction}
+							{displayWtPrice p=$product.price_without_reduction * 4 }
 						</span>
 						{if $product.specific_prices.reduction_type == 'percentage'}
 						<span class="price-percent-reduction">-{$product.specific_prices.reduction * 100}%</span>
