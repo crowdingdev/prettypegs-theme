@@ -171,7 +171,10 @@
 			<p class="online_only">{l s='Online only'}</p>
 			{/if}
 
-
+			<div class="product_tab_content">
+					{if isset($HOOK_PRODUCT_TAB_CONTENT) && $HOOK_PRODUCT_TAB_CONTENT}{$HOOK_PRODUCT_TAB_CONTENT}{/if}
+				</div>
+				
 			{if $product->description_short || $packItems|@count > 0}
 			<div id="short_description_block">
 				<h3> Info </h3>
@@ -196,9 +199,7 @@
 				</div>
 				{/if}
 				
-				<div class="product_tab_content">
-					{if isset($HOOK_PRODUCT_TAB_CONTENT) && $HOOK_PRODUCT_TAB_CONTENT}{$HOOK_PRODUCT_TAB_CONTENT}{/if}
-				</div>
+	
 
 			</div> <!-- end short_description_block -->
 			{/if}

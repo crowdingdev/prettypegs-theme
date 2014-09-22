@@ -33,8 +33,8 @@ $(document).ready(function(){
 		/*	$('#opc_account_choice').show();
 		$('#opc_account_form, #opc_invoice_address').hide();*/
 
-		//$('#opc_checkout').hide();
-		//$('#opc_checkout_carrier_and_payment').hide();
+		$('#opc_checkout').hide();
+		$('#opc_checkout_carrier_and_payment').hide();
 
 		/*Start - This shows the guest checkout form - Linus*/
 		$('.is_customer_param').hide();
@@ -293,6 +293,13 @@ $(document).ready(function(){
 							/*Start - Added by linus*/
 							$('#submitAccount').hide();
 							updateAddressSelection();
+
+								//$("html, body").animate({ scrollTop: $(document).height() }, 1000);
+							  
+							  /* Scroll down */
+							  var scrollTo = $('#HOOK_BEFORECARRIER');
+							  var container = 	 $('body');
+								container.animate({ scrollTop: scrollTo.offset().top - 400}, 400);
 
 							/* Start - this will trigger paypal after guest account is saved - Linus */
 									/*$('#paypal_payment_form').submit();*/
