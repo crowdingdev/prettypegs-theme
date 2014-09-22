@@ -93,6 +93,7 @@
   margin-bottom: 40px;
 }
 #checkout-options .pp-checkout-heading {
+  color: #000;
   margin-top: -60px;
 }
 #checkout-options .pp-checkout-heading h3 {
@@ -102,11 +103,18 @@
 #checkout-options .pp-checkout-options {
   float: right;
 }
+#checkout-options .pp-checkout-options p {
+  margin-bottom: 0;
+  color: #000;
+}
 @media (max-width: 767px) {
   #checkout-options .pp-checkout-options {
     float: left;
     margin: 50px 0 0 20px;
   }
+}
+#checkout-options .pp-klarna-checkout {
+  float: right;
 }
 #checkout-options .pp-checkout-option {
   margin-bottom: 20px;
@@ -142,6 +150,12 @@
 #checkout-options .pp-checkout-option .pp-payment-provider-services-logo.pp-mastercard-logo {
   background: url(../img/icon/mastercard_2x.png) no-repeat;
 }
+#checkout-options .pp-checkout-option .pp-payment-provider-services-logo.pp-paypal-logo {
+  background: url(../img/icon/paypal_2x.png) no-repeat;
+  height: 60px !important;
+  width: 80px !important;
+  background-position: 2px 14px !important;
+}
 #checkout-options .pp-checkout-option .pp-payment-provider-services-logo.pp-payment-provider-services-logo {
   background-size: 100%;
   background-position: center;
@@ -152,6 +166,7 @@
 }
 #checkout-options .pp-checkout-option .pp-payment-provider-logo.pp-klarna-logo {
   background: url(../img/icon/klarna_2x.png) no-repeat;
+  margin-left: 18px;
 }
 #checkout-options .pp-checkout-option .pp-payment-provider-logo.pp-paypal-logo {
   background: url(../img/icon/paypal_2x.png) no-repeat;

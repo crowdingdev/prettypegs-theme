@@ -25,7 +25,7 @@
 
 {capture name=path}{l s='Order confirmation'}{/capture}
 
-<h1 class="page-heading">{l s='Order confirmation'}</h1>
+<h1 class="page-heading">{l s='Thank you for your order'}!</h1>
 
 {assign var='current_step' value='payment'}
 {include file="$tpl_dir./order-steps.tpl"}
@@ -39,8 +39,10 @@
 
 
 {if $is_guest}
-	<p>{l s='Your order ID is:'} <span class="bold">{$id_order_formatted}</span> . {l s='Your order ID has been sent via email.'}</p>
-  
+
+	<p>
+		{l s='Your order confirmation has been sent to'} <strong>{$email}</strong></p>
+
 {else}
 
 {/if}

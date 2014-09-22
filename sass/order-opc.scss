@@ -97,16 +97,21 @@
 
 
 	.pp-checkout-heading{
+		color: #000;
 		margin-top:-60px;
 		h3{
 		font-weight:bold;
 		font-size: 30px;
 		}
-		
 	}
 
 	.pp-checkout-options{
 		float:right;
+
+		p{
+			margin-bottom:0;
+			color: #000;
+		}
 
 		@media (max-width: $screen-xs-max) {
 				float:left;
@@ -116,8 +121,9 @@
 	}
 
 	.pp-klarna-checkout{
-
+		float:right;
 	}
+
 	.pp-paypal-checkout{
 
 	}
@@ -154,6 +160,12 @@
 			&.pp-mastercard-logo{
 				background: url(../img/icon/mastercard_2x.png) no-repeat;
 			}
+			&.pp-paypal-logo{
+				background: url(../img/icon/paypal_2x.png) no-repeat;
+				height: 60px !important;
+				width: 80px !important;
+				background-position: 2px 14px !important;
+			}
 
 
 			&.pp-payment-provider-services-logo{
@@ -172,6 +184,7 @@
 
 			&.pp-klarna-logo{
 				background: url(../img/icon/klarna_2x.png) no-repeat;
+				margin-left: 18px;
 			}
 			&.pp-paypal-logo{
 				background: url(../img/icon/paypal_2x.png) no-repeat;
