@@ -94,7 +94,7 @@
 
 		{if $blog_conf.comment_active && $post->allow_comments}
 
-		<div class="comments" id="postcomments">
+		<div class="comments" style="float:left;" id="postcomments">
 			<h3>{l s='COMMENTS' mod='psblog'}</h3>
 
 			{if isset($psblog_confirmation)}

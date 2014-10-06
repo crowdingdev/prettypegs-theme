@@ -41,7 +41,7 @@
 					
 					<span style="display:none;">{$PayPal_content.payment_choice}</span>
 					({l s='PayPal account needed'})<br>
-					<img src="{$img_dir}icon/paypal_card_logos.png" />
+					<img src="{$img_ps_dir}paypal_card_logos.png" />
 
 						<button class="btn btn-default button button-medium exclusive" style="float:right; margin-right: -22px; margin-top:10px; ">
 							<span >Continue<i class="icon-chevron-right right"></i></span>

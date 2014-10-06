@@ -171,9 +171,6 @@
 			<p class="online_only">{l s='Online only'}</p>
 			{/if}
 
-			<div class="product_tab_content">
-					{if isset($HOOK_PRODUCT_TAB_CONTENT) && $HOOK_PRODUCT_TAB_CONTENT}{$HOOK_PRODUCT_TAB_CONTENT}{/if}
-				</div>
 				
 			{if $product->description_short || $packItems|@count > 0}
 			<div id="short_description_block">
@@ -203,6 +200,14 @@
 
 			</div> <!-- end short_description_block -->
 			{/if}
+
+
+			<div class="product_tab_content">
+					{if isset($HOOK_PRODUCT_TAB_CONTENT) && $HOOK_PRODUCT_TAB_CONTENT}
+					{$HOOK_PRODUCT_TAB_CONTENT}
+					{/if}
+				</div>
+			
 			{if ($display_qties == 1 && !$PS_CATALOG_MODE && $PS_STOCK_MANAGEMENT && $product->available_for_order)}
 			<!-- number of item in stock -->
 			<p id="pQuantityAvailable"{if $product->quantity <= 0} style="display: none;"{/if}>
