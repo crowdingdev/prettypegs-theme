@@ -66,6 +66,19 @@ There are a conversion tracking pixel in ->/views/templates/front/thankyoupage.t
 ####PayPal v3.7.1 - by PrestaShop -  Official
 **Desc:** Accepts payments by credit cards (CB, Visa, MasterCard, Amex, Aurore, Cofinoga, 4 stars) with PayPal. **Category:** Payments and Gateways
 
+The item showing up as a payment option in the checkout process has been overidden for paypal module.
+views/templates/hook/express_checkout_payment.tpl
+
+
+================
+####Mondidopay v1.2 - by Mondido payment -  Official
+**Desc:** Prestashop module
+**Category:** Payments and Gateways
+
+The item showing up as a payment option in the checkout process has been overidden for mondido module.
+views/templates/hooks/payment.tpl
+
+
 ================
 ####Theme configurator v1.1.0 - by PrestaShop
 **Desc:** Configure the main elements of your theme. **Category:** Front Office Features
