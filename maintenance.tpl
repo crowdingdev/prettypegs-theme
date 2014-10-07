@@ -46,9 +46,12 @@
 			 <div class="logo"><img src="{$logo_url}" {if $logo_image_width}width="{$logo_image_width}"{/if} {if $logo_image_height}height="{$logo_image_height}"{/if} alt="logo" /></div>
              {$HOOK_MAINTENANCE}
              <div id="message">
-             	<h1 class="maintenance-heading">{l s='Maintenance mode'}</h1>
+             	<h1 class="maintenance-heading">{l s='Maintenance'}</h1>
 				{l s='In order to perform website maintenance, our online store will be temporarily offline.'}
 				{l s='We apologize for the inconvenience and ask that you please try again later.'}
+
+<br><br>
+				<p>We expect to be up and running within an hour!</p>
 			 </div>
 		</div>
         </div>

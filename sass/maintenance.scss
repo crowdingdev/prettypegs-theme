@@ -3,15 +3,18 @@
 /*********************************************************************
 					Maintenance Page Styles
 **********************************************************************/
-#maintenance {
+ #maintenance {
 	margin: 50px 0 0 0;
 	@media (min-width: $screen-lg) { // > 1200 
-		margin: 126px 0 0 0;
-		padding: 91px 48px 365px 297px;
-		background: url(../img/bg_maintenance.png) no-repeat;
+
+
 	}
 	.logo {
-		margin: 0 0 31px 0;	
+		width: 300px;
+		height: 300px;
+		margin:auto;
+
+		//margin: 0 0 31px 0;	
 	}
 	h1 {
 		font: 600 28px/34px $font-custom;
@@ -26,6 +29,9 @@
 		padding: 0 0 0 18px;
 		color: #555454;
 		text-transform: uppercase;	
+		text-align: center;
+		width: 700px;
+		margin:auto;
 	}
 }
 @media only screen and (min-width: 1200px) {
