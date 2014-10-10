@@ -190,7 +190,6 @@ $(document).ready(function(){
 				callingFile = orderOpcUrl;
 				params = 'method=editCustomer&';
 			}
-				//console.log(orderOpcUrl);
 
 			$('#opc_account_form input:visible, #opc_account_form input[type=hidden]').each(function() {
 				if ($(this).is('input[type=checkbox]'))
@@ -378,7 +377,6 @@ function updatePaymentMethods(json)
 
 function updatePaymentMethodsDisplay()
 {
-	console.log('updatePaymentMethodsDisplay');
 	var checked = '';
 	if ($('#cgv:checked').length !== 0)
 		checked = 1;
@@ -792,9 +790,6 @@ function saveAddress(type)
 			}
 		},
 		error: function(XMLHttpRequest, textStatus, errorThrown) {
-			console.log(XMLHttpRequest);
-			console.log(textStatus);
-			console.log(errorThrown);
 			if (textStatus !== 'abort')
 			{
 				error = "TECHNICAL ERROR: unable to save adresses \n\nDetails:\nError thrown: " + XMLHttpRequest + "\n" + 'Text status: ' + textStatus;

@@ -41,6 +41,8 @@
         <link href='//fonts.googleapis.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css' />
 	</head>
 	<body>
+
+		
     	<div class="container">
 			<div id="maintenance">
 			 <div class="logo"><img src="{$logo_url}" {if $logo_image_width}width="{$logo_image_width}"{/if} {if $logo_image_height}height="{$logo_image_height}"{/if} alt="logo" /></div>
