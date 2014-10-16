@@ -466,7 +466,7 @@
 											{l s='tax excl.'}
 										</span>
 										{/if}
-										<p class="shipping-included">({l s='Shipping included'})</p>
+
 									</div><!-- end prices -->
 
 
