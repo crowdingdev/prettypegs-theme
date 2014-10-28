@@ -5259,8 +5259,8 @@ textarea {
   padding-top: 15px; }
 
 #index .tab-content {
-  margin-top: 8px;
-  margin-bottom: 34px; }
+  margin-top: 0;
+  margin-bottom: -15px; }
 
 header {
   z-index: 1;
@@ -5284,7 +5284,7 @@ header {
       position: relative; }
     header .row #header_logo {
       width: 220px;
-      padding-top: 15px; }
+      padding-top: 26px; }
       header .row #header_logo img {
         max-width: 190px !important; }
       @media (max-width: 960px) {

@@ -89,10 +89,12 @@ End Google Tag Manager -->
 	{/if}
 	<div id="page">
 		<div class="header-container">
+
+			<div class="pre-header" style="background-color: #ccc; height: 45px; "> </div>
 			<header id="header">
 				<div>
 					<div class="container">
-						<div class="row shop-slogan">
+						<div class="row shop-slogan" style="top: -32px;">
 
 							<h1>{l s='Designed furniture legs'}</h1> <a href="/content/1-"> {l s='Free shipping world wide'}</a>
 						</div>
@@ -101,7 +103,7 @@ End Google Tag Manager -->
 							<div class="">
 								<div id="header_logo" >
 									<a href="{$base_dir}" title="{$shop_name|escape:'html':'UTF-8'}">
-										<img class="logo" src="{$img_dir}logo/header.png" height="114px" width="190px" alt="{$shop_name|escape:'html':'UTF-8'}" />
+										<img class="logo" src="{$img_dir}logo/header.png" width="190px" alt="{$shop_name|escape:'html':'UTF-8'}" />
 									</a>
 								</div>
 							</div>
