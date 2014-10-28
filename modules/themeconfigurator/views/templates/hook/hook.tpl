@@ -31,35 +31,28 @@
 	{if isset($htmlitems) && $htmlitems}
 	<div id="pp-home-category-wrapper htmlcontent_{$hook|escape:'htmlall':'UTF-8'}">
 
+
+<h3 class="home-header bold">{l s='PEGS' mod='themeconfigurator'} {l s='FOR' mod='themeconfigurator'}:</h3>
 	<ul class="htmlcontent-home  pp-home-categories clearfix row">
 
 		{foreach name=items from=$htmlitems item=hItem}
 
 
-		<li class="child-{$smarty.foreach.items.iteration|escape:'htmlall':'UTF-8'} col-xs-6">
+		<li class="child-{$smarty.foreach.items.iteration|escape:'htmlall':'UTF-8'} ">
 			<div class="pp-home-category">
 
 				<a href="{$hItem.url|escape:'htmlall':'UTF-8'}">
 
-					<div class="pp-category-text">
+		
 
-						{if $hItem.html}
-						{$hItem.html}
 
-						{else}
-						<h4>PEGS</h4>
-						<h4>{l s='FOR' mod='themeconfigurator'}</h4>
-						{/if}
+
+
+					<div class="pp-category-image" style=" {if isset($hItem.image) && $hItem.image}background: url({$link->getMediaLink("`$module_dir`img/`$hItem.image`")});{/if} 	{if $hItem.image_w}background-position-x:{$hItem.image_w|intval}px;{else}background-position: center right;{/if}">
+						
 
 						<h4 class="pp-category-name">{$hItem.title|escape:'htmlall':'UTF-8'}</h4>
-					</div>
 
-
-
-
-
-
-					<div class="pp-category-image" style="background: url({$link->getMediaLink("`$module_dir`img/`$hItem.image`")}); 	{if $hItem.image_w}background-position-x:{$hItem.image_w|intval}px;{else}background-position: center right;{/if}">
 					</div>
 				</div>
 
@@ -67,6 +60,8 @@
 
 		</li>
 		{/foreach}
+
+
 	</ul>
 
 

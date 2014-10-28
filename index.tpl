@@ -26,19 +26,25 @@
 
 	{if isset($HOOK_HOME_TAB_CONTENT) && $HOOK_HOME_TAB_CONTENT|trim}
 	{if isset($HOOK_HOME_TAB) && $HOOK_HOME_TAB|trim}
-		<ul id="home-page-tabs" class="nav nav-tabs clearfix">
-			{$HOOK_HOME_TAB}
-		</ul>
-		{/if}
+	<ul id="home-page-tabs" class="nav nav-tabs clearfix">
+		{$HOOK_HOME_TAB}
+	</ul>
+	{/if}
 
+	
+	{/if}
+
+	{if isset($HOOK_HOME) && $HOOK_HOME|trim}
+	<div class="clearfix">
+		{$HOOK_HOME}
+		<h3 class="home-header thin">{l s='MOST POPULAR' mod='blockbestsellers'}</h3>
 		<div class="tab-content">{$HOOK_HOME_TAB_CONTENT}</div>
-		{/if}
+	</div>
 
-		{if isset($HOOK_HOME) && $HOOK_HOME|trim}
-		<div class="clearfix">
-			{$HOOK_HOME}
-		</div>
-		{/if}
+	<h3 class="home-header thin">{l s='PRETTYPEGS ON INSTAGRAM' mod='blockbestsellers'}</h3>
+	<ul id="slideshow" class="jcarousel-skin-tango"></ul>
+
+	{/if}
 
 
 

@@ -102,7 +102,7 @@ textarea {
 
 #index {
 	.tab-content {
-		margin-top: 35px;
+		margin-top: 8px;
 		margin-bottom: 34px;
 	}
 }
@@ -3658,43 +3658,45 @@ a{
 }
 
 .pp-home-categories{
-	margin-top: 20px !important;
-	margin: 15px -15px 0 -15px !important;
+	margin-top: 30px !important;
+	margin: 15px -15px 20px -15px !important;
 	li{
 		padding:0 15px !important;
+				float:left;
 
 		//margin: 0 -10px;
 	}
 	.pp-home-category{
 		overflow:hidden;
+
 		a{
-			width: 100%;
-			.pp-category-text{
-				text-transform:uppercase;
-				float:left;
-				padding: 15px 17px;
-				margin-bottom: 30px;
-				background-color: #eceaeb;
-				height: 150px;
+		
+
 				h4{
-					margin:0;
+					text-transform: capitalize;
+					padding: 15px;
 					font-size: 38px;
-					word-spacing: 9999999px;
+					//word-spacing: 9999999px;
+					color:#fff;
+					margin:0;
+					margin-bottom: 20px;
 					&.pp-category-name{
 						font-weight: bold;
-						color: #000;
+						color: #fff;
 					}
 				}
-			}
+			
 			.pp-category-image{
-				height: 150px;
+				border-radius: 100px;
+				background-color: rgb(202,153,152) !important;
+				//height: 150px;
 				//background-size: 100% !important;
-				background-repeat: no-repeat !important;
+				//background-repeat: no-repeat !important;
 				//background-position: right !important;
 				//background-position: center right  !important;
 				//background-position-x: 150px !important;
 				//background-size: cover !important;
-				background-color: #eceaeb !important;
+				//background-color: #eceaeb !important;
 			}
 			&:hover{
 				 .pp-category-text{
@@ -3721,7 +3723,16 @@ a{
 		}
 	}
 }
+.home-header{
+	color: #000;
+	margin-bottom: 0px;
+	&.thin{
 
+	}
+	&.bold{
+		font-weight: bold;
+	}
+}
 
 // .htmlcontent-home{
 // 	a{
@@ -3835,3 +3846,48 @@ margin-left: 25px;
 	}
 }
 
+
+/* start embedagram */
+
+
+.jcarousel-skin-tango{
+	li{
+		float:left;
+		img{
+			height: 192px;
+			width: 192px;
+		}
+
+		
+	}
+
+	@media (max-width:1200px) {
+			li{
+			
+			img{
+				height: 186px;
+				width: 186px;
+			}
+		}		
+	}
+
+		@media (max-width:975px) {
+			li{
+			
+			img{
+				height: 183px;
+				width: 183px;
+			}
+		}		
+	}
+	@media (max-width: $screen-sm) {
+		li{
+			float:none;
+			img{
+				height: auto;
+				width: auto;
+			}
+		}		
+	}
+}
+/* end embedagram */

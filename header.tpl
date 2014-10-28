@@ -49,17 +49,24 @@
 		{/foreach}
 		{/if}
 		{$HOOK_HEADER}
+
+
 		<!--[if IE 8]>
 		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
 		<![endif]-->
+
+
+			<script src="{$js_dir}/jquery-embedagram.js"></script>
+
+
 	</head>
 	<body{if isset($page_name)} id="{$page_name|escape:'html':'UTF-8'}"{/if} class="{if isset($page_name)}{$page_name|escape:'html':'UTF-8'}{/if}{if isset($body_classes) && $body_classes|@count} {implode value=$body_classes separator=' '}{/if}{if $hide_left_column} hide-left-column{/if}{if $hide_right_column} hide-right-column{/if}{if $content_only} content_only{/if} lang_{$lang_iso}">
 
 
 
 {literal}
-<!--Start Google Tag Manager -->
+<!--Start Google Tag Manager 
 
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MWVGZ8"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -69,7 +76,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-MWVGZ8');</script>
 
-<!--End Google Tag Manager -->
+
+End Google Tag Manager -->
 {/literal}
 
 

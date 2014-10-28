@@ -3,185 +3,138 @@
 			One-Page Checkout Styles
 			********************************************************/
 #order-opc {
-  line-height: 20px;
-}
-#order-opc .box {
-  padding-bottom: 20px;
-}
-#order-opc .page-heading.step-num {
-  position: relative;
-  overflow: visible;
-}
-#order-opc .page-heading.step-num span {
-  font-weight: bold;
-  font-size: 42px;
-  line-height: 51px;
-  font-style: italic;
-  color: #333333;
-  position: absolute;
-  left: 10px;
-  top: -14px;
-}
-#order-opc .form-group {
-  margin-bottom: 2px;
-}
-#order-opc .form-group .form-control {
-  width: 271px;
-}
-#order-opc .lost_password {
-  display: inline-block;
-  text-decoration: underline;
-  margin: 5px 0 14px;
-}
-#order-opc .lost_password:hover {
-  text-decoration: none;
-}
-#order-opc .title_block {
-  font-weight: bold;
-  color: #333333;
-  padding: 3px 0 6px;
-}
-#order-opc .opc-button {
-  padding: 11px 0 0 0;
-}
-#order-opc ul.bullet {
-  line-height: 22px;
-  margin-bottom: 5px;
-}
-#order-opc .date-select {
-  padding-bottom: 10px;
-}
-#order-opc .opc-add-save {
-  border-top: 1px solid #d6d4d4;
-  margin-top: 20px;
-  padding-top: 20px;
-}
-#order-opc .opc-add-save button {
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
-}
-#order-opc #message {
-  margin-bottom: 35px;
-}
-#order-opc #opc_payment_methods {
-  margin-bottom: 30px;
-}
-#order-opc #opc_payment_methods p.warning {
-  color: #F13340;
-  font-weight: 700;
-}
-#order-opc #opc_account {
-  margin-bottom: 30px;
-}
-#order-opc .address_delivery.select {
-  margin-bottom: 15px;
-}
-#order-opc #address_invoice_form.form-group {
-  margin-bottom: 30px;
-}
+  line-height: 20px; }
+  #order-opc .box {
+    padding-bottom: 20px; }
+  #order-opc .page-heading.step-num {
+    position: relative;
+    overflow: visible; }
+    #order-opc .page-heading.step-num span {
+      font-weight: bold;
+      font-size: 42px;
+      line-height: 51px;
+      font-style: italic;
+      color: #333;
+      position: absolute;
+      left: 10px;
+      top: -14px; }
+  #order-opc .form-group {
+    margin-bottom: 2px; }
+    #order-opc .form-group .form-control {
+      width: 271px; }
+  #order-opc .lost_password {
+    display: inline-block;
+    text-decoration: underline;
+    margin: 5px 0 14px; }
+    #order-opc .lost_password:hover {
+      text-decoration: none; }
+  #order-opc .title_block {
+    font-weight: bold;
+    color: #333;
+    padding: 3px 0 6px; }
+  #order-opc .opc-button {
+    padding: 11px 0 0 0; }
+  #order-opc ul.bullet {
+    line-height: 22px;
+    margin-bottom: 5px; }
+  #order-opc .date-select {
+    padding-bottom: 10px; }
+  #order-opc .opc-add-save {
+    border-top: 1px solid #d6d4d4;
+    margin-top: 20px;
+    padding-top: 20px; }
+    #order-opc .opc-add-save button {
+      -moz-border-radius: 4px;
+      -webkit-border-radius: 4px;
+      border-radius: 4px; }
+  #order-opc #message {
+    margin-bottom: 35px; }
+  #order-opc #opc_payment_methods {
+    margin-bottom: 30px; }
+    #order-opc #opc_payment_methods p.warning {
+      color: #F13340;
+      font-weight: 700; }
+  #order-opc #opc_account {
+    margin-bottom: 30px; }
+  #order-opc .address_delivery.select {
+    margin-bottom: 15px; }
+  #order-opc #address_invoice_form.form-group {
+    margin-bottom: 30px; }
 
 #new_account_form .id_state,
 #new_account_form .dni,
 #new_account_form .postcode {
-  display: none;
-}
+  display: none; }
 
 #checkout-options {
-  margin-bottom: 40px;
-}
-#checkout-options .pp-checkout-heading {
-  color: #000;
-  margin-top: -60px;
-}
-#checkout-options .pp-checkout-heading h3 {
-  font-weight: bold;
-  font-size: 30px;
-}
-#checkout-options .pp-checkout-options {
-  float: right;
-}
-#checkout-options .pp-checkout-options p {
-  margin-bottom: 0;
-  color: #000;
-}
-@media (max-width: 767px) {
+  margin-bottom: 40px; }
+  #checkout-options .pp-checkout-heading {
+    color: #000;
+    margin-top: -60px; }
+    #checkout-options .pp-checkout-heading h3 {
+      font-weight: bold;
+      font-size: 30px; }
   #checkout-options .pp-checkout-options {
-    float: left;
-    margin: 50px 0 0 20px;
-  }
-}
-#checkout-options .pp-klarna-checkout {
-  float: right;
-}
-#checkout-options .pp-checkout-option {
-  margin-bottom: 20px;
-  padding: 20px;
-  border: 1px solid #ccc;
-  background-color: rgba(245, 245, 245, 0.5);
-}
-#checkout-options .pp-checkout-option a, #checkout-options .pp-checkout-option button {
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
-}
-#checkout-options .pp-checkout-option .pp-payment-provider-services-logo {
-  margin-bottom: 10px;
-}
-#checkout-options .pp-checkout-option .pp-payment-provider-services-logo.pp-mastercard-logo {
-  background: url(../img/icon/mastercard_2x.png) no-repeat;
-}
-#checkout-options .pp-checkout-option .pp-payment-provider-services-logo.pp-americanexpress-logo {
-  background: url(../img/icon/americanexpress_2x.png) no-repeat;
-}
-#checkout-options .pp-checkout-option .pp-payment-provider-services-logo.pp-discovercard-logo {
-  background: url(../img/icon/discovercard_2x.png) no-repeat;
-}
-#checkout-options .pp-checkout-option .pp-payment-provider-services-logo.pp-visa-logo {
-  background: url(../img/icon/visa_2x.png) no-repeat;
-}
-#checkout-options .pp-checkout-option .pp-payment-provider-services-logo.pp-mastercard-logo {
-  background: url(../img/icon/mastercard_2x.png) no-repeat;
-}
-#checkout-options .pp-checkout-option .pp-payment-provider-services-logo.pp-mastercard-logo {
-  background: url(../img/icon/mastercard_2x.png) no-repeat;
-}
-#checkout-options .pp-checkout-option .pp-payment-provider-services-logo.pp-paypal-logo {
-  background: url(../img/icon/paypal_2x.png) no-repeat;
-  height: 60px !important;
-  width: 80px !important;
-  background-position: 2px 14px !important;
-}
-#checkout-options .pp-checkout-option .pp-payment-provider-services-logo.pp-payment-provider-services-logo {
-  background-size: 100%;
-  background-position: center;
-  height: 40px;
-  width: 40px;
-  margin-right: 5px;
-  float: left;
-}
-#checkout-options .pp-checkout-option .pp-payment-provider-logo.pp-klarna-logo {
-  background: url(../img/icon/klarna_2x.png) no-repeat;
-  margin-left: 18px;
-}
-#checkout-options .pp-checkout-option .pp-payment-provider-logo.pp-paypal-logo {
-  background: url(../img/icon/paypal_2x.png) no-repeat;
-}
-#checkout-options .pp-checkout-option .pp-payment-provider-logo.pp-payment-provider-logo {
-  background-size: 50%;
-  width: 200px;
-  height: 40px;
-  display: block;
-}
+    float: right; }
+    #checkout-options .pp-checkout-options p {
+      margin-bottom: 0;
+      color: #000; }
+    @media (max-width: 767px) {
+      #checkout-options .pp-checkout-options {
+        float: left;
+        margin: 50px 0 0 20px; } }
+  #checkout-options .pp-klarna-checkout {
+    float: right; }
+  #checkout-options .pp-checkout-option {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: rgba(245, 245, 245, 0.5); }
+    #checkout-options .pp-checkout-option a, #checkout-options .pp-checkout-option button {
+      -moz-border-radius: 4px;
+      -webkit-border-radius: 4px;
+      border-radius: 4px; }
+    #checkout-options .pp-checkout-option .pp-payment-provider-services-logo {
+      margin-bottom: 10px; }
+      #checkout-options .pp-checkout-option .pp-payment-provider-services-logo.pp-mastercard-logo {
+        background: url(../img/icon/mastercard_2x.png) no-repeat; }
+      #checkout-options .pp-checkout-option .pp-payment-provider-services-logo.pp-americanexpress-logo {
+        background: url(../img/icon/americanexpress_2x.png) no-repeat; }
+      #checkout-options .pp-checkout-option .pp-payment-provider-services-logo.pp-discovercard-logo {
+        background: url(../img/icon/discovercard_2x.png) no-repeat; }
+      #checkout-options .pp-checkout-option .pp-payment-provider-services-logo.pp-visa-logo {
+        background: url(../img/icon/visa_2x.png) no-repeat; }
+      #checkout-options .pp-checkout-option .pp-payment-provider-services-logo.pp-mastercard-logo {
+        background: url(../img/icon/mastercard_2x.png) no-repeat; }
+      #checkout-options .pp-checkout-option .pp-payment-provider-services-logo.pp-mastercard-logo {
+        background: url(../img/icon/mastercard_2x.png) no-repeat; }
+      #checkout-options .pp-checkout-option .pp-payment-provider-services-logo.pp-paypal-logo {
+        background: url(../img/icon/paypal_2x.png) no-repeat;
+        height: 60px !important;
+        width: 80px !important;
+        background-position: 2px 14px !important; }
+      #checkout-options .pp-checkout-option .pp-payment-provider-services-logo.pp-payment-provider-services-logo {
+        background-size: 100%;
+        background-position: center;
+        height: 40px;
+        width: 40px;
+        margin-right: 5px;
+        float: left; }
+    #checkout-options .pp-checkout-option .pp-payment-provider-logo.pp-klarna-logo {
+      background: url(../img/icon/klarna_2x.png) no-repeat;
+      margin-left: 18px; }
+    #checkout-options .pp-checkout-option .pp-payment-provider-logo.pp-paypal-logo {
+      background: url(../img/icon/paypal_2x.png) no-repeat; }
+    #checkout-options .pp-checkout-option .pp-payment-provider-logo.pp-payment-provider-logo {
+      background-size: 50%;
+      width: 200px;
+      height: 40px;
+      display: block; }
 
 #opc_account_saved {
-  margin-top: 30px;
-}
+  margin-top: 30px; }
 
 #back-to-checkout-options {
-  float: right;
-}
+  float: right; }
+
+/*# sourceMappingURL=order-opc.css.map */
