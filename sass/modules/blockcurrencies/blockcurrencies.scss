@@ -4,6 +4,8 @@
 	float: right;
 	position: relative;
 	z-index: 90;
+	margin-top: -43px;
+	margin-left: 100px;
 	// max 479px
 	@media (max-width: $screen-xs - 1) {
 		width: 25%;

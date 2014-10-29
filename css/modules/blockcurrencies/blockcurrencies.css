@@ -2,7 +2,9 @@
 #currencies-block-top {
   float: right;
   position: relative;
-  z-index: 90; }
+  z-index: 90;
+  margin-top: -43px;
+  margin-left: 100px; }
   @media (max-width: 479px) {
     #currencies-block-top {
       width: 25%; } }

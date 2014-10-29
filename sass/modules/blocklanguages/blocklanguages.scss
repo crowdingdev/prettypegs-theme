@@ -5,9 +5,12 @@
 	position: relative;
 	z-index: 90;
 	width: 106px;
+	margin-top: -43px;
+	margin-right: 113px;
 	// max 479px
 	@media (max-width: $screen-xs - 1) {
 		width: 25%;
+			margin-right: 80px;
 	}
 	span.firstWord {
 		display: none;

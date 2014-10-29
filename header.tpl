@@ -90,11 +90,11 @@ End Google Tag Manager -->
 	<div id="page">
 		<div class="header-container">
 
-			<div class="pre-header" style="background-color: #ccc; height: 45px; "> </div>
+			<div class="pre-header"> </div>
 			<header id="header">
 				<div>
 					<div class="container">
-						<div class="row shop-slogan" style="top: -32px;">
+						<div class="row shop-slogan">
 
 							<h1>{l s='Designed furniture legs'}</h1> <a href="/content/1-"> {l s='Free shipping world wide'}</a>
 						</div>

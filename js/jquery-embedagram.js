@@ -49,8 +49,7 @@
  * @author Linus Karlsson
  */
 $('#slideshow').embedagram({
-	instagram_id: 594069319, 
-	success: function (){ $('#slideshow').jcarousel() },
+	instagram_id: 594069319,
 	limit: 5,
 	thumb_width: 306
 });

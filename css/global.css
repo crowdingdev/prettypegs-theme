@@ -5262,6 +5262,10 @@ textarea {
   margin-top: 0;
   margin-bottom: -15px; }
 
+.pre-header {
+  background: url(../img/bg_patterns/noise.png) #dbd8d2;
+  height: 45px; }
+
 header {
   z-index: 1;
   position: relative;
@@ -8056,7 +8060,7 @@ div.star.star_hover:after {
   width: 100%;
   height: 0px;
   position: relative;
-  top: 11px;
+  top: -32px;
   z-index: 50; }
   .header-container .shop-slogan h1 {
     display: inline;
@@ -8064,10 +8068,10 @@ div.star.star_hover:after {
     text-align: center;
     text-transform: uppercase;
     font-size: 12px;
-    margin-left: 240px; }
+    margin-left: 15px; }
   .header-container .shop-slogan a {
     display: inline;
-    margin-left: 40px; }
+    margin-left: 138px; }
     .header-container .shop-slogan a:before {
       font-family: "FontAwesome";
       content: "\f072"; }
