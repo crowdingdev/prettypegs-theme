@@ -32,7 +32,7 @@
 	<div id="pp-home-category-wrapper htmlcontent_{$hook|escape:'htmlall':'UTF-8'}">
 
 
-<h3 class="home-header bold">{l s='PEGS' mod='themeconfigurator'} {l s='FOR' mod='themeconfigurator'}:</h3>
+<h3 class="home-header">{l s='PEGS' mod='themeconfigurator'} {l s='FOR' mod='themeconfigurator'}:</h3>
 	<ul class="htmlcontent-home  pp-home-categories clearfix row">
 
 		{foreach name=items from=$htmlitems item=hItem}

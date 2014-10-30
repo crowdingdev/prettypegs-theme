@@ -7990,7 +7990,7 @@ div.star.star_hover:after {
   .navigation-wrapper a {
     text-align: center; }
   .navigation-wrapper .pp-link {
-    font-size: 35px;
+    font-size: 22px;
     font-weight: bold;
     padding: 40px 0;
     float: left;
@@ -8023,7 +8023,7 @@ div.star.star_hover:after {
   .pp-home-categories .pp-home-category {
     overflow: hidden; }
     .pp-home-categories .pp-home-category a h4 {
-      text-shadow: 0px 0px 29px #ccc;
+      text-shadow: 1px 1px 1px #666;
       text-transform: capitalize;
       padding: 15px;
       font-size: 38px;
@@ -8031,8 +8031,11 @@ div.star.star_hover:after {
       margin: 0;
       margin-bottom: 20px; }
       .pp-home-categories .pp-home-category a h4.pp-category-name {
-        font-weight: bold;
+        font-size: 24px;
+        padding: 20px 60px;
         color: #fff; }
+      .pp-home-categories .pp-home-category a h4:hover {
+        text-decoration: underline; }
     .pp-home-categories .pp-home-category a .pp-category-image {
       border-radius: 100px;
       background-color: #ca9998 !important; }
@@ -8074,7 +8077,8 @@ div.star.star_hover:after {
     display: inline;
     margin-left: 138px;
     font-weight: bold;
-    color: #db7770; }
+    color: #db7770;
+    text-transform: uppercase; }
     .header-container .shop-slogan a:before {
       font-family: "FontAwesome";
       content: "\f072";
