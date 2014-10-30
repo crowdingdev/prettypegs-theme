@@ -8023,6 +8023,7 @@ div.star.star_hover:after {
   .pp-home-categories .pp-home-category {
     overflow: hidden; }
     .pp-home-categories .pp-home-category a h4 {
+      text-shadow: 0px 0px 29px #ccc;
       text-transform: capitalize;
       padding: 15px;
       font-size: 38px;
@@ -8071,10 +8072,13 @@ div.star.star_hover:after {
     margin-left: 15px; }
   .header-container .shop-slogan a {
     display: inline;
-    margin-left: 138px; }
+    margin-left: 138px;
+    font-weight: bold;
+    color: #db7770; }
     .header-container .shop-slogan a:before {
       font-family: "FontAwesome";
-      content: "\f072"; }
+      content: "\f072";
+      color: #db7770; }
 @media (max-width: 700px) {
   .header-container .shop-slogan {
     display: none; }
